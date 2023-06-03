@@ -1,6 +1,6 @@
 import React from "react";
 import "./header.css"
-import logo from "../../img/logo.svg"
+import logo from "../../img/header_logo.png"
 import { NavLink } from "react-router-dom";
 import facebook from "../../img/🦆 icon _Facebook v1_.svg"
 import instagram from "../../img/🦆 icon _Instagram_.svg"
@@ -11,7 +11,7 @@ function Header () {
         <div className="header">
             <div className="container1">
                 <NavLink to="/">
-                <img src={logo} />
+                <img className="image" src={logo} />  
                 </NavLink>
                 <div className="adds">
                     <NavLink className="add1" to="Registrations">

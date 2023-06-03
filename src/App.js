@@ -1,19 +1,19 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import Footer from './components/footer/footer';
+import Registrations from './pages/registrations/registrations';
+import { Notfoundpage } from './pages/notfoundpage/notfoundpage';
+import { Layout } from './components/UI/layout/layout';
 import Header from './components/header/header';
-import Registrations from './pages/registrations';
-import Main from './pages/main';
 
 function App() {
   return (
     <div className="App">
       <Header/>
       <Routes>
-        <Route path='/' element={ <Main/> } />
+        <Route path='/' element={ <Layout/> } />
         <Route path='Registrations' element={ <Registrations/> } />
+        <Route path='*' element={ <Notfoundpage/> } />
       </Routes>
-      <Footer/>
     </div>
   )
 }

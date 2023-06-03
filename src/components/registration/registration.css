@@ -3,4 +3,93 @@
     height: 900px;
     background: url("../../img/registration_bg.svg") no-repeat center;
     background-size: cover;
+    box-sizing: border-box;
+    padding-top: 147px;
+}
+.registration .container{ 
+    margin: 0 auto;
+    width: 1200px;
+    height: 100%;
+    box-sizing: border-box;
+    padding-top: 53px;
+    background: #00000000;
+}
+.registration .container h1{
+    color: white;
+    text-align: center;
+    font-size:32px;
+    font-weight: 500;
+    background: #00000000;
+}
+.registration .r-block{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 52px;
+    background: #00000000;
+}
+.registration .r-block input {
+    width: 520px;
+    height: 71px;
+    border: 2px solid #0761DC;
+    border-radius: 10px;
+    padding-left: 71px;
+    font-weight: 400;
+    font-size: 18px;
+    color: #B4B2B2;
+    margin-top: 22px;
+    background: #00000000;
+    outline: none;
+    transition: .2s ease;
+}
+.registration .r-block input:hover{
+    background-color: rgba(52, 191, 255, 0.115);
+    color: #0761DC;
+}
+.registration .registration1{
+    display: flex;
+    flex-direction: column;
+    background: #00000000;
+}
+.registration .registration2{
+    display: flex;
+    flex-direction: column;
+    background: #00000000;
+}
+.registration #add_r{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 245px;
+    height: 62px;
+    background: #0761DC;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+    margin-top: 70px;
+    cursor: pointer;
+}
+.registration #add_r:hover{
+    background: #0c51b1;
+}
+.registration .href{
+    background: #00000000;
+}
+.registration .r_footer{
+    margin: 0 auto;
+    width: 550px;
+    margin-top: 115px;
+    font-weight: 400;
+    font-size: 20px;
+    color: #767676;
+    display: flex;
+    justify-content: space-between;
+    background: #00000000;
+}
+.registration .href a{
+    text-decoration: none;
+    color: blue;
+    background: #00000000;
 }
