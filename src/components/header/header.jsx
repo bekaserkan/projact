@@ -10,14 +10,14 @@ function Header () {
     return (
         <div className="header">
             <div className="container1">
-                <NavLink to="/">
+                <NavLink className="img" to="/">
                 <img className="image" src={logo} />  
                 </NavLink>
                 <div className="adds">
-                    <NavLink className="add1" to="Registrations">
+                    <NavLink className="add1" to="Registration">
                         <h1>Регистрация</h1>
                     </NavLink>
-                    <NavLink className="add2" to="/">
+                    <NavLink className="add2" to="Authorization">
                         <h1>Войти</h1>
                     </NavLink> 
                 </div>
@@ -28,13 +28,13 @@ function Header () {
                     <NavLink className="menu" to="/">
                         <h1>Главная</h1>
                     </NavLink>
-                    <NavLink className="menu" to="/">
+                    <NavLink className="menu" to="Battles">
                         <h1>Сражения</h1>
                     </NavLink>
-                    <NavLink className="menu" to="/">
+                    <NavLink className="menu" to="Chavo">
                         <h1>ЧАВО</h1>
                     </NavLink>
-                    <NavLink className="menu" to="/">
+                    <NavLink className="menu" to="News">
                         <h1>Новости</h1>
                     </NavLink>
                     </div>

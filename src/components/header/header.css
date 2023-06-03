@@ -47,6 +47,9 @@
 .header .add2:hover{
     background: #e4e4e418;
 }
+.header .add2.active{
+    background: #e4e4e418;
+}
 .header h1{
     background: #00000000;
     font-weight: 400;
@@ -102,10 +105,17 @@
     align-items: center;
     text-decoration: none;
     background: #00000000;
+    transition: .2s ease-in;
     z-index: 1;
 }
 .header .menu:hover{
     background: #0761DC;
+}
+.header .active{
+    background: #0761DC;
+}
+.header .img.active{
+    background: #00000000;
 }
 .header .icons{
     width: 132px;

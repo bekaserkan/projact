@@ -15,13 +15,13 @@ const Footer = () => {
                     <NavLink className="li" to="/" >
                         ГЛАВНАЯ
                     </NavLink>
-                    <NavLink className="li" to="/" >
+                    <NavLink className="li" to="Battles" >
                         СРАЖЕНИЯ
                     </NavLink>
-                    <NavLink className="li" to="/" >
+                    <NavLink className="li" to="Chavo" >
                         ЧАВО
                     </NavLink>
-                    <NavLink className="li" to="/" >
+                    <NavLink className="li" to="News" >
                         НОВОСТИ
                     </NavLink>
                 </ul>

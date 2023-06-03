@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import "./registration.css"
+import { Link } from "react-router-dom";
 
 function Registration () {
 
@@ -20,8 +21,8 @@ function Registration () {
                 </div>
                 <button id="add_r">Регистрация</button>
                 <div className="r_footer">
-                <span className="href">У вас есть профиль?<a href="#">Войти</a></span> 
-                <span className="href">Забыли пароль?<a href="#">Восстановить</a></span>
+                <span className="href">У вас есть профиль?<Link to='Authorization' >Войти</Link></span> 
+                <span className="href">Забыли пароль?<Link to='Restore' >Восстановить</Link></span>
                 </div>
             </div>
         </div>

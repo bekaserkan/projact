@@ -1,0 +1,15 @@
+.authorization{
+    width: 100%;
+    height: 900px;
+    background: url("../../img/registration_bg.svg") no-repeat center;
+    background-size: cover;
+    box-sizing: border-box;
+    padding-top: 147px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.authorization h1{
+    font-size: 3rem;
+    color: #ffffff;
+}
