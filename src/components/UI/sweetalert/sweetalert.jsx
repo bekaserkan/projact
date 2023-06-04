@@ -1,5 +1,5 @@
 import Swal from "sweetalert2";
-import "./sweetalert.css"
+import "./sweetalert.css"              
 
 export  const successContact = () => {
     const Toast = Swal.mixin({

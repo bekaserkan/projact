@@ -19,6 +19,7 @@ function App() {
         <Route path='Registration/Restore' element={ <Restore/> } />
         <Route path='Authorization' element={ <Authorization /> } />
         <Route path='Registration/Authorization' element={ <Authorization /> } />
+        <Route path='Registration/Restore/Authorization' element={ <Authorization /> } />
         <Route path='Registration' element={ <Registration /> } />
         <Route path='/' element={ <Main/> } />
         <Route path='Battles' element={ <Battles/> } />

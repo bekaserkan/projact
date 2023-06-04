@@ -24,3 +24,9 @@
 .swal2-x-mark{
     background: #00000000;
 }
+
+.swal2-container,
+.swal2-top-end,
+.swal2-backdrop-show{
+    background: #00000000;
+}
