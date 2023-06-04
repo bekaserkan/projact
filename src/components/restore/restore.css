@@ -5,11 +5,20 @@
     background-size: cover;
     box-sizing: border-box;
     padding-top: 147px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-bottom: 140px;
 }
-.restore h1{
-    color: #ffffff;
-    font-size: 3rem;
+.restore .container{ 
+    margin: 0 auto;
+    width: 1200px;
+    height: 100%;
+    box-sizing: border-box;
+    padding-top: 53px;
+    background: #00000000;
+}
+.restore .container h1{
+    color: white;
+    text-align: center;
+    font-size:32px;
+    font-weight: 500;
+    background: #00000000;
 }

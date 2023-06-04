@@ -1,0 +1,26 @@
+.swal2-title{
+    background: white;
+}
+.swal2-success-line-long,
+.swal2-success-line-tip{
+    background: green;
+}
+.swal2-success-circular-line-left,
+.swal2-success-circular-line-right,
+.swal2-success-fix,
+.swal2-success-ring{
+    background: #00000000;
+}
+.swal2-icon-show{
+    background: #00000000;
+}
+.swal2-timer-progress-bar-container{
+    background: #ccc;
+}
+.swal2-timer-progress-bar{
+    background: cadetblue;
+}
+
+.swal2-x-mark{
+    background: #00000000;
+}

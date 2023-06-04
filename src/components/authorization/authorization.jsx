@@ -5,7 +5,7 @@ function Authorization () {
     return (
         <div className="authorization">
             <div className="container">
-                <h1>страница пока не готоваа!</h1>
+                <h1>Авторизация</h1>
             </div>
         </div>
     )
