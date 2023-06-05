@@ -8,6 +8,7 @@ import play_icons2 from "../../img/play_icons2.svg";
 import play_icons3 from "../../img/play_icons3.svg";
 import all_strelka from "../../img/all_strelka.png";
 import { NavLink } from "react-router-dom";
+import { errorClick } from "../UI/sweetalert/sweetalert";
 
 function Play() {
   const [card, setCard] = useState([]);
@@ -67,7 +68,9 @@ function Play() {
         </NavLink>
         <div className="playing">
           {isLoading ? (
-            <h2 className="loading">Идет загрузка...</h2>
+            <div className="loading_div">
+              <h2 className="loading">Идет загрузка...</h2>
+            </div>
           ) : (
             <Slider {...settings2} className="home_platform">
               {card.map((el, id) => (
@@ -87,7 +90,9 @@ function Play() {
                       <span>
                         <img src={play_icons3} /> до {el.price} $
                       </span>
-                      <button className="btn">{el.text}</button>
+                      <button onClick={errorClick} className="btn">
+                        {el.text}
+                      </button>
                     </div>
                   </div>
                 </div>

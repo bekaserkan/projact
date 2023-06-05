@@ -31,7 +31,9 @@ function Battle() {
         <h1>Все игры</h1>
         <div className="block">
           {isLoading ? (
-            <h2 className="loading">Идет загрузка...</h2>
+            <div className="loading_div">
+              <h2 className="loading">Идет загрузка...</h2>
+            </div>
           ) : (
             batl.map((el, id) => (
               <Fite
@@ -46,16 +48,18 @@ function Battle() {
             ))
           )}
         </div>
-        <ul className="pagination">
-          {[...Array(5)].map((_, i) => (
-            <li
-              onClick={() => setPage(i + 1)}
-              className={page === i + 1 ? "active" : ""}
-            >
-              {i + 1}
-            </li>
-          ))}
-        </ul>
+        <div className="post">
+          <ul className="pagination">
+            {[...Array(5)].map((_, i) => (
+              <li
+                onClick={() => setPage(i + 1)}
+                className={page === i + 1 ? "active" : ""}
+              >
+                {i + 1}
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     </div>
   );
