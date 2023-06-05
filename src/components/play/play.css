@@ -1,123 +1,130 @@
-.play{
-    width: 100%;
-    height: 1347px;
-    box-sizing: border-box;
-    padding-top: 147px;
-    background: #00000000;
-    display: flex;
-    justify-content: center;
+.play {
+  width: 100%;
+  height: 1347px;
+  box-sizing: border-box;
+  padding-top: 147px;
+  background: #00000000;
+  display: flex;
+  justify-content: center;
 }
-.play .play_bg{
-    position: absolute;
-    margin: 0 auto;
-    background: #00000000;
-    width: 1440px;
-    height: 394px;
+.play .play_bg {
+  position: absolute;
+  margin: 0 auto;
+  background: #00000000;
+  width: 1440px;
+  height: 394px;
 }
-.play .img{
-    width: 1440px;
-    height: 394px;
-    background: url("../../img/play_bg.svg") no-repeat center;
-    background-size: cover;
+.play .img {
+  width: 1440px;
+  height: 394px;
+  background: url("../../img/play_bg.svg") no-repeat center;
+  background-size: cover;
 }
-.play div{
-    background: #00000000;
+.play .play_bg .slick-prev::before{
+    display: none;
 }
-.play .container{
-    margin: 0 auto;
-    width: 1200px;
-    height: 100%;
-    background: #00000000;
-    box-sizing: border-box;
-    padding-top: 125px;
-    display: flex;
-    justify-content: center;
+.play .play_bg .slick-next::before{
+    display: none;
 }
-.play h1{
-    width: 474px;
-    color: #ffffff;
-    font-size: 64px;
-    line-height: 87px;
-    color: #FFFFFF;
-    background: #00000000;
-    position: absolute;
-    z-index: 1;
+
+.play div {
+  background: #00000000;
 }
-.play .playing{
-    position: absolute;
-    margin-top: 150px;
-    width: 1200px;
-    height: 300px;
+.play .container {
+  margin: 0 auto;
+  width: 1200px;
+  height: 100%;
+  background: #00000000;
+  box-sizing: border-box;
+  padding-top: 125px;
+  display: flex;
+  justify-content: center;
 }
-.play .play_game{
-    width: 100%;
-    height: 310px;
-    border-radius: 15px;
-    position: relative;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 1.5rem;
+.play h1 {
+  width: 474px;
+  color: #ffffff;
+  font-size: 64px;
+  line-height: 87px;
+  color: #ffffff;
+  background: #00000000;
+  position: absolute;
+  z-index: 1;
 }
-.play .home_platform{
-    background: #00000000;
+.play .playing {
+  position: absolute;
+  margin-top: 150px;
+  width: 1200px;
+  height: 300px;
 }
-.play .play_game .platform{
-    margin-left: 2.5%;
-    width: 95%;
-    height: 300px;
-    border: none;
-    border-radius: 15px;
-    position: absolute;
-    background: #00000000;
+.play .play_game {
+  width: 100%;
+  height: 310px;
+  border-radius: 15px;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5rem;
 }
-.play .content{
-    margin-left: 2.5%;
-    margin-top: 180px;
-    position: absolute;
-    width: 95%;
-    height: 120px;
-    background: #121B24;
-    border-radius: 15px;
-    padding: 15px;
-    box-shadow: 0 0 15px 5px rgb(66, 66, 66);
+.play .home_platform {
+  background: #00000000;
 }
-.play .content .h1{
-    width: 100%;
-    height: 20px;
-    color: #ffffff;
-    font-size: 20px;
-    margin-bottom: 10px;
+.play .play_game .platform {
+  margin-left: 2.5%;
+  width: 95%;
+  height: 300px;
+  border: none;
+  border-radius: 15px;
+  position: absolute;
+  background: #00000000;
 }
-.play .icons{
-    margin-top: 60px;
-    width: 100%;
-    height: 50%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1.5fr  1.5fr;
-    gap: .5rem;
+.play .content {
+  margin-left: 2.5%;
+  margin-top: 180px;
+  position: absolute;
+  width: 95%;
+  height: 120px;
+  background: #121b24;
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0 0 15px 5px rgb(66, 66, 66);
 }
-.play .icons span{
-    width: 100%;
-    height: 20px;
-    display: flex;
-    align-items: center;
-    color: #FFFFFF;
-    background: #00000000;
+.play .content .h1 {
+  width: 100%;
+  height: 20px;
+  color: #ffffff;
+  font-size: 20px;
+  margin-bottom: 10px;
 }
-.play .icons span img{
-    width: 12px;
-    height: 12px;
-    margin-right: 3px;
-    background: #00000000;
+.play .icons {
+  margin-top: 60px;
+  width: 100%;
+  height: 50%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.5fr 1.5fr;
+  gap: 0.5rem;
 }
-.play .btn{
-    width: 100%;
-    height: 20px;
-    background: #0761DC;
-    color: #FFFFFF;
-    outline: none;
-    border: none;
-    font-weight: 300;
-    font-size: 15px;
-    border-radius: 15px;
+.play .icons span {
+  width: 100%;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  background: #00000000;
+}
+.play .icons span img {
+  width: 12px;
+  height: 12px;
+  margin-right: 3px;
+  background: #00000000;
+}
+.play .btn {
+  width: 100%;
+  height: 20px;
+  background: #0761dc;
+  color: #ffffff;
+  outline: none;
+  border: none;
+  font-weight: 300;
+  font-size: 15px;
+  border-radius: 15px;
 }

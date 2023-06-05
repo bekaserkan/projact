@@ -1,111 +1,111 @@
-.footer{
-    margin-top: -140px;
-    width: 100%;
-    height: 140px;
-    background: #00000000;
+.footer {
+  margin-top: -140px;
+  width: 100%;
+  height: 140px;
+  background: #00000000;
 }
-.footer .border{
-    width: 100%;
-    height: 1px;
-    background: #B5B5B5;
-    opacity: 0.2;
-    transform: matrix(1, 0, 0, -1, 0, 0);
+.footer .border {
+  width: 100%;
+  height: 1px;
+  background: #b5b5b5;
+  opacity: 0.2;
+  transform: matrix(1, 0, 0, -1, 0, 0);
 }
-.footer .container{
-    margin: 0 auto;
-    width: 1200px;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #00000000;
+.footer .container {
+  margin: 0 auto;
+  width: 1200px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #00000000;
 }
-.footer .image{
-    width: 160px;
-    margin-right: 55px;
-    transition: .2s ease;
+.footer .image {
+  width: 160px;
+  margin-right: 55px;
+  transition: 0.2s ease;
 }
-.footer .image:hover{
-    width: 176px;
-    margin-right: 39px;
+.footer .image:hover {
+  width: 176px;
+  margin-right: 39px;
 }
-.footer h1{
-    background: #00000000;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 21px;
-    color: #FFFFFF;
+.footer h1 {
+  background: #00000000;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
 }
-.footer a{
-    text-decoration: none;
-    color: #0761DC;
-    background: #00000000;
+.footer a {
+  text-decoration: none;
+  color: #0761dc;
+  background: #00000000;
 }
-.footer ul{
-    background: #00000000;
+.footer ul {
+  background: #00000000;
 }
-.footer .li{
-    width: 100%;
-    height: 14px;
-    padding-left: 15px;
-    margin-right: 23px;
-    background: #00000000;
-    text-decoration: none;
-    color: #444E57;
-    border-left: 3px solid #444E57;
-    font-size: 14px;
-    transition: .2s ease-in;
+.footer .li {
+  width: 100%;
+  height: 14px;
+  padding-left: 15px;
+  margin-right: 23px;
+  background: #00000000;
+  text-decoration: none;
+  color: #444e57;
+  border-left: 3px solid #444e57;
+  font-size: 14px;
+  transition: 0.2s ease-in;
 }
-.footer .li:hover{
-    color: #FFFFFF;
+.footer .li:hover {
+  color: #ffffff;
 }
-.footer .active{
-    color: #FFFFFF;
+.footer .active {
+  color: #ffffff;
 }
-.footer .btn_footer{
-    width: 170px;
-    height: 54px;
-    background: #1B2127;
-    border: none;
-    outline: none;
-    border-radius: 3px;
-    display: flex;
-    align-items: center;
-    position: relative;
+.footer .btn_footer {
+  width: 170px;
+  height: 54px;
+  background: #1b2127;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  position: relative;
 }
 .footer .btn_footer::before {
-    content: url("../../img/strelka.svg");
-    width: 64px;
-    z-index: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  content: url("../../img/strelka.svg");
+  width: 64px;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .footer .btn_footer::after {
-    position: absolute;
-    top: 0;
-    right: 0;
-    content: "";
-    width: 106px;
-    height: 100%;
-    border-radius: 0 3px 3px 0;
-    background: #FF7A00;
-    transition: all 0.5s ease;
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: "";
+  width: 106px;
+  height: 100%;
+  border-radius: 0 3px 3px 0;
+  background: #ff7a00;
+  transition: all 0.5s ease;
 }
 .footer .btn_footer:hover::after {
-    width: 100%;
-    border-radius: 3px;
+  width: 100%;
+  border-radius: 3px;
 }
 .footer .btn_footer .word {
-    margin-left: 64px;
-    width: 106px;
-    position: absolute;
-    z-index: 1;
-    font-weight: 500;
-    font-size: 14px;
-    color: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #00000000;
+  margin-left: 64px;
+  width: 106px;
+  position: absolute;
+  z-index: 1;
+  font-weight: 500;
+  font-size: 14px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #00000000;
 }

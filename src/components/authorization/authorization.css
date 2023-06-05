@@ -1,24 +1,24 @@
-.authorization{
-    width: 100%;
-    height: 900px;
-    background: url("../../img/registration_bg.svg") no-repeat center;
-    background-size: cover;
-    box-sizing: border-box;
-    padding-top: 147px;
-    margin-bottom: 140px;
+.authorization {
+  width: 100%;
+  height: 900px;
+  background: url("../../img/registration_bg.svg") no-repeat center;
+  background-size: cover;
+  box-sizing: border-box;
+  padding-top: 147px;
+  margin-bottom: 140px;
 }
-.authorization .container{ 
-    margin: 0 auto;
-    width: 1200px;
-    height: 100%;
-    box-sizing: border-box;
-    padding-top: 53px;
-    background: #00000000;
+.authorization .container {
+  margin: 0 auto;
+  width: 1200px;
+  height: 100%;
+  box-sizing: border-box;
+  padding-top: 53px;
+  background: #00000000;
 }
-.authorization .container h1{
-    color: white;
-    text-align: center;
-    font-size:32px;
-    font-weight: 500;
-    background: #00000000;
+.authorization .container h1 {
+  color: white;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 500;
+  background: #00000000;
 }

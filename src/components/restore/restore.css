@@ -1,103 +1,103 @@
-.restore{
-    width: 100%;
-    height: 900px;
-    background: url("../../img/registration_bg.svg") no-repeat center;
-    background-size: cover;
-    box-sizing: border-box;
-    padding-top: 147px;
-    margin-bottom: 140px;
+.restore {
+  width: 100%;
+  height: 900px;
+  background: url("../../img/registration_bg.svg") no-repeat center;
+  background-size: cover;
+  box-sizing: border-box;
+  padding-top: 147px;
+  margin-bottom: 140px;
 }
-.restore .container{ 
-    margin: 0 auto;
-    width: 1200px;
-    height: 100%;
-    box-sizing: border-box;
-    padding-top: 53px;
-    background: #00000000;
+.restore .container {
+  margin: 0 auto;
+  width: 1200px;
+  height: 100%;
+  box-sizing: border-box;
+  padding-top: 53px;
+  background: #00000000;
 }
-.restore .container h1{
-    color: white;
-    text-align: center;
-    font-size:32px;
-    font-weight: 500;
-    background: #00000000;
+.restore .container h1 {
+  color: white;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 500;
+  background: #00000000;
 }
-.restore .container .email1_block{
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
-    justify-content: center;
-    background: #00000000;
+.restore .container .email1_block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #00000000;
 }
-.restore .container .email1{
-    width: 520px;
-    height: 71px;
-    border: 2px solid #0761DC;
-    border-radius: 10px;
-    font-weight: 400;
-    font-size: 18px;
-    color: #767676;
-    padding-left: 42px;
-    margin-top: 55px;
-    background: #00000000;
-    outline: none;
+.restore .container .email1 {
+  width: 520px;
+  height: 71px;
+  border: 2px solid #0761dc;
+  border-radius: 10px;
+  font-weight: 400;
+  font-size: 18px;
+  color: #767676;
+  padding-left: 42px;
+  margin-top: 55px;
+  background: #00000000;
+  outline: none;
 }
-.restore .container .email1:hover{
-    background-color: rgba(52, 191, 255, 0.115);
-    color: #0761DC;
+.restore .container .email1:hover {
+  background-color: rgba(52, 191, 255, 0.115);
+  color: #0761dc;
 }
-.restore .container .mail_block{
-    margin: 0 auto;
-    width: 500px;
-    margin-top: 70px;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 25px;
-    text-align: center;
-    color: #767676;
-    background: #00000000;
+.restore .container .mail_block {
+  margin: 0 auto;
+  width: 500px;
+  margin-top: 70px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #767676;
+  background: #00000000;
 }
-.restore .mail{
-    background: #00000000;
+.restore .mail {
+  background: #00000000;
 }
-.restore .container .mail_block a{
-    text-decoration: none;
-    color: blue;
+.restore .container .mail_block a {
+  text-decoration: none;
+  color: blue;
 }
-.restore .container .btn_r1{
-    margin: 0 auto;
-    width: 520px;
-    height: 71px;
-    margin-top: 45px;
-    background: #0761DC;
-    border-radius: 10px;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 27px;
-    outline: none;
-    border: none;
-    color: #FFFFFF;
-    cursor:pointer;
+.restore .container .btn_r1 {
+  margin: 0 auto;
+  width: 520px;
+  height: 71px;
+  margin-top: 45px;
+  background: #0761dc;
+  border-radius: 10px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  outline: none;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
 }
-.restore .container .restore_footer{
-    margin-top: 147px;
-    margin: 0 auto;
-    width: 550px;
-    margin-top: 115px;
-    font-weight: 400;
-    font-size: 20px;
-    color: #767676;
-    display: flex;
-    justify-content: space-between;
-    background: #00000000;
+.restore .container .restore_footer {
+  margin-top: 147px;
+  margin: 0 auto;
+  width: 550px;
+  margin-top: 115px;
+  font-weight: 400;
+  font-size: 20px;
+  color: #767676;
+  display: flex;
+  justify-content: space-between;
+  background: #00000000;
 }
-.restore .href{
-    background: #00000000;
+.restore .href {
+  background: #00000000;
 }
-.restore .container .restore_footer a{
-    background: #00000000;
-    text-decoration: none;
-}   
-.restore .container .restore_footer .link1{
-    color: blue;
+.restore .container .restore_footer a {
+  background: #00000000;
+  text-decoration: none;
+}
+.restore .container .restore_footer .link1 {
+  color: blue;
 }

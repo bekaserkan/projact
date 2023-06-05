@@ -1,141 +1,141 @@
-.header{
-    width: 100%;
-    height: 149px;
-    background: url("../../img/header_bg.svg") no-repeat center;
-    background-size: cover;
-    position: absolute;
+.header {
+  width: 100%;
+  height: 149px;
+  background: url("../../img/header_bg.svg") no-repeat center;
+  background-size: cover;
+  position: absolute;
 }
-.header .container1{
-    margin: 0 auto;
-    width: 1200px;
-    height: 89px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #00000000;
+.header .container1 {
+  margin: 0 auto;
+  width: 1200px;
+  height: 89px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #00000000;
 }
-.header .adds{
-    width: 320px;
-    display: flex;
-    justify-content: space-between;
-    background: #00000000;
+.header .adds {
+  width: 320px;
+  display: flex;
+  justify-content: space-between;
+  background: #00000000;
 }
-.header .add1{
-    width: 165px;
-    height: 39px;
-    background: #0761DC;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 3px;
-    text-decoration: none;
+.header .add1 {
+  width: 165px;
+  height: 39px;
+  background: #0761dc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  text-decoration: none;
 }
-.header .add1:hover{
-    background: #0c51b1;
+.header .add1:hover {
+  background: #0c51b1;
 }
-.header .add2{
-    width: 123px;
-    height: 39px;
-    background: #00000000;
-    border: 1px solid #E4E4E4;
-    border-radius: 3px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
+.header .add2 {
+  width: 123px;
+  height: 39px;
+  background: #00000000;
+  border: 1px solid #e4e4e4;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
 }
-.header .add2:hover{
-    background: #e4e4e418;
+.header .add2:hover {
+  background: #e4e4e418;
 }
-.header .add2.active{
-    background: #e4e4e418;
+.header .add2.active {
+  background: #e4e4e418;
 }
-.header h1{
-    background: #00000000;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 27px;
-    color: #FFFFFF;
+.header h1 {
+  background: #00000000;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  color: #ffffff;
 }
-.header .home{
-    width: 100%;
-    height: 58px;
-    display: flex;
-    align-items: center;
-    border-bottom: 3px solid #0761DC;
-    z-index: 1;
-    background: #00000000;
+.header .home {
+  width: 100%;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  border-bottom: 3px solid #0761dc;
+  z-index: 1;
+  background: #00000000;
 }
-.header .home::after{
-    content: "";
-    position: absolute;
-    left: 0;
-    width: 80%;
-    height: 58px;
-    background: rgba(23, 23, 23, 0.466);
+.header .home::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 80%;
+  height: 58px;
+  background: rgba(23, 23, 23, 0.466);
 }
-.header .home::before{
-    content: "";
-    position: absolute;
-    right: 0;
-    width: 20%;
-    height: 58px;
-    background: #00000000;
-    border-top: 1px solid rgba(228, 228, 228, 0.2);
-    border-left: 1px solid rgba(228, 228, 228, 0.2);
+.header .home::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 20%;
+  height: 58px;
+  background: #00000000;
+  border-top: 1px solid rgba(228, 228, 228, 0.2);
+  border-left: 1px solid rgba(228, 228, 228, 0.2);
 }
-.header .container2{
-    margin: 0 auto;
-    width: 1200px;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: #00000000;
+.header .container2 {
+  margin: 0 auto;
+  width: 1200px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #00000000;
 }
-.header .menus{
-    display: flex;
-    background: #00000000;
+.header .menus {
+  display: flex;
+  background: #00000000;
 }
-.header .menu{
-    width: 163px;
-    height: 58px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    background: #00000000;
-    transition: .2s ease-in;
-    z-index: 1;
+.header .menu {
+  width: 163px;
+  height: 58px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  background: #00000000;
+  transition: 0.2s ease-in;
+  z-index: 1;
 }
-.header .menu:hover{
-    background: #0761DC;
+.header .menu:hover {
+  background: #0761dc;
 }
-.header .active{
-    background: #0761DC;
+.header .active {
+  background: #0761dc;
 }
-.header .img.active{
-    background: #00000000;
+.header .img.active {
+  background: #00000000;
 }
-.header .icons{
-    width: 132px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 100%;
-    background: #00000000;
+.header .icons {
+  width: 132px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  background: #00000000;
 }
-.header .icons img{
-    width: 24px;
-    height: 24px;
-    background: #00000000;
-    z-index: 1;
+.header .icons img {
+  width: 24px;
+  height: 24px;
+  background: #00000000;
+  z-index: 1;
 }
-.header .container1 .image{
-    background: #00000000;
-    width: 100%;
-    transition: .2s ease;
+.header .container1 .image {
+  background: #00000000;
+  width: 100%;
+  transition: 0.2s ease;
 }
-.header .container1 .image:hover{
-    width: 110%;
+.header .container1 .image:hover {
+  width: 110%;
 }
