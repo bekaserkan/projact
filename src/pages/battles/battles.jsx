@@ -1,12 +1,11 @@
 import React from "react";
 import "./battles.css";
+import Battle from "../../components/battle/battle";
 
 function Battles() {
   return (
     <div className="battles">
-      <div className="container">
-        <h1>страница пока не готоваа!</h1>
-      </div>
+      <Battle />
     </div>
   );
 }

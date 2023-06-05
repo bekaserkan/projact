@@ -13,12 +13,10 @@
   height: 100%;
   box-sizing: border-box;
   padding-top: 53px;
-  background: #00000000;
 }
 .authorization .container h1 {
   color: white;
   text-align: center;
   font-size: 32px;
   font-weight: 500;
-  background: #00000000;
 }

@@ -1,0 +1,122 @@
+.battle {
+  width: 100%;
+  height: 1350px;
+  background: url("../../img/battle_bg.svg") no-repeat center;
+  background-size: cover;
+  box-sizing: border-box;
+  padding-top: 147px;
+}
+.battle .container {
+  margin: 0 auto;
+  width: 1200px;
+  height: 1200px;
+  box-sizing: border-box;
+  padding-top: 53px;
+}
+.battle .container h1 {
+  font-size: 32px;
+  line-height: 44px;
+  color: #ffffff;
+  text-align: center;
+}
+.battle .block {
+  margin-top: 37px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1.5rem;
+}
+.battle .play_game {
+  width: 100%;
+  height: 310px;
+  border-radius: 15px;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5rem;
+}
+.battle .play_game .platform {
+  margin-left: 2.5%;
+  width: 95%;
+  height: 300px;
+  border: none;
+  border-radius: 15px;
+  position: absolute;
+}
+.battle .content {
+  margin-left: 2.5%;
+  margin-top: 180px;
+  position: absolute;
+  width: 95%;
+  height: 120px;
+  background: #121b24;
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0 0 15px 5px rgb(66, 66, 66);
+}
+.battle .content .h1 {
+  margin-top: 26px;
+  text-align: start;
+  font-weight: 200;
+  width: 100%;
+  height: 20px;
+  color: #ffffff;
+  font-size: 20px;
+}
+.battle .icons {
+  margin-top: 20px;
+  width: 100%;
+  height: 50%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.5fr 1.5fr;
+  gap: 0.5rem;
+}
+.battle .icons span {
+  width: 100%;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+.battle .icons span img {
+  width: 12px;
+  height: 12px;
+  margin-right: 3px;
+}
+.battle .btn {
+  width: 100%;
+  height: 20px;
+  background: #0761dc;
+  color: #ffffff;
+  outline: none;
+  border: none;
+  font-weight: 300;
+  font-size: 15px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.battle .pagination {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  margin-top: 40px;
+}
+.battle li {
+  display: inline-block;
+  padding: 10px 17px;
+  color: #ffffff;
+  font-size: 18px;
+  border-radius: 10px;
+  margin-right: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+.battle li.active {
+  background: #0761dc;
+  color: #fff;
+}
+.battle .loading {
+  font-weight: 300;
+  color: #ffffff;
+}

@@ -13,33 +13,30 @@
   height: 100%;
   box-sizing: border-box;
   padding-top: 53px;
-  background: #00000000;
 }
 .restore .container h1 {
   color: white;
   text-align: center;
   font-size: 32px;
   font-weight: 500;
-  background: #00000000;
 }
 .restore .container .email1_block {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: #00000000;
 }
 .restore .container .email1 {
   width: 520px;
   height: 71px;
   border: 2px solid #0761dc;
+  background: #00000000;
   border-radius: 10px;
   font-weight: 400;
   font-size: 18px;
   color: #767676;
   padding-left: 42px;
   margin-top: 55px;
-  background: #00000000;
   outline: none;
 }
 .restore .container .email1:hover {
@@ -55,10 +52,6 @@
   line-height: 25px;
   text-align: center;
   color: #767676;
-  background: #00000000;
-}
-.restore .mail {
-  background: #00000000;
 }
 .restore .container .mail_block a {
   text-decoration: none;
@@ -89,13 +82,8 @@
   color: #767676;
   display: flex;
   justify-content: space-between;
-  background: #00000000;
-}
-.restore .href {
-  background: #00000000;
 }
 .restore .container .restore_footer a {
-  background: #00000000;
   text-decoration: none;
 }
 .restore .container .restore_footer .link1 {

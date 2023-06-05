@@ -6,9 +6,12 @@ import "slick-carousel/slick/slick-theme.css";
 import play_icons1 from "../../img/play_icons1.svg";
 import play_icons2 from "../../img/play_icons2.svg";
 import play_icons3 from "../../img/play_icons3.svg";
+import all_strelka from "../../img/all_strelka.png";
+import { NavLink } from "react-router-dom";
 
 function Play() {
   const [card, setCard] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
 
   const settings1 = {
     dots: false,
@@ -29,16 +32,16 @@ function Play() {
   };
 
   React.useEffect(() => {
+    setIsLoading(true);
     fetch("https://647ce174c0bae2880ad14bc3.mockapi.io/play_dota")
       .then((res) => res.json())
       .then((json) => {
         setCard(json);
-        console.log(json);
       })
       .catch((err) => {
-        console.log(err);
         alert("Ошибка при получении данных");
-      });
+      })
+      .finally(() => setIsLoading(false));
   }, []);
 
   return (
@@ -58,32 +61,39 @@ function Play() {
       </div>
       <div className="container">
         <h1>Сыграй с нами</h1>
-        
+        <NavLink to="Battles" className="all">
+          {" "}
+          Все игры <img className="all_stralka" src={all_strelka} />{" "}
+        </NavLink>
         <div className="playing">
-          <Slider {...settings2} className="home_platform">
-            {card.map((el) => (
-              <div className="play_game">
-                <img className="platform" src={el.photos} />
-                <div className="content">
-                  <h1 className="h1">{el.title}</h1>
-                  <div className="icons">
-                    <span>
-                      <img src={play_icons1} />
-                      {el.batll}
-                    </span>
-                    <span>
-                      <img src={play_icons2} />
-                      {el.puople}
-                    </span>
-                    <span>
-                      <img src={play_icons3} /> до {el.price} $
-                    </span>
-                    <button className="btn">{el.text}</button>
+          {isLoading ? (
+            <h2 className="loading">Идет загрузка...</h2>
+          ) : (
+            <Slider {...settings2} className="home_platform">
+              {card.map((el, id) => (
+                <div key={id} className="play_game">
+                  <img className="platform" src={el.photos} />
+                  <div className="content">
+                    <h1 className="h1">{el.title}</h1>
+                    <div className="icons">
+                      <span>
+                        <img src={play_icons1} />
+                        {el.batll}
+                      </span>
+                      <span>
+                        <img src={play_icons2} />
+                        {el.puople}
+                      </span>
+                      <span>
+                        <img src={play_icons3} /> до {el.price} $
+                      </span>
+                      <button className="btn">{el.text}</button>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
-          </Slider>
+              ))}
+            </Slider>
+          )}
         </div>
       </div>
     </div>
