@@ -3,7 +3,7 @@ import "../../battle/battle.css";
 import play_icons1 from "../../../img/play_icons1.svg";
 import play_icons2 from "../../../img/play_icons2.svg";
 import play_icons3 from "../../../img/play_icons3.svg";
-import { errorClick } from "../sweetalert/sweetalert";
+import { infoClick } from "../sweetalert/sweetalert";
 
 export function Fite({ photos, title, batll, puople, price, text, key }) {
   return (
@@ -23,7 +23,9 @@ export function Fite({ photos, title, batll, puople, price, text, key }) {
           <span>
             <img src={play_icons3} /> до {price} $
           </span>
-          <button onClick={errorClick} className="btn">{text}</button>
+          <button onClick={infoClick} className="btn">
+            {text}
+          </button>
         </div>
       </div>
     </div>

@@ -8,7 +8,8 @@ import play_icons2 from "../../img/play_icons2.svg";
 import play_icons3 from "../../img/play_icons3.svg";
 import all_strelka from "../../img/all_strelka.png";
 import { NavLink } from "react-router-dom";
-import { errorClick } from "../UI/sweetalert/sweetalert";
+import { infoClick } from "../UI/sweetalert/sweetalert";
+import { Join_game } from "../UI/join_game/join_game";
 
 function Play() {
   const [card, setCard] = useState([]);
@@ -17,8 +18,8 @@ function Play() {
   const settings1 = {
     dots: false,
     infinite: true,
-    slick_prev: false,
-    speed: 600,
+    arrows: false,
+    speed: 400,
     slidesToShow: 1,
     slidesToScroll: 1,
   };
@@ -90,7 +91,7 @@ function Play() {
                       <span>
                         <img src={play_icons3} /> до {el.price} $
                       </span>
-                      <button onClick={errorClick} className="btn">
+                      <button onClick={infoClick} className="btn">
                         {el.text}
                       </button>
                     </div>
@@ -100,6 +101,7 @@ function Play() {
             </Slider>
           )}
         </div>
+        <Join_game />
       </div>
     </div>
   );

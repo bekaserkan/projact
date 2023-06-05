@@ -1,5 +1,5 @@
 .main {
   width: 100%;
   height: 3200px;
-  background: url("../../img/BG.svg");
+  background: url("../../img/BG.svg") no-repeat center;
 }

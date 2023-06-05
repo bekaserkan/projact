@@ -9,20 +9,17 @@
 .play .play_bg {
   position: absolute;
   margin: 0 auto;
-  width: 1440px;
+  width: 100%;
   height: 394px;
 }
 .play .img {
-  width: 1440px;
+  width: 100%;
   height: 394px;
   background: url("../../img/play_bg.svg") no-repeat center;
-  background-size: cover;
 }
-.play .play_bg .slick-prev::before {
-  display: none;
-}
-.play .play_bg .slick-next::before {
-  display: none;
+.play .play_bg div {
+  width: 100%;
+  position: relative;
 }
 .play .all {
   position: absolute;
@@ -87,7 +84,11 @@
   background: #121b24;
   border-radius: 15px;
   padding: 15px;
-  box-shadow: 0 0 15px 5px rgb(66, 66, 66);
+  box-shadow: 0 -5px 10px 1px rgb(66, 66, 66);
+  transition: 0.3s ease-in;
+}
+.play .content:hover {
+  box-shadow: 0 0px 15px 5px #0761dc;
 }
 .play .content .h1 {
   width: 100%;
@@ -135,7 +136,7 @@
   font-weight: 300;
   color: #ffffff;
 }
-.play .loading_div{
+.play .loading_div {
   width: 1200px;
   height: 300px;
   display: flex;
