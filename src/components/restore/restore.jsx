@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./restore.css";
+import "./Restore.css";
 import { Link } from "react-router-dom";
 import { errorContact, successContact } from "../UI/sweetalert/sweetalert";
 

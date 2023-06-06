@@ -20,3 +20,66 @@
   font-size: 32px;
   font-weight: 500;
 }
+.authorization .container .btn_block04 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 31px;
+}
+.authorization .container .btn_04 {
+  margin: 0 auto;
+  width: 520px;
+  height: 71px;
+  border: 2px solid #0761dc;
+  color: #ffffff;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  background: #00000000;
+  border-radius: 10px;
+  margin-top: 22px;
+}
+.authorization .container .btn_04:hover{
+  background-color: rgba(52, 191, 255, 0.115);
+  color: #0761dc;
+}
+.authorization .container .btn_04 p {
+  margin-left: 143px;
+}
+.authorization .container .btn_04 .image {
+  margin-left: 99px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+}
+.authorization .container .rules {
+  display: flex;
+  flex-direction: column;
+  margin-top: 76px;
+}
+.authorization .open,
+.authorization .container .rules span {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  text-align: center;
+  color: #767676;
+}
+.authorization .container .rules .two {
+  margin: 0 auto;
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
+}
+.authorization .container .rules .two p {
+  margin-top: 52px;
+  margin-bottom: 76px;
+}
+.authorization .container .rules .a {
+  text-decoration: none;
+  color: #0761dc;
+}

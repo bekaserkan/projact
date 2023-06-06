@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./play.css";
+import "./Play.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -10,6 +10,7 @@ import all_strelka from "../../img/all_strelka.png";
 import { NavLink } from "react-router-dom";
 import { infoClick } from "../UI/sweetalert/sweetalert";
 import { Join_game } from "../UI/join_game/join_game";
+import { Loading } from "../UI/loading/loading";
 
 function Play() {
   const [card, setCard] = useState([]);
@@ -40,7 +41,7 @@ function Play() {
       .then((json) => {
         setCard(json);
       })
-      .catch((err) => {
+      .catch(() => {
         alert("Ошибка при получении данных");
       })
       .finally(() => setIsLoading(false));
@@ -70,12 +71,12 @@ function Play() {
         <div className="playing">
           {isLoading ? (
             <div className="loading_div">
-              <h2 className="loading">Идет загрузка...</h2>
+              <Loading />
             </div>
           ) : (
             <Slider {...settings2} className="home_platform">
-              {card.map((el, id) => (
-                <div key={id} className="play_game">
+              {card.map((el) => (
+                <div key={el.id + `game`} className="play_game">
                   <img className="platform" src={el.photos} />
                   <div className="content">
                     <h1 className="h1">{el.title}</h1>

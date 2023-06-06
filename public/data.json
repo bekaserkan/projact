@@ -148,15 +148,6 @@
   "collections": [
     {
       "id": 1,
-      "title": "Dota 2",
-      "batll": "145",
-      "puople": "2789",
-      "price": "2 500",
-      "text": "Стратегия",
-      "photos": ["https://cq.ru/storage/uploads/posts/1020612/vesdoty2.png"]
-    },
-    {
-      "id": 2,
       "title": "Counter-Strike: Global Offensive",
       "batll": "178",
       "puople": "2289",
@@ -167,7 +158,7 @@
       ]
     },
     {
-      "id": 3,
+      "id": 2,
       "title": "World of Tanks",
       "batll": "95",
       "puople": "1589",
@@ -176,18 +167,7 @@
       "photos": ["https://i.artfile.ru/1920x1080_1046830_[www.ArtFile.ru].jpg"]
     },
     {
-      "id": 4,
-      "title": "Playerunknowns Battlegrounds",
-      "batll": "185",
-      "puople": "889",
-      "price": "6 545",
-      "text": "RPG",
-      "photos": [
-        "https://i.pinimg.com/originals/6c/ae/26/6cae26920d349f0314282a0e9e5061d2.jpg"
-      ]
-    },
-    {
-      "id": 5,
+      "id": 3,
       "title": "Minecraft",
       "batll": "655",
       "puople": "1789",
@@ -198,7 +178,7 @@
       ]
     },
     {
-      "id": 6,
+      "id": 4,
       "title": "League of Legands",
       "batll": "794",
       "puople": "3614",
@@ -209,7 +189,7 @@
       ]
     },
     {
-      "id": 7,
+      "id": 5,
       "title": "Hearth Stone",
       "batll": "545",
       "puople": "9674",
@@ -218,7 +198,7 @@
       "photos": ["https://static.goodgame.ru/files/logotypes/ma_39757_rAfd.jpg"]
     },
     {
-      "id": 8,
+      "id": 6,
       "title": "Warface",
       "batll": "945",
       "puople": "8589",
@@ -229,7 +209,7 @@
       ]
     },
     {
-      "id": 9,
+      "id": 7,
       "title": "Dota 2",
       "batll": "245",
       "puople": "5000",
@@ -240,7 +220,38 @@
       ]
     },
     {
-      "id": 1,
+      "id": 8,
+      "title": "Minecraft",
+      "batll": "655",
+      "puople": "1789",
+      "price": "2 190",
+      "text": "Стратегия",
+      "photos": [
+        "https://app-time.ru/uploads/posts/cover/2021/07/0707202118415780.jpg"
+      ]
+    },
+    {
+      "id": 9,
+      "title": "League of Legands",
+      "batll": "794",
+      "puople": "3614",
+      "price": "7 964",
+      "text": "Стратегия",
+      "photos": [
+        "https://a-static.besthdwallpaper.com/k-da-kai-sa-league-of-legends-lol-wallpaper-3840x2160-65782_54.jpg"
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Hearth Stone",
+      "batll": "545",
+      "puople": "9674",
+      "price": "4 500",
+      "text": "Стратегия",
+      "photos": ["https://static.goodgame.ru/files/logotypes/ma_39757_rAfd.jpg"]
+    },
+    {
+      "id": 11,
       "title": "Dota 2",
       "batll": "145",
       "puople": "2789",
@@ -249,7 +260,38 @@
       "photos": ["https://cq.ru/storage/uploads/posts/1020612/vesdoty2.png"]
     },
     {
-      "id": 2,
+      "id": 12,
+      "title": "Warface",
+      "batll": "945",
+      "puople": "8589",
+      "price": "8 500",
+      "text": "Стратегия",
+      "photos": [
+        "https://phonoteka.org/uploads/posts/2022-09/1663802454_55-phonoteka-org-p-varfeis-fon-krasivo-57.jpg"
+      ]
+    },
+    {
+      "id": 13,
+      "title": "Dota 2",
+      "batll": "245",
+      "puople": "5000",
+      "price": "9 500",
+      "text": "Стратегия",
+      "photos": [
+        "https://virtus-img.cdnvideo.ru/images/as-is/plain/b0/b081f035d3f1d7c36a2b2192874f3c0d.jpg@jpg"
+      ]
+    },
+    {
+      "id": 14,
+      "title": "Dota 2",
+      "batll": "145",
+      "puople": "2789",
+      "price": "2 500",
+      "text": "Стратегия",
+      "photos": ["https://cq.ru/storage/uploads/posts/1020612/vesdoty2.png"]
+    },
+    {
+      "id": 15,
       "title": "Counter-Strike: Global Offensive",
       "batll": "178",
       "puople": "2289",
@@ -260,7 +302,7 @@
       ]
     },
     {
-      "id": 3,
+      "id": 16,
       "title": "World of Tanks",
       "batll": "95",
       "puople": "1589",
@@ -269,7 +311,7 @@
       "photos": ["https://i.artfile.ru/1920x1080_1046830_[www.ArtFile.ru].jpg"]
     },
     {
-      "id": 4,
+      "id": 17,
       "title": "Playerunknowns Battlegrounds",
       "batll": "185",
       "puople": "889",
@@ -280,7 +322,18 @@
       ]
     },
     {
-      "id": 5,
+      "id": 18,
+      "title": "Playerunknowns Battlegrounds",
+      "batll": "185",
+      "puople": "889",
+      "price": "6 545",
+      "text": "RPG",
+      "photos": [
+        "https://i.pinimg.com/originals/6c/ae/26/6cae26920d349f0314282a0e9e5061d2.jpg"
+      ]
+    },
+    {
+      "id": 19,
       "title": "Minecraft",
       "batll": "655",
       "puople": "1789",
@@ -291,7 +344,7 @@
       ]
     },
     {
-      "id": 6,
+      "id": 20,
       "title": "League of Legands",
       "batll": "794",
       "puople": "3614",
@@ -302,7 +355,7 @@
       ]
     },
     {
-      "id": 7,
+      "id": 21,
       "title": "Hearth Stone",
       "batll": "545",
       "puople": "9674",
@@ -311,7 +364,7 @@
       "photos": ["https://static.goodgame.ru/files/logotypes/ma_39757_rAfd.jpg"]
     },
     {
-      "id": 8,
+      "id": 22,
       "title": "Warface",
       "batll": "945",
       "puople": "8589",
@@ -322,7 +375,7 @@
       ]
     },
     {
-      "id": 9,
+      "id": 23,
       "title": "Dota 2",
       "batll": "245",
       "puople": "5000",
@@ -333,7 +386,7 @@
       ]
     },
     {
-      "id": 1,
+      "id": 24,
       "title": "Dota 2",
       "batll": "145",
       "puople": "2789",
@@ -342,7 +395,7 @@
       "photos": ["https://cq.ru/storage/uploads/posts/1020612/vesdoty2.png"]
     },
     {
-      "id": 2,
+      "id": 25,
       "title": "Counter-Strike: Global Offensive",
       "batll": "178",
       "puople": "2289",
@@ -353,7 +406,7 @@
       ]
     },
     {
-      "id": 3,
+      "id": 26,
       "title": "World of Tanks",
       "batll": "95",
       "puople": "1589",
@@ -362,7 +415,7 @@
       "photos": ["https://i.artfile.ru/1920x1080_1046830_[www.ArtFile.ru].jpg"]
     },
     {
-      "id": 4,
+      "id": 27,
       "title": "Playerunknowns Battlegrounds",
       "batll": "185",
       "puople": "889",
@@ -370,59 +423,6 @@
       "text": "RPG",
       "photos": [
         "https://i.pinimg.com/originals/6c/ae/26/6cae26920d349f0314282a0e9e5061d2.jpg"
-      ]
-    },
-    {
-      "id": 5,
-      "title": "Minecraft",
-      "batll": "655",
-      "puople": "1789",
-      "price": "2 190",
-      "text": "Стратегия",
-      "photos": [
-        "https://app-time.ru/uploads/posts/cover/2021/07/0707202118415780.jpg"
-      ]
-    },
-    {
-      "id": 6,
-      "title": "League of Legands",
-      "batll": "794",
-      "puople": "3614",
-      "price": "7 964",
-      "text": "Стратегия",
-      "photos": [
-        "https://a-static.besthdwallpaper.com/k-da-kai-sa-league-of-legends-lol-wallpaper-3840x2160-65782_54.jpg"
-      ]
-    },
-    {
-      "id": 7,
-      "title": "Hearth Stone",
-      "batll": "545",
-      "puople": "9674",
-      "price": "4 500",
-      "text": "Стратегия",
-      "photos": ["https://static.goodgame.ru/files/logotypes/ma_39757_rAfd.jpg"]
-    },
-    {
-      "id": 8,
-      "title": "Warface",
-      "batll": "945",
-      "puople": "8589",
-      "price": "8 500",
-      "text": "Стратегия",
-      "photos": [
-        "https://phonoteka.org/uploads/posts/2022-09/1663802454_55-phonoteka-org-p-varfeis-fon-krasivo-57.jpg"
-      ]
-    },
-    {
-      "id": 9,
-      "title": "Dota 2",
-      "batll": "245",
-      "puople": "5000",
-      "price": "9 500",
-      "text": "Стратегия",
-      "photos": [
-        "https://virtus-img.cdnvideo.ru/images/as-is/plain/b0/b081f035d3f1d7c36a2b2192874f3c0d.jpg@jpg"
       ]
     }
   ]

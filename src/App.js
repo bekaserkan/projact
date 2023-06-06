@@ -1,29 +1,32 @@
+import React from "react";
 import { Route, Routes } from "react-router-dom";
-import "./App.css";
-import { Notfoundpage } from "./pages/notfoundpage/notfoundpage";
-import Header from "./components/header/header";
-import Battles from "./pages/battles/battles";
-import Footer from "./components/footer/footer";
-import Main from "./pages/main/main";
-import News from "./pages/news/news";
-import Chavo from "./pages/chavo/chavo";
-import Registration from "./components/registration/registration";
-import Authorization from "./components/authorization/authorization";
-import Restore from "./components/restore/restore";
+import Restore from "./components/Restore/Restore";
+import Authorization from "./components/Authorization/Authorization";
+import Registration from "./components/Registration/Registration";
+import Main from "./pages/Main/Main";
+import Battles from "./pages/Battles/Battles";
+import News from "./pages/News/News";
+import Chavo from "./pages/Chavo/Chavo";
+import { Notfoundpage } from "./pages/Notfoundpage/Notfoundpage";
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
-    <div className="App">
+    <>
       <Header />
       <Routes>
         <Route path="Registration/Restore" element={<Restore />} />
+        <Route path="Authorization/Restore" element={<Restore />} />
         <Route path="Authorization" element={<Authorization />} />
+        <Route path="Restore/Authorization" element={<Authorization />} />
         <Route path="Registration/Authorization" element={<Authorization />} />
-        <Route
+        <Route 
           path="Registration/Restore/Authorization"
           element={<Authorization />}
         />
         <Route path="Registration" element={<Registration />} />
+        <Route path="Authorization/Registration" element={<Registration />} />
         <Route path="/" element={<Main />} />
         <Route path="Battles" element={<Battles />} />
         <Route path="News" element={<News />} />
@@ -31,7 +34,7 @@ function App() {
         <Route path="*" element={<Notfoundpage />} />
       </Routes>
       <Footer />
-    </div>
+    </>
   );
 }
 

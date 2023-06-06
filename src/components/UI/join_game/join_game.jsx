@@ -4,6 +4,7 @@ import dota2 from "../../../img/dota2.svg";
 import eye from "../../../img/eye.svg";
 import revers from "../../../img/revers.svg";
 import { joinClick } from "../sweetalert/sweetalert";
+import { Loading } from "../loading/loading";
 
 export function Join_game() {
   const [join, setJoin] = useState([]);
@@ -13,7 +14,7 @@ export function Join_game() {
   React.useEffect(() => {
     setIsLoading(true);
     fetch(
-      `https://647ce174c0bae2880ad14bc3.mockapi.io/play_join?page=${page}&limit=5`
+      `https://647ce174c0bae2880ad14bc3.mockapi.io/play_join?page=${page}&limit=6`
     )
       .then((res) => res.json())
       .then((json) => {
@@ -29,11 +30,11 @@ export function Join_game() {
     <div className="join_game">
       {isLoading ? (
         <div className="loading_div">
-          <h2 className="loading"> идет загрузка... </h2>
+          <Loading />
         </div>
       ) : (
-        join.map((el, index) => (
-          <div key={index} className="wrapper">
+        join.map((el) => (
+          <div key={el.id + "taur"} className="wrapper">
             <div className="box">
               <img src={dota2} />
             </div>
@@ -67,8 +68,9 @@ export function Join_game() {
       )}
       <div className="post">
         <ul className="pagination">
-          {[...Array(4)].map((_, i) => (
+          {[...Array(3)].map((_, i) => (
             <li
+              key={i + "pagination"}
               onClick={() => setPage(i + 1)}
               className={page === i + 1 ? "active" : ""}
             >

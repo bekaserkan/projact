@@ -1,6 +1,6 @@
 import React from "react";
-import "./main.css";
-import Play from "../../components/play/play";
+import "./Main.css";
+import Play from "../../components/Play/Play";
 
 function Main() {
   return (

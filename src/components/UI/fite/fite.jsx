@@ -1,13 +1,13 @@
 import React from "react";
-import "../../battle/battle.css";
+import "../../Battle/Battle.css";
 import play_icons1 from "../../../img/play_icons1.svg";
 import play_icons2 from "../../../img/play_icons2.svg";
 import play_icons3 from "../../../img/play_icons3.svg";
 import { infoClick } from "../sweetalert/sweetalert";
 
-export function Fite({ photos, title, batll, puople, price, text, key }) {
+export function Fite({ photos, title, batll, puople, price, text }) {
   return (
-    <div key={key} className="play_game">
+    <div className="play_game">
       <img className="platform" src={photos} />
       <div className="content">
         <h1 className="h1">{title}</h1>

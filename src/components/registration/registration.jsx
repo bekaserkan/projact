@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./registration.css";
+import "./Registration.css";
 import { Link } from "react-router-dom";
 import { errorContact, successContact } from "../UI/sweetalert/sweetalert";
 

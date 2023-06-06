@@ -1,6 +1,6 @@
 import React from "react";
-import "./battles.css";
-import Battle from "../../components/battle/battle";
+import "./Battles.css";
+import Battle from "../../components/Battle/Battle";
 
 function Battles() {
   return (

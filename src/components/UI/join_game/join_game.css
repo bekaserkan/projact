@@ -52,7 +52,6 @@
   background: #0c51b1;
 }
 .join_game .pagination {
-  position: absolute;
   list-style: none;
   margin-top: 40px;
   z-index: 5;
@@ -71,23 +70,7 @@
   background: #0761dc;
   color: #fff;
 }
-.join_game .loading {
-  padding-left: 10px;
-  width: 200px;
-  background: #0761dc;
-  font-weight: 300;
-  color: #ffffff;
-}
-.join_game .loading_div {
-  width: 1200px;
-  height: 475px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .join_game .post {
-  width: 1200px;
-  height: 100px;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;

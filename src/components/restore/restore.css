@@ -72,6 +72,9 @@
   color: #ffffff;
   cursor: pointer;
 }
+.restore .container .btn_r1:hover {
+  background: #0c51b1;
+}
 .restore .container .restore_footer {
   margin-top: 147px;
   margin: 0 auto;

@@ -1,5 +1,5 @@
 import React from "react";
-import "./chavo.css";
+import "./Chavo.css";
 
 function Chavo() {
   return (
