@@ -8,5 +8,5 @@
 .chavo .container{
   margin: 0 auto;
   width: 1200px;
-  height: 80vh;
+  min-height: 800px;
 }

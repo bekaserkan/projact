@@ -2,7 +2,6 @@ import React from "react";
 import "./Header.css";
 import logo from "../../img/header_logo.png";
 import { NavLink } from "react-router-dom";
-import facebook from "../../img/🦆 icon _Facebook v1_.svg";
 import instagram from "../../img/🦆 icon _Instagram_.svg";
 import vk from "../../img/🦆 icon _vk_.svg";
 
@@ -39,9 +38,15 @@ function Header() {
             </NavLink>
           </div>
           <div className="icons">
-            <img src={instagram} />
-            <img src={vk} />
-            <img src={facebook} />
+            <a className="site" href="https://www.instagram.com/">
+              <img src={instagram} />{" "}
+            </a>
+            <a className="site" href="https://vk.com/">
+              <img src={vk} />{" "}
+            </a>
+            <a className="site" href="https://github.com/bekaserkan">
+              <div className="git"></div>
+            </a>
           </div>
         </div>
       </div>

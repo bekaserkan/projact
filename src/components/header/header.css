@@ -115,10 +115,38 @@
   justify-content: space-between;
   height: 100%;
 }
-.header .icons img {
+.header .icons .site img {
   width: 24px;
   height: 24px;
   z-index: 1;
+  transition: 0.3s ease;
+}
+.header .git {
+  width: 27px;
+  height: 27px;
+  z-index: 1;
+  border-radius: 50%;
+  background: url("../../img/github_icon.png") no-repeat center;
+  background-size: cover;
+  transition: 0.4s ease;
+}
+.header .icons .site {
+  width: 24px;
+  height: 24px;
+  z-index: 1;
+  cursor: pointer;
+}
+.header .icons img:hover {
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  box-shadow: 0 0 15px 5px #0761dc;
+}
+.header .icons .site:hover .git {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  box-shadow: 0 0 15px 5px #0761dc;
 }
 .header .container1 .image {
   width: 100%;

@@ -11,6 +11,7 @@ import { NavLink } from "react-router-dom";
 import { infoClick } from "../UI/sweetalert/sweetalert";
 import { Join_game } from "../UI/join_game/join_game";
 import { Loading } from "../UI/loading/loading";
+import Tilt from "react-parallax-tilt";
 
 function Play() {
   const [card, setCard] = useState([]);
@@ -76,28 +77,30 @@ function Play() {
           ) : (
             <Slider {...settings2} className="home_platform">
               {card.map((el) => (
-                <div key={el.id + `game`} className="play_game">
-                  <img className="platform" src={el.photos} />
-                  <div className="content">
-                    <h1 className="h1">{el.title}</h1>
-                    <div className="icons">
-                      <span>
-                        <img src={play_icons1} />
-                        {el.batll}
-                      </span>
-                      <span>
-                        <img src={play_icons2} />
-                        {el.puople}
-                      </span>
-                      <span>
-                        <img src={play_icons3} /> до {el.price} $
-                      </span>
-                      <button onClick={infoClick} className="btn">
-                        {el.text}
-                      </button>
+                <Tilt>
+                  <div key={el.id + `game`} className="play_game">
+                    <img className="platform" src={el.photos} />
+                    <div className="content">
+                      <h1 className="h1">{el.title}</h1>
+                      <div className="icons">
+                        <span>
+                          <img src={play_icons1} />
+                          {el.batll}
+                        </span>
+                        <span>
+                          <img src={play_icons2} />
+                          {el.puople}
+                        </span>
+                        <span>
+                          <img src={play_icons3} /> до {el.price} $
+                        </span>
+                        <button onClick={infoClick} className="btn">
+                          {el.text}
+                        </button>
+                      </div>
                     </div>
                   </div>
-                </div>
+                </Tilt>
               ))}
             </Slider>
           )}

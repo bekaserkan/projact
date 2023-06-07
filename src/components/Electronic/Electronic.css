@@ -24,7 +24,6 @@
   display: flex;
   flex-direction: column;
   margin-top: 53px;
-  margin-bottom: 63px;
 }
 .electronic .container .profile input {
   margin: 0 auto;
@@ -40,9 +39,58 @@
   background: #00000000;
   outline: none;
 }
+.electronic .container input:hover {
+  background-color: rgba(52, 191, 255, 0.115);
+  color: #0761dc;
+}
 .electronic .container .btn_044 {
+  margin: 0 auto;
   width: 183px;
   height: 62px;
   background: #0761dc;
   border-radius: 10px;
+  outline: none;
+  border: none;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  color: #ffffff;
+  margin-top: 63px;
+  margin-bottom: 117px;
+}
+.electronic .container .btn_044:hover {
+  background: #0c51b1;
+}
+.electronic .wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.electronic .container .wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.electronic .open,
+.electronic .container .wrapper span {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  text-align: center;
+  color: #767676;
+}
+.electronic .container .wrapper .two {
+  margin: 0 auto;
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
+}
+.electronic .container .wrapper .two p {
+  margin-top: 52px;
+  margin-bottom: 76px;
+}
+.electronic .container .wrapper .a {
+  text-decoration: none;
+  color: #0761dc;
 }
