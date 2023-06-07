@@ -55,7 +55,7 @@
 }
 .restore .container .mail_block a {
   text-decoration: none;
-  color: blue;
+  color: #0761dc;
 }
 .restore .container .btn_r1 {
   margin: 0 auto;
@@ -90,5 +90,5 @@
   text-decoration: none;
 }
 .restore .container .restore_footer .link1 {
-  color: blue;
+  color: #0761dc;
 }

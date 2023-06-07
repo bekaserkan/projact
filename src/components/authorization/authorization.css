@@ -33,19 +33,29 @@
   border: 2px solid #0761dc;
   color: #ffffff;
   font-size: 20px;
-  display: flex;
-  align-items: center;
   cursor: pointer;
   background: #00000000;
   border-radius: 10px;
   margin-top: 22px;
+  transition: 0.2s ease;
 }
-.authorization .container .btn_04:hover{
+.authorization .container .btn_04:hover {
   background-color: rgba(52, 191, 255, 0.115);
   color: #0761dc;
 }
+.authorization .container .p {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
 .authorization .container .btn_04 p {
   margin-left: 143px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  color: #b4b2b2;
 }
 .authorization .container .btn_04 .image {
   margin-left: 99px;

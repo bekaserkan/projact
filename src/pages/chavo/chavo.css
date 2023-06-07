@@ -1,11 +1,12 @@
 .chavo {
   width: 100%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background: url("../../img/questions_bg.svg") no-repeat center;
+  background-size: cover;
+  height: 100%;
+  padding-top: 147px;
 }
-.chavo h1 {
-  font-size: 3rem;
-  color: #ffffff;
+.chavo .container{
+  margin: 0 auto;
+  width: 1200px;
+  height: 80vh;
 }

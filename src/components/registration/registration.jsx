@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Registration.css";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { errorContact, successContact } from "../UI/sweetalert/sweetalert";
 
 function Registration() {
@@ -39,10 +39,10 @@ function Registration() {
         </button>
         <div className="r_footer">
           <span className="href">
-            У вас есть профиль?<Link to="Authorization">Войти</Link>
+            У вас есть профиль?<NavLink to="/Authorization">Войти</NavLink>
           </span>
           <span className="href">
-            Забыли пароль?<Link to="Restore">Восстановить</Link>
+            Забыли пароль?<NavLink to="/Restore">Восстановить</NavLink>
           </span>
         </div>
       </div>

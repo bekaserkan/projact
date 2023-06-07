@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Restore.css";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { errorContact, successContact } from "../UI/sweetalert/sweetalert";
 
 const Restore = () => {
@@ -13,7 +13,7 @@ const Restore = () => {
   return (
     <div className="restore">
       <div className="container">
-        <h1>Восстановление пароля</h1>
+           <h1>Восстановление пароля</h1>
         <div className="email1_block">
           <input
             value={restoreValue}
@@ -38,15 +38,15 @@ const Restore = () => {
           <div className="restore_footer">
             <span className="href">
               У вас есть профиль?
-              <Link className="link1" to="Authorization">
+              <NavLink className="link1" to="/Authorization">
                 Войти
-              </Link>
+              </NavLink>
             </span>
             <span className="href">
               Хотите на назад?
-              <Link className="link1" to="/">
+                   <NavLink className="link1" to="/">
                 На главную
-              </Link>
+              </NavLink>
             </span>
           </div>
         </div>

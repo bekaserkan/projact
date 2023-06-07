@@ -1,6 +1,6 @@
 .battle {
   width: 100%;
-  min-height: 1350px;
+  min-height: 1550px;
   background: url("../../img/battle_bg.svg") no-repeat center;
   background-size: cover;
   box-sizing: border-box;
@@ -122,15 +122,8 @@
 }
 .battle .loading_div {
   width: 1200px;
-  height: 644px;
+  height: 978px;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.battle .loading {
-  padding-left: 10px;
-  width: 200px;
-  background: #0761dc;
-  font-weight: 300;
-  color: #ffffff;
 }

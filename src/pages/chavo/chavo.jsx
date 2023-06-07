@@ -1,10 +1,13 @@
 import React from "react";
 import "./Chavo.css";
+import Faq from "../../components/Faq/Faq";
 
 function Chavo() {
   return (
     <div className="chavo">
-      <h1>страница пока не готоваа!</h1>
+      <div className="container">
+        <Faq />
+      </div>
     </div>
   );
 }

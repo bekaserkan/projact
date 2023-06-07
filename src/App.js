@@ -10,23 +10,17 @@ import Chavo from "./pages/Chavo/Chavo";
 import { Notfoundpage } from "./pages/Notfoundpage/Notfoundpage";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
+import Electronic from "./components/Electronic/Electronic";
 
 function App() {
   return (
     <>
       <Header />
       <Routes>
-        <Route path="Registration/Restore" element={<Restore />} />
-        <Route path="Authorization/Restore" element={<Restore />} />
+        <Route path="Restore" element={<Restore />} />
         <Route path="Authorization" element={<Authorization />} />
-        <Route path="Restore/Authorization" element={<Authorization />} />
-        <Route path="Registration/Authorization" element={<Authorization />} />
-        <Route 
-          path="Registration/Restore/Authorization"
-          element={<Authorization />}
-        />
+        <Route path="Electronic" element={<Electronic />} />
         <Route path="Registration" element={<Registration />} />
-        <Route path="Authorization/Registration" element={<Registration />} />
         <Route path="/" element={<Main />} />
         <Route path="Battles" element={<Battles />} />
         <Route path="News" element={<News />} />
