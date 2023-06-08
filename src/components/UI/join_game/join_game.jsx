@@ -34,7 +34,7 @@ export function Join_game() {
         </div>
       ) : (
         join.map((el) => (
-          <div key={el.id + "taur"} className="wrapper">
+          <div key={el.id + "yes"} className="wrapper">
             <div className="box">
               <img src={dota2} />
             </div>
@@ -70,7 +70,7 @@ export function Join_game() {
         <ul className="pagination">
           {[...Array(3)].map((_, i) => (
             <li
-              key={i + "pagination"}
+              key={i + "page"}
               onClick={() => setPage(i + 1)}
               className={page === i + 1 ? "active" : ""}
             >

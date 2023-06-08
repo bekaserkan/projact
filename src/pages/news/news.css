@@ -1,11 +1,3 @@
-.news {
+.news{
   width: 100%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.news h1 {
-  font-size: 3rem;
-  color: #ffffff;
 }

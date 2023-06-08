@@ -77,8 +77,8 @@ function Play() {
           ) : (
             <Slider {...settings2} className="home_platform">
               {card.map((el) => (
-                <Tilt>
-                  <div key={el.id + `game`} className="play_game">
+                <Tilt key={el.id}>
+                  <div className="play_game">
                     <img className="platform" src={el.photos} />
                     <div className="content">
                       <h1 className="h1">{el.title}</h1>

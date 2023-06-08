@@ -11,6 +11,7 @@ import { Notfoundpage } from "./pages/Notfoundpage/Notfoundpage";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import Electronic from "./components/Electronic/Electronic";
+import Champions from "./components/Сhampions/Champions";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/" element={<Main />} />
         <Route path="Battles" element={<Battles />} />
         <Route path="News" element={<News />} />
+        <Route path="News/Champions" element={<Champions />} />
         <Route path="Chavo" element={<Chavo />} />
         <Route path="*" element={<Notfoundpage />} />
       </Routes>
