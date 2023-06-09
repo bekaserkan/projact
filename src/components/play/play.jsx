@@ -29,7 +29,6 @@ function Play() {
   const settings2 = {
     dots: false,
     infinite: true,
-    slick_prev: false,
     speed: 450,
     slidesToShow: 3,
     slidesToScroll: 1,

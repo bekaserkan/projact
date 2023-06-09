@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Routes } from "react-router-dom";
+import { Route, Router, Routes } from "react-router-dom";
 import Restore from "./components/Restore/Restore";
 import Authorization from "./components/Authorization/Authorization";
 import Registration from "./components/Registration/Registration";
@@ -11,7 +11,6 @@ import { Notfoundpage } from "./pages/Notfoundpage/Notfoundpage";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import Electronic from "./components/Electronic/Electronic";
-import Champions from "./components/Сhampions/Champions";
 
 function App() {
   return (
@@ -24,8 +23,7 @@ function App() {
         <Route path="Registration" element={<Registration />} />
         <Route path="/" element={<Main />} />
         <Route path="Battles" element={<Battles />} />
-        <Route path="News" element={<News />} />
-        <Route path="News/Champions" element={<Champions />} />
+        <Route path="News/*" element={<News />} />
         <Route path="Chavo" element={<Chavo />} />
         <Route path="*" element={<Notfoundpage />} />
       </Routes>
