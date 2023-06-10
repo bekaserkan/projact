@@ -11,10 +11,9 @@ import stars from "../../img/stars.svg";
 import help from "../../img/help.svg";
 import go_out from "../../img/go_out.svg";
 import photo from "../../img/photo_provate.svg";
+import TopUp from "../TopUp/TopUp";
 
 function Private() {
-  const [count, setCount] = useState(750);
-
   return (
     <div className="private">
       <div className="container">
@@ -23,15 +22,15 @@ function Private() {
           <div className="div">
             <div className="info">
               <h1>@beka</h1>
-              <NavLink className="setting_data" to="">
+              <NavLink className="setting_data" to="/Tuning">
                 Настройки данных
               </NavLink>
             </div>
             <div className="balance">
               <h3>
-                <img src={briliand} /> Баланс {count} сом
+                <img src={briliand} /> Баланс 750 сом
               </h3>
-              <NavLink to='/Battles/TopUp'>
+              <NavLink to="/Battles/TopUp">
                 <button className="top_up">Пополнить</button>
               </NavLink>
             </div>

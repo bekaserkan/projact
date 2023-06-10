@@ -31,7 +31,7 @@ function Electronic() {
       <div className="container">
         <h1> Авторизация через электронный адрес </h1>
         <div className="profile">
-          <input value={email} onChange={emailChange} type="emaшl" placeholder="Введите электронный адрес" />
+          <input value={email} onChange={emailChange} type="email" placeholder="Введите электронный адрес" />
           <input
             value={entrance}
             onChange={entranceChange}

@@ -12,6 +12,7 @@ import Footer from "./components/Footer/Footer";
 import Electronic from "./components/Electronic/Electronic";
 import Private from "./components/Private/Private";
 import { NotFoundPage } from "./pages/NotFoundPage/NotFoundPage";
+import Tuning from "./pages/Tuning/Tuning";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path="News/*" element={<News />} />
         <Route path="Chavo" element={<Chavo />} />
         <Route path="Private" element={ <Private/> } />
+        <Route path="Tuning/*" element={ <Tuning/> } />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <Footer />

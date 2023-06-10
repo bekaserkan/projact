@@ -4,6 +4,7 @@ import Battle from "../../components/Battle/Battle";
 import { Route, Routes } from "react-router-dom";
 import { NotFoundPage } from "../NotFoundPage/NotFoundPage";
 import TopUp from "../../components/TopUp/TopUp";
+import Setting from "../../components/Setting/Setting";
 
 function Battles() {
   return (
