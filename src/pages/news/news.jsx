@@ -3,8 +3,8 @@ import "./News.css";
 import Tidings from "../../components/Tidings/Tidings";
 import { Route, Routes } from "react-router-dom";
 import Champions from "../../components/Сhampions/Champions";
-import { Notfoundpage } from "../Notfoundpage/Notfoundpage";
 import { useState } from "react";
+import { NotFoundPage } from "../NotFoundPage/NotFoundPage";
 
 function News() {
   const [selectedBackend, setSelectedBackend] = useState(null);
@@ -60,7 +60,7 @@ function News() {
               )
             }
           />
-          <Route path="*" element={<Notfoundpage />} />
+          <Route path="*" element={<NotFoundPage />} />
         </Route>
       </Routes>
     </div>

@@ -1,0 +1,106 @@
+.private {
+  width: 100%;
+  height: 100%;
+  background: url("../../img/Provate_BG.svg") no-repeat center;
+  background-size: cover;
+  padding-top: 147px;
+}
+.private .container {
+  margin: 0 auto;
+  width: 1200px;
+  min-height: 750px;
+}
+.private .cabinet {
+  margin-top: 55px;
+  width: 100%;
+  height: 133px;
+  display: flex;
+}
+.private .cabinet .photo {
+  margin-right: 30px;
+}
+.private .div {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.private .info {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.private .balance {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.private h1 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+  color: #ffffff;
+}
+.private .setting_data {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  text-decoration-line: underline;
+  color: #ffffff;
+}
+.private h3 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+}
+.private h3 img {
+  margin-right: 12px;
+}
+.private .top_up {
+  width: 165px;
+  height: 55px;
+  background: #0761dc;
+  border-radius: 3px;
+  outline: none;
+  border: none;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 27px;
+  color: #ffffff;
+  cursor: pointer;
+}
+.private .top_up:hover {
+  background: #0c51b1;
+}
+.private .line {
+  margin-top: 25px;
+  width: 100%;
+  opacity: 0.1;
+  border: 1px solid #ffffff;
+  margin-bottom: 100px;
+}
+.private .icons {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 55px;
+}
+.private .icon {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  color: #ffffff;
+  text-decoration: none;
+}
+.private .icon img{
+    margin-right: 10px;
+}

@@ -51,16 +51,19 @@
 }
 .play .playing {
   position: absolute;
-  margin-top: 150px;
+  margin-top: 110px;
   width: 1200px;
+  height: 350px;
 }
 .play .play_game {
-  height: 310px;
+  height: 350px;
   border-radius: 15px;
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1.5rem;
+  display: flex;
+  align-items: center;
 }
 .play .home_platform {
   cursor: grab;
@@ -129,7 +132,7 @@
 }
 .play .loading_div{
   width: 100%;
-  height: 98.3%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -1,0 +1,11 @@
+.top_up_balanse{
+    width: 100%;
+    height: 100%;
+    background: url("../../img/top_up_BG.svg") no-repeat center;
+    background-size: cover;
+}
+.top_up_balanse .container{
+    margin: 0 auto;
+    width: 1200px;
+    height: 1430px;
+}

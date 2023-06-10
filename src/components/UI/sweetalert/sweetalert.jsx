@@ -32,7 +32,7 @@ export const errorContact = () => {
   });
   Toast.fire({
     icon: "error",
-    title: "Заполите все поля пожалуйста ",
+    title: "Заполняйте правильно !",
   });
 };
 
