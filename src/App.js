@@ -24,10 +24,10 @@ function App() {
         <Route path="Electronic" element={<Electronic />} />
         <Route path="Registration" element={<Registration />} />
         <Route path="/" element={<Main />} />
-        <Route path="Battles/*" element={<Battles  />} />
+        <Route path="Battles/*" element={<Battles />} />
         <Route path="News/*" element={<News />} />
         <Route path="Chavo" element={<Chavo />} />
-        <Route path="PrivateHome/*" element={ <PrivateHome/> } />
+        <Route path="PrivateHome/*" element={<PrivateHome />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <Footer />
