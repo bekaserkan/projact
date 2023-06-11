@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Private.css";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import briliand from "../../img/briliand.svg";
 import swords from "../../img/swords.svg";
 import questions from "../../img/questions.svg";
@@ -11,9 +11,15 @@ import stars from "../../img/stars.svg";
 import help from "../../img/help.svg";
 import go_out from "../../img/go_out.svg";
 import photo from "../../img/photo_provate.svg";
-import TopUp from "../TopUp/TopUp";
 
 function Private() {
+  const [modal, setModal] = useState(false);
+  const navigate = useNavigate();
+
+  function Yes() {
+    navigate("/");
+  }
+
   return (
     <div className="private">
       <div className="container">
@@ -22,7 +28,7 @@ function Private() {
           <div className="div">
             <div className="info">
               <h1>@beka</h1>
-              <NavLink className="setting_data" to="/Tuning">
+              <NavLink className="setting_data" to="Tuning">
                 Настройки данных
               </NavLink>
             </div>
@@ -43,32 +49,47 @@ function Private() {
             Создать сражение
           </NavLink>
           <NavLink className="icon" to="">
-            <img src={questions} />
-            Вопросы и ответы
-          </NavLink>
-          <NavLink className="icon" to="">
             <img src={my_battle} />
             Мои сражения
           </NavLink>
-          <NavLink className="icon" to="">
-            <img src={info} />О сайте
-          </NavLink>
-          <NavLink className="icon" to="">
+          <NavLink className="icon" to="Notify">
             <img src={notifications} />
             Уведомления
+          </NavLink>
+          <NavLink className="icon" to="Help">
+            <img src={help} />
+            Помощь
+          </NavLink>
+          <NavLink className="icon" to="QuestionAnswers">
+            <img src={questions} />
+            Вопросы и ответы
+          </NavLink>
+          <NavLink className="icon" to="AboutSite">
+            <img src={info} />О сайте
           </NavLink>
           <NavLink className="icon" to="">
             <img src={stars} />
             Идентификация
           </NavLink>
-          <NavLink className="icon" to="">
-            <img src={help} />
-            Помощь
-          </NavLink>
-          <NavLink className="icon" to="">
+          <h2 onClick={() => setModal(true)} className="icon">
             <img src={go_out} />
             Выйти
-          </NavLink>
+          </h2>
+          {modal && (
+            <div className="modal">
+              <div className="box">
+                <p className="ques">Вы точно хотите выйти?</p>
+                <div className="btns">
+                  <button onClick={() => setModal(false)} className="not">
+                    отмена
+                  </button>
+                  <button onClick={() => Yes()} className="yes">
+                    выйти
+                  </button>
+                </div>
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </div>

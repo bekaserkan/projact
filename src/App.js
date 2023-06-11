@@ -10,9 +10,9 @@ import Chavo from "./pages/Chavo/Chavo";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import Electronic from "./components/Electronic/Electronic";
-import Private from "./components/Private/Private";
 import { NotFoundPage } from "./pages/NotFoundPage/NotFoundPage";
 import Tuning from "./pages/Tuning/Tuning";
+import PrivateHome from "./pages/PrivateHome/PrivateHome";
 
 function App() {
   return (
@@ -27,8 +27,7 @@ function App() {
         <Route path="Battles/*" element={<Battles />} />
         <Route path="News/*" element={<News />} />
         <Route path="Chavo" element={<Chavo />} />
-        <Route path="Private" element={ <Private/> } />
-        <Route path="Tuning/*" element={ <Tuning/> } />
+        <Route path="PrivateHome/*" element={ <PrivateHome/> } />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <Footer />

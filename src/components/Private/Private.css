@@ -1,6 +1,6 @@
 .private {
   width: 100%;
-  height: 100%;
+  min-height: 900px;
   background: url("../../img/Provate_BG.svg") no-repeat center;
   background-size: cover;
   padding-top: 147px;
@@ -8,7 +8,7 @@
 .private .container {
   margin: 0 auto;
   width: 1200px;
-  min-height: 750px;
+  height: 100%;
 }
 .private .cabinet {
   margin-top: 55px;
@@ -100,7 +100,66 @@
   line-height: 27px;
   color: #ffffff;
   text-decoration: none;
+  cursor: pointer;
 }
-.private .icon img{
-    margin-right: 10px;
+.private .icon img {
+  margin-right: 10px;
+}
+.private .modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.577);
+}
+.private .modal .box {
+  width: 300px;
+  height: 250px;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  background: #0761dc;
+  border: 0.1px solid #ffffff;
+}
+.private .modal .box .ques {
+  text-align: center;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 27px;
+  color: #ffffff;
+}
+.private .modal .box .btns {
+  display: flex;
+  justify-content: space-around;
+}
+.private .modal .box button {
+  width: 100px;
+  height: 50px;
+  outline: none;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 25px;
+  color: #000;
+  border: none;
+  background: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 10px 25px black;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.private .modal .btns .yes:hover {
+  box-shadow: 0 10px 15px red;
+  color: red;
+}
+.private .modal .btns .not:hover {
+  box-shadow: 0 10px 15px green;
+  color: green;
 }

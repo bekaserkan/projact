@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Registration.css";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { errorContact, successContact } from "../UI/sweetalert/sweetalert";
 
 function Registration() {

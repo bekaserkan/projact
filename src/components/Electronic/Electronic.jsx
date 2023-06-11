@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Electronic.css";
-import { Link, NavLink, useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { errorContact, successContact } from "../UI/sweetalert/sweetalert";
 
 function Electronic() {
@@ -19,7 +19,7 @@ function Electronic() {
   function Open() {
     if (entrance == 2023 && email === "@beka") {
       successContact();
-      navigate('/Private')
+      navigate('/PrivateHome')
       // window.location.href = '/Private'  
     } else {
       errorContact();

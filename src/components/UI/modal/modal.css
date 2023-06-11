@@ -1,5 +1,5 @@
 .modal_animated {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -7,11 +7,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1;
 }
 .modal_animated .modal_div {
-  margin-top: 50px;
-  opacity: 1;
-  position: relative;
   width: 520px;
   height: 470px;
   background: url("../../../img/modal_bg.svg") no-repeat center;

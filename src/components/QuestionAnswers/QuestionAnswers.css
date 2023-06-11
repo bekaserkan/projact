@@ -1,0 +1,47 @@
+.question_answers {
+  width: 100%;
+  min-height: 1000px;
+  background: url("../../img/battle_bg.svg") no-repeat center;
+  background-size: cover;
+  padding-top: 147px;
+  padding-bottom: 250px;
+}
+.question_answers .container {
+  margin: 0 auto;
+  width: 1200px;
+  height: 100%;
+}
+.question_answers h1 {
+  margin-top: 50px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 44px;
+  color: #ffffff;
+  margin-bottom: 65px;
+}
+.question_answers .questions {
+  width: 100%;
+}
+.question_answers .answers {
+  margin-bottom: 33px;
+}
+.question_answers .answers .accordion_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.question_answers .answers h2 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 42px;
+  color: #ffffff;
+}
+.question_answers .answers p {
+  margin-top: 35px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #b5b5b5;
+}

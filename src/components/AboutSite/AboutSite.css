@@ -1,0 +1,42 @@
+.about_site {
+  width: 100%;
+  min-height: 1123px;
+  background: url("../../img/battle_bg.svg") no-repeat center;
+  background-size: cover;
+  padding-top: 147px;
+  padding-bottom: 140px;
+}
+.about_site .container {
+  margin: 0 auto;
+  width: 1200px;
+  height: 100%;
+}
+.about_site h1 {
+  margin-top: 55px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 44px;
+  color: #ffffff;
+  margin-bottom: 65px;
+}
+.about_site p {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  color: #ffffff;
+  margin-bottom: 46px;
+}
+.about_site .text{
+    margin-bottom: 83px;
+}
+.about_site .center{
+    text-align: center;
+    margin-bottom: 19px;
+}
+.about_site img{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 218px;
+}

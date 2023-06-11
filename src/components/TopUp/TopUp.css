@@ -72,6 +72,7 @@
   font-weight: 400;
   font-size: 18px;
   color: #b4b2b2;
+  transition: 0.2s ease;
 }
 .top_up_balanse .input_center {
   margin-top: 35px;
@@ -93,6 +94,7 @@
   font-size: 18px;
   line-height: 25px;
   color: #b4b2b2;
+  transition: 0.2s ease;
 }
 .top_up_balanse .label_not {
   padding-top: 25px;
@@ -111,6 +113,7 @@
   line-height: 25px;
   color: #b4b2b2;
   padding-left: 22px;
+  transition: 0.2s ease;
 }
 .top_up_balanse .container .btn_end {
   margin: 71px auto;
@@ -128,4 +131,10 @@
 }
 .top_up_balanse .btn_end:hover {
   background: #0c51b1;
+}
+.top_up_balanse .summa_input:hover,
+.top_up_balanse .b_input:hover,
+.top_up_balanse input:hover {
+  background-color: rgba(52, 191, 255, 0.115);
+  color: #0761dc;
 }

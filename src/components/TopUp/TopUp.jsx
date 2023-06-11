@@ -1,8 +1,26 @@
 import React, { useState } from "react";
 import "./TopUp.css";
 import viza from "../../img/viza.svg";
+import { errorContact, success } from "../UI/sweetalert/sweetalert";
 
 function TopUp() {
+  const [valueSumma, setValueSumma] = useState("");
+
+  const numVulue = Number(valueSumma);
+
+  function summaChange(e) {
+    setValueSumma(e.target.value);
+  }
+
+  function topUp() {
+    if (numVulue >= 1) {
+      success();
+    } else {
+      errorContact();
+    }
+    setValueSumma("");
+  }
+
   return (
     <div className="top_up_balanse">
       <div className="container">
@@ -33,11 +51,15 @@ function TopUp() {
           </div>
           <label>Сумма</label>
           <input
+            value={valueSumma}
+            onChange={summaChange}
             className="summa_input"
             type="text"
             placeholder="Введите сумму вывода"
           />
-          <button className="btn_end">Пополнить</button>
+          <button onClick={topUp} className="btn_end">
+            Пополнить
+          </button>
         </div>
       </div>
     </div>
