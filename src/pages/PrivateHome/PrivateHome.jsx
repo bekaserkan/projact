@@ -7,7 +7,6 @@ import Notify from "../../components/Notify/Notify";
 import Help from "../../components/Help/Help";
 import AboutSite from "../../components/AboutSite/AboutSite";
 import QuestionAnswers from "../../components/QuestionAnswers/QuestionAnswers";
-import MyBattles from "../../components/MyBattles/MyBattles";
 
 function PrivateHome() {
   return (
@@ -17,7 +16,6 @@ function PrivateHome() {
         <Route path="Notify" element={<Notify />} />
         <Route path="Help" element={ <Help/> } />
         <Route path="AboutSite" element={ <AboutSite/> } />
-        <Route path="MyBattles/*" element={ <MyBattles/> } />
         <Route path="QuestionAnswers" element={ <QuestionAnswers/> } />
         <Route path="Tuning/*" element={<Tuning />} />
         <Route path="*" element={<NotFoundPage />} />

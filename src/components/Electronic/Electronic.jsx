@@ -20,7 +20,7 @@ function Electronic() {
     if (entrance == 2023 && email === "@beka") {
       successContact();
       navigate('/PrivateHome')
-      // window.location.href = '/Private'  
+      // window.location.href = '/PrivateHome'  
     } else {
       errorContact();
     }

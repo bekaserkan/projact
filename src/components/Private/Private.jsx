@@ -44,11 +44,11 @@ function Private() {
         </div>
         <div className="line"></div>
         <div className="icons">
-          <NavLink className="icon" to="">
+          <NavLink className="icon" to="/Battles/Category">
             <img src={swords} />
             Создать сражение
           </NavLink>
-          <NavLink className="icon" to="MyBattles">
+          <NavLink className="icon" to="/Battles/MyBattles">
             <img src={my_battle} />
             Мои сражения
           </NavLink>
