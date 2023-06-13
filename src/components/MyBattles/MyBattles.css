@@ -1,0 +1,84 @@
+.mybattles {
+  width: 100%;
+  min-height: 950px;
+  background: url("../../img/battle_bg.svg") no-repeat center;
+  background-size: cover;
+  padding-top: 147px;
+  padding-bottom: 200px;
+}
+.mybattles .container {
+  margin: 0 auto;
+  width: 1200px;
+  height: 100%;
+  padding-top: 55px;
+}
+.mybattles h1 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 44px;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+.mybattles .wrapper {
+  width: 100%;
+  min-height: 400px;
+}
+.mybattles .title {
+  width: 100%;
+  height: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.mybattles .title .nav {
+  text-align: center;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 41px;
+  color: #414d59;
+  text-decoration: none;
+  transition: 0.4s ease;
+}
+.mybattles .title .nav:hover {
+  color: #ffffff;
+}
+.mybattles .title .active {
+  transition: 0.1s ease;
+  color: #ffffff;
+  border-bottom: 2px solid #ffbb3d;
+}
+.mybattles .div{
+  margin: 100px auto;
+  width: 450px;
+  height: 200px;
+  background: #0761DC;
+  border-radius: 10px;
+  padding: 20px;
+}
+.mybattles h2 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 36px;
+  color: #ffffff;
+}
+.mybattles .performer,
+.mybattles .customer {
+  width: 100%;
+  min-height: 400px;
+  z-index: 1;
+}
+.mybattles .performer img,
+.mybattles .customer img {
+  display: flex;
+  margin: 65px auto;
+  opacity: 0.2;
+}
+.mybattles .performer p,
+.mybattles .customer p {
+  text-align: center;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 36px;
+  color: #414950;
+}
