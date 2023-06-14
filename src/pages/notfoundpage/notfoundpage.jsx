@@ -2,14 +2,16 @@ import React, { useEffect, useState } from "react";
 import "./NotFoundPage.css";
 import not_page from "../../img/not_page.png";
 import krest from "../../img/krest.png";
+import { useNavigate } from "react-router-dom";
 
 export function NotFoundPage() {
-  const [modal, setModal] = useState();
+  const [modal, setModal] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     setTimeout(() => {
-      setModal(true)
-    }, 1000);
+      setModal(true);
+    }, 2000);
   }, []);
 
   return (
@@ -21,7 +23,9 @@ export function NotFoundPage() {
           <div className="mod">
             <img onClick={() => setModal(false)} src={krest} />
             <p>Вернуться на главную страницу</p>
-            <button className="exit">Выйти</button>
+            <button onClick={() => navigate("/")} className="exit">
+              Выйти
+            </button>
           </div>
         </div>
       )}

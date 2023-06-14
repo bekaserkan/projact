@@ -48,6 +48,7 @@
   position: absolute;
   right: 0;
   margin: 20px 20px;
+  cursor: pointer;
 }
 .notfoundpage .exit {
   margin: 50px auto;
@@ -62,6 +63,12 @@
   font-size: 20px;
   line-height: 27px;
   color: #ffffff;
-  transition: .3s ease;
+  transition: 0.2s ease-in;
 }
-
+.notfoundpage .exit:hover {
+  background: #ffffff;
+  font-weight: 700;
+  font-size: 22px;
+  color: #0761dc;
+  border: 1px solid #0761dc;
+}
