@@ -1,0 +1,13 @@
+.identification{
+    width: 100%;
+    min-height: 1700px;
+    background: url("../../img/battle_bg.svg") no-repeat center;
+    background-size: cover;
+    padding-top: 147px;
+    padding-bottom: 300px;
+}
+.identification .container{
+    margin: 0 auto;
+    width: 1200px;
+    height: 100%;
+}

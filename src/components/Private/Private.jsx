@@ -67,7 +67,7 @@ function Private() {
           <NavLink className="icon" to="AboutSite">
             <img src={info} />О сайте
           </NavLink>
-          <NavLink className="icon" to="">
+          <NavLink className="icon" to="Identification">
             <img src={stars} />
             Идентификация
           </NavLink>

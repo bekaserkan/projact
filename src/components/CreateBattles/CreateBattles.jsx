@@ -55,7 +55,7 @@ function CreateBattles() {
               <div className="user">
                 <div className="user_box">
                   <img className="photo" src={photo} />
-                  <p>@beka</p>
+                  <span>@beka</span>
                   <img src={king} />
                 </div>
               </div>

@@ -11,7 +11,6 @@ import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import Electronic from "./components/Electronic/Electronic";
 import { NotFoundPage } from "./pages/NotFoundPage/NotFoundPage";
-import Tuning from "./pages/Tuning/Tuning";
 import PrivateHome from "./pages/PrivateHome/PrivateHome";
 
 function App() {

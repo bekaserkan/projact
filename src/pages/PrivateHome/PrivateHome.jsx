@@ -7,6 +7,7 @@ import Notify from "../../components/Notify/Notify";
 import Help from "../../components/Help/Help";
 import AboutSite from "../../components/AboutSite/AboutSite";
 import QuestionAnswers from "../../components/QuestionAnswers/QuestionAnswers";
+import Identification from "../../components/Identification/Identification";
 
 function PrivateHome() {
   return (
@@ -14,9 +15,10 @@ function PrivateHome() {
       <Routes path="/">
         <Route index element={<Private />} />
         <Route path="Notify" element={<Notify />} />
-        <Route path="Help" element={ <Help/> } />
-        <Route path="AboutSite" element={ <AboutSite/> } />
-        <Route path="QuestionAnswers" element={ <QuestionAnswers/> } />
+        <Route path="Help" element={<Help />} />
+        <Route path="AboutSite" element={<AboutSite />} />
+        <Route path="Identification" element={<Identification />} />
+        <Route path="QuestionAnswers" element={<QuestionAnswers />} />
         <Route path="Tuning/*" element={<Tuning />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
