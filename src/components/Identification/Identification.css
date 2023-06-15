@@ -1,13 +1,235 @@
-.identification{
-    width: 100%;
-    min-height: 1700px;
-    background: url("../../img/battle_bg.svg") no-repeat center;
-    background-size: cover;
-    padding-top: 147px;
-    padding-bottom: 300px;
+.identification {
+  width: 100%;
+  min-height: 1700px;
+  background: url("../../img/battle_bg.svg") no-repeat center;
+  background-size: cover;
+  padding-top: 147px;
+  padding-bottom: 300px;
 }
-.identification .container{
-    margin: 0 auto;
-    width: 1200px;
-    height: 100%;
+.identification .container {
+  margin: 0 auto;
+  width: 1200px;
+  height: 100%;
+}
+.identification .ident_text {
+  margin-top: 53px;
+  font-weight: 500;
+  font-size: 32px;
+  color: #ffffff;
+  text-align: center;
+}
+.identification .ident_text2 {
+  margin-top: 64px;
+  width: 100%;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 152.43%;
+  color: #ffffff;
+}
+.identification .input_block {
+  margin-top: 82px;
+  display: flex;
+  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 71px;
+}
+.identification .input_block label {
+  font-weight: 400;
+  font-size: 18px;
+  color: #ffffff;
+}
+.identification .top {
+  margin-top: 11px;
+}
+.identification .input_block input {
+  width: 100%;
+  height: 108px;
+  border: 2px solid #0761dc;
+  border-radius: 10px;
+  background: #00000000;
+  margin-bottom: 35px;
+  outline: none;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #b5b5b5;
+  padding-left: 22px;
+  transition: 0.2s ease;
+}
+.identification .ident_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  text-align: center;
+  width: 331px;
+  height: 67px;
+  background: #0761dc;
+  border-radius: 3px;
+  outline: none;
+  border: none;
+  font-weight: 500;
+  font-size: 20px;
+  color: #ffffff;
+}
+.identification .add {
+  padding-left: 22px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 11px;
+  width: 100%;
+  height: 108px;
+  border: 2px solid #0761dc;
+  border-radius: 10px;
+  background: #00000000;
+  outline: none;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #8c8c8c;
+  transition: 0.2s ease;
+  z-index: 1;
+  position: relative;
+}
+.identification .add::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 75px;
+  height: 100%;
+  background: url("../../img/iden_plus.svg") no-repeat center;
+}
+.identification .input_block input:hover,
+.identification .add:hover {
+  background-color: rgba(52, 191, 255, 0.115);
+  color: #0761dc;
+}
+.identification .ident_btn:hover {
+  background: #0c51b1;
+}
+.identification .image1 {
+  margin-top: 11px;
+  width: 100%;
+  height: 342px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../../img/pass\ \(2\).svg") no-repeat center;
+  background-size: cover;
+  margin-bottom: 106px;
+}
+.identification .image2 {
+  margin-top: 11px;
+  width: 100%;
+  height: 342px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../../img/pass.svg") no-repeat center;
+  background-size: cover;
+  margin-bottom: 106px;
+}
+.identification .wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+.identification .modal {
+  width: 1000px;
+  height: 480px;
+  background: url("../../img/iden_modal.svg") no-repeat center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.identification .modal h2 {
+  margin-top: 57px;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 45px;
+  color: #ffffff;
+}
+
+.loader_i {
+  animation: rotate 1s infinite;
+  height: 50px;
+  width: 50px;
+}
+
+.loader_i:before,
+.loader_i:after {
+  border-radius: 50%;
+  content: "";
+  display: block;
+  height: 20px;
+  width: 20px;
+}
+.loader_i:before {
+  animation: ball1 1s infinite;
+  background-color: #fff;
+  box-shadow: 30px 0 0 #0761dc;
+  margin-bottom: 10px;
+}
+.loader_i:after {
+  animation: ball2 1s infinite;
+  background-color: #0761dc;
+  box-shadow: 30px 0 0 #fff;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg) scale(0.8);
+  }
+  50% {
+    transform: rotate(360deg) scale(1.2);
+  }
+  100% {
+    transform: rotate(720deg) scale(0.8);
+  }
+}
+
+@keyframes ball1 {
+  0% {
+    box-shadow: 30px 0 0 #0761dc;
+  }
+  50% {
+    box-shadow: 0 0 0 #0761dc;
+    margin-bottom: 0;
+    transform: translate(15px, 15px);
+  }
+  100% {
+    box-shadow: 30px 0 0 #0761dc;
+    margin-bottom: 10px;
+  }
+}
+
+@keyframes ball2 {
+  0% {
+    box-shadow: 30px 0 0 #fff;
+  }
+  50% {
+    box-shadow: 0 0 0 #fff;
+    margin-top: -20px;
+    transform: translate(15px, 15px);
+  }
+  100% {
+    box-shadow: 30px 0 0 #fff;
+    margin-top: 0;
+  }
 }
