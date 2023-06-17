@@ -16,9 +16,10 @@
   font-weight: 500;
   font-size: 32px;
   color: #ffffff;
+  margin-bottom: 65px;
 }
 .viza .viza_btn {
-  margin: 64px auto;
+  margin: 0 auto;
   width: 668px;
   height: 120px;
   border: 2px solid #0761dc;

@@ -28,7 +28,7 @@ function App() {
         <Route path="Battles/*" element={<Battles />} />
         <Route path="News/*" element={<News />} />
         <Route path="Chavo" element={<Chavo />} />
-        <Route path="Filter" element={<Filter />} />
+        <Route path="Filter/*" element={<Filter />} />
         <Route path="Withdrawal/*" element={<Withdrawal />} />
         <Route path="PrivateHome/*" element={<PrivateHome />} />
         <Route path="*" element={<NotFoundPage />} />

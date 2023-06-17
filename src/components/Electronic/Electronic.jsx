@@ -19,8 +19,8 @@ function Electronic() {
   function Open() {
     if (entrance == 2023 && email === "@beka") {
       successContact();
-      navigate('/PrivateHome')
-      // window.location.href = '/PrivateHome'  
+      navigate("/PrivateHome");
+      // window.location.href = '/PrivateHome'
     } else {
       errorContact();
     }
@@ -31,7 +31,12 @@ function Electronic() {
       <div className="container">
         <h1> Авторизация через электронный адрес </h1>
         <div className="profile">
-          <input value={email} onChange={emailChange} type="email" placeholder="Введите электронный адрес" />
+          <input
+            value={email}
+            onChange={emailChange}
+            type="email"
+            placeholder="Введите электронный адрес"
+          />
           <input
             value={entrance}
             onChange={entranceChange}

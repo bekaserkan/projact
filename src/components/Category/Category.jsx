@@ -3,7 +3,6 @@ import "./Category.css";
 import { Loading } from "../UI/loading/loading";
 import { CategoryFile } from "./CategoryFile";
 import check_mark from "../../img/check_mark.svg";
-import { errorContact, success } from "../UI/sweetalert/sweetalert";
 import { useNavigate } from "react-router-dom";
 
 function Category() {
@@ -57,7 +56,7 @@ function Category() {
             ))
           )}
         </div>
-        <button onClick={() => navigate("Filter")} className="next">
+        <button onClick={() => navigate("/Filter")} className="next">
           Далее
         </button>
       </div>

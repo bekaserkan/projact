@@ -80,20 +80,12 @@
 .funds .elcom_card:hover {
   background-color: rgba(52, 191, 255, 0.115);
 }
-.funds .visa_card::before {
-  content: "";
-  top: 0;
-  right: 0;
-  position: absolute;
-  width: 100px;
-  height: 100%;
-  background: url("../../img/minus.svg") no-repeat center;
-}
+.funds .visa_card::before,
 .funds .elcom_card::before {
   content: "";
   top: 0;
   right: 0;
-  width: 100px;
+  width: 75px;
   height: 100%;
   background: url("../../img/minus.svg") no-repeat center;
   position: absolute;

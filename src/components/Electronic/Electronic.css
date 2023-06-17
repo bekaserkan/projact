@@ -36,8 +36,9 @@
   padding-left: 63px;
   font-size: 18px;
   color: #b4b2b2;
-  background: #00000000;
   outline: none;
+  background: #00000000;
+  transition: 0.2s;
 }
 .electronic .container input:hover {
   background-color: rgba(52, 191, 255, 0.115);

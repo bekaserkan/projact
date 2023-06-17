@@ -1,8 +1,10 @@
+const MODAL_ACTION = "MODAL_ACTION";
 const MODAL_ACTION_FIRST = "MODAL_ACTION_FIRST";
 const MODAL_ACTION_SECOND = "MODAL_ACTION_SECOND";
 const MODAL_ACTION_THREE = "MODAL_ACTION_THREE";
 
 const initialState = {
+  modal: false,
   modal1: false,
   modal2: false,
   modal3: false,
@@ -10,6 +12,8 @@ const initialState = {
 
 export const Modalreduser = (state = initialState, action) => {
   switch (action.type) {
+    case MODAL_ACTION:
+      return { ...state, modal: action.payload };
     case MODAL_ACTION_FIRST:
       return { ...state, modal1: action.payload };
     case MODAL_ACTION_SECOND:
@@ -22,6 +26,10 @@ export const Modalreduser = (state = initialState, action) => {
   }
 };
 
+export const modalAction = (payload) => ({
+  type: MODAL_ACTION,
+  payload,
+});
 export const modalAction1 = (payload) => ({
   type: MODAL_ACTION_FIRST,
   payload,
