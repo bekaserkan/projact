@@ -1,6 +1,5 @@
 .mybattles {
   width: 100%;
-  min-height: 950px;
   background: url("../../img/battle_bg.svg") no-repeat center;
   background-size: cover;
   padding-top: 147px;
@@ -47,11 +46,11 @@
   color: #ffffff;
   border-bottom: 2px solid #ffbb3d;
 }
-.mybattles .div{
+.mybattles .div {
   margin: 100px auto;
   width: 450px;
   height: 200px;
-  background: #0761DC;
+  background: #0761dc;
   border-radius: 10px;
   padding: 20px;
 }
@@ -62,23 +61,44 @@
   line-height: 36px;
   color: #ffffff;
 }
-.mybattles .performer,
 .mybattles .customer {
   width: 100%;
-  min-height: 400px;
-  z-index: 1;
+  min-height: 500px;
 }
-.mybattles .performer img,
-.mybattles .customer img {
+.mybattles .performer {
+  width: 100%;
+  min-height: 500px;
+}
+.mybattles .box_data {
+  margin-top: 35px;
+  width: 100%;
+  height: 80px;
+  display: grid;
+  grid-template-columns: 77px 330px 1.5fr 1fr 126px;
+  border-bottom: 1px solid #8c8c8c99;
+}
+.mybattles .box_data p {
   display: flex;
-  margin: 65px auto;
-  opacity: 0.2;
+  justify-content: center;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 25px;
+  color: #ffffff;
 }
-.mybattles .performer p,
-.mybattles .customer p {
-  text-align: center;
-  font-weight: 400;
-  font-size: 26px;
-  line-height: 36px;
-  color: #414950;
+.mybattles .box_data .name {
+  margin-left: 10px;
+}
+.mybattles .box_data .status {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.mybattles .box_data .status img {
+  margin-right: 16px;
+}
+.mybattles .modal {
+  width: 180px;
+  height: 20px;
+  background: white;
+  border-radius: 5px;
 }

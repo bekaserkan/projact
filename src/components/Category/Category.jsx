@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Category.css";
 import { Loading } from "../UI/loading/loading";
-import { Btn, CategoryFile } from "./CategoryFile";
+import { CategoryFile } from "./CategoryFile";
 import check_mark from "../../img/check_mark.svg";
 import { errorContact, success } from "../UI/sweetalert/sweetalert";
 import { useNavigate } from "react-router-dom";
@@ -31,15 +31,6 @@ function Category() {
       .finally(() => setIsLoading(false));
   }, []);
 
-  function next() {
-    if (divVisible == true) {
-      success();
-      navigate("/Battles/CreateBattles");
-    } else {
-      errorContact();
-    }
-  }
-
   return (
     <div className="category">
       <div className="container">
@@ -66,7 +57,7 @@ function Category() {
             ))
           )}
         </div>
-        <button onClick={next} className="next">
+        <button onClick={() => navigate("Filter")} className="next">
           Далее
         </button>
       </div>

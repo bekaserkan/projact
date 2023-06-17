@@ -12,6 +12,8 @@ import Footer from "./components/Footer/Footer";
 import Electronic from "./components/Electronic/Electronic";
 import { NotFoundPage } from "./pages/NotFoundPage/NotFoundPage";
 import PrivateHome from "./pages/PrivateHome/PrivateHome";
+import Withdrawal from "./pages/Withdrawal/Withdrawal";
+import Filter from "./pages/Filter/Filter";
 
 function App() {
   return (
@@ -26,6 +28,8 @@ function App() {
         <Route path="Battles/*" element={<Battles />} />
         <Route path="News/*" element={<News />} />
         <Route path="Chavo" element={<Chavo />} />
+        <Route path="Filter" element={<Filter />} />
+        <Route path="Withdrawal/*" element={<Withdrawal />} />
         <Route path="PrivateHome/*" element={<PrivateHome />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>

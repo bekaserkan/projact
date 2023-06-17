@@ -28,6 +28,14 @@ function Private() {
           <div className="div">
             <div className="info">
               <h1>@beka</h1>
+              <div>
+                <NavLink className="filter" to="/Filter">
+                  Фильтр
+                </NavLink>
+              </div>
+            </div>
+            <div className="profil">
+              <h2 className="prof">Профиль</h2>
               <NavLink className="setting_data" to="Tuning">
                 Настройки данных
               </NavLink>
@@ -36,15 +44,20 @@ function Private() {
               <h3>
                 <img src={briliand} /> Баланс 750 сом
               </h3>
-              <NavLink to="/Battles/TopUp">
-                <button className="top_up">Пополнить</button>
-              </NavLink>
+              <div>
+                <NavLink to="/Battles/TopUp">
+                  <button className="top_up">Пополнить</button>
+                </NavLink>
+                <NavLink to="/Withdrawal">
+                  <button className="withdrawal">Вывод средств</button>
+                </NavLink>
+              </div>
             </div>
           </div>
         </div>
         <div className="line"></div>
         <div className="icons">
-          <NavLink className="icon" to="/Battles/Category">
+          <NavLink className="icon" to="/Battles/CreateBattles">
             <img src={swords} />
             Создать сражение
           </NavLink>

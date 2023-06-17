@@ -1,86 +1,91 @@
-.top_up_balanse {
+.viza {
   width: 100%;
-  height: 100%;
-  background: url("../../img/top_up_BG.svg") no-repeat center;
+  height: 1450px;
+  background: url("../../img/battle_bg.svg") no-repeat center;
   background-size: cover;
-  box-sizing: border-box;
+  padding-top: 147px;
 }
-.top_up_balanse .container {
+.viza .container {
   margin: 0 auto;
   width: 1200px;
-  height: 1430px;
-  box-sizing: border-box;
+  height: 100%;
 }
-.top_up_balanse .container .balance_text {
-  padding-top: 199px;
-  font-weight: 500;
+.viza .viza_text {
+  margin-top: 53px;
   text-align: center;
+  font-weight: 500;
   font-size: 32px;
   color: #ffffff;
-  margin-bottom: 64px;
 }
-.top_up_balanse .container .balance_btn {
-  display: flex;
-  align-items: center;
-  margin: 0 auto;
+.viza .viza_btn {
+  margin: 64px auto;
   width: 668px;
   height: 120px;
   border: 2px solid #0761dc;
   border-radius: 10px;
+  background: #00000000;
+  display: flex;
+  align-items: center;
+  position: relative;
 }
-.top_up_balanse .container .balance_btn .master_text {
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 33px;
-  color: #ffffff;
-  padding-left: 43px;
+.viza .viza_btn::before {
+  content: "";
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 100%;
+  background: url("../../img/minus.svg") no-repeat center;
+  position: absolute;
 }
-.top_up_balanse .container .number_label {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  color: #ffffff;
-}
-.top_up_balanse .container .balance_btn img {
+.viza .viza_btn img {
+  padding-left: 39px;
   width: 105px;
   height: 105px;
-  padding-left: 39px;
 }
-.top_up_balanse .container .balance_block {
+.viza .vizamaster_text {
+  padding-left: 43px;
+  font-weight: 400;
+  font-size: 24px;
+  color: #ffffff;
+}
+.viza .number_block {
   margin: 0 auto;
   width: 668px;
   display: flex;
   flex-direction: column;
 }
-.top_up_balanse .container .balance_block label {
+.viza .number_label {
+  margin-top: 35px;
+  font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  line-height: 25px;
   color: #ffffff;
-  margin-top: 35px;
+  margin-bottom: 11px;
 }
-.top_up_balanse .container .b_input {
-  margin: 0 auto;
-  margin-top: 11px;
+.viza .number_card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.viza .b_input {
   width: 668px;
   height: 120px;
   border: 2px solid #0761dc;
   border-radius: 10px;
-  outline: none;
   background: #00000000;
-  padding-left: 22px;
   font-weight: 400;
+  padding-left: 22px;
   font-size: 18px;
   color: #b4b2b2;
-  transition: 0.2s ease;
+  outline: none;
 }
-.top_up_balanse .input_center {
+.viza .input_center {
   margin-top: 35px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 25px;
 }
-.top_up_balanse .input_center input {
+.viza .input_center input {
   margin-top: 11px;
   width: 100%;
   height: 120px;
@@ -96,11 +101,11 @@
   color: #b4b2b2;
   transition: 0.2s ease;
 }
-.top_up_balanse .label_not {
+.viza .label_not {
   padding-top: 25px;
   background: #00000000;
 }
-.top_up_balanse .container .summa_input {
+.viza .summa_input {
   margin-top: 11px;
   width: 668px;
   height: 120px;
@@ -114,27 +119,39 @@
   color: #b4b2b2;
   padding-left: 22px;
   transition: 0.2s ease;
+  margin-bottom: 71px;
 }
-.top_up_balanse .container .btn_end {
-  margin: 71px auto;
-  outline: none;
-  border: none;
-  cursor: pointer;
-  width: 189px;
+.viza .input_center label {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #ffffff;
+  margin-top: 35px;
+}
+.viza .summa_label {
+  margin-top: 35px;
+  font-weight: 400;
+  font-size: 18px;
+  color: #ffffff;
+}
+.viza .enter {
+  margin: 0 auto;
+  width: 164px;
   height: 67px;
   background: #0761dc;
   border-radius: 3px;
+  outline: none;
+  border: none;
   font-weight: 500;
   font-size: 20px;
-  line-height: 27px;
   color: #ffffff;
 }
-.top_up_balanse .btn_end:hover {
-  background: #0c51b1;
-}
-.top_up_balanse .summa_input:hover,
-.top_up_balanse .b_input:hover,
-.top_up_balanse input:hover {
+.viza .input_center input:hover,
+.viza .b_input:hover,
+.viza .summa_input:hover {
   background-color: rgba(52, 191, 255, 0.115);
   color: #0761dc;
+}
+.viza .enter:hover {
+  background: #0c51b1;
 }

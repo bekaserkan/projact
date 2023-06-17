@@ -2,7 +2,8 @@ import React from "react";
 import "./MyBattles.css";
 import { NavLink, Route, Routes } from "react-router-dom";
 import { NotFoundPage } from "../../pages/NotFoundPage/NotFoundPage";
-import daggers from "../../img/daggers.svg";
+import { Customer } from "./Customer";
+import { Performer } from "./Performer";
 
 function MyBattles() {
   return (
@@ -20,25 +21,8 @@ function MyBattles() {
           </div>
           <Routes path="/">
             <Route index />
-            <Route
-              path="customer"
-              element={
-                <div className="customer">
-                  <img src={daggers} />
-                  <p>Вы пока не участвовали в сражениях</p>
-                </div>
-              }
-            />
-            <Route
-              path="performer"
-              element={
-                <div className="performer">
-                  {" "}
-                  <img src={daggers} />
-                  <p>Вы пока не участвовали в сражениях</p>
-                </div>
-              }
-            />
+            {/* <Route path="customer" element={<Customer />} /> */}
+            {/* <Route path="performer" element={<Performer />} /> */}
             <Route path="*" element={<NotFoundPage />} />
           </Routes>
         </div>

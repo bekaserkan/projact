@@ -13,7 +13,7 @@
 .private .cabinet {
   margin-top: 55px;
   width: 100%;
-  height: 133px;
+  height: 180px;
   display: flex;
 }
 .private .cabinet .photo {
@@ -26,14 +26,21 @@
 }
 .private .info {
   width: 100%;
-  height: 50%;
+  height: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.private .profil {
+  width: 100%;
+  height: 30%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .private .balance {
   width: 100%;
-  height: 50%;
+  height: 30%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -44,6 +51,14 @@
   line-height: 33px;
   color: #ffffff;
 }
+.private .prof {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 33px;
+  color: #ffffff;
+  cursor: pointer;
+  position: relative;
+}
 .private .setting_data {
   font-weight: 500;
   font-size: 18px;
@@ -52,11 +67,17 @@
   color: #ffffff;
   position: relative;
 }
+.private .prof:hover::before,
+.private .icon:hover::before,
+.private .filter:hover::before,
 .private .setting_data:hover::before {
   transform: scaleX(1);
   transform-origin: left;
   transition: transform 0.3s;
 }
+.private .prof::before,
+.private .icon::before,
+.private .filter::before,
 .private .setting_data::before {
   content: "";
   width: 100%;
@@ -66,8 +87,28 @@
   left: 0;
   bottom: -1px;
   transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s;
+}
+.private .icon::before {
+  width: 60%;
+}
+.private .filter:hover::before,
+.private .setting_data:hover::before {
   transform-origin: right;
-  transition: transform 0.3s;
+}
+.private .filter::before,
+.private .setting_data::before {
+  transform-origin: right;
+}
+.private .filter {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  text-decoration: none;
+  color: #ffffff;
+  position: relative;
+  margin-left: 2rem;
 }
 .private h3 {
   font-weight: 400;
@@ -96,6 +137,23 @@
 .private .top_up:hover {
   background: #0c51b1;
 }
+.private .withdrawal {
+  width: 165px;
+  height: 55px;
+  background: #ff7a00;
+  border-radius: 3px;
+  outline: none;
+  border: none;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 27px;
+  color: #ffffff;
+  cursor: pointer;
+  margin-left: 2rem;
+}
+.private .withdrawal:hover {
+  background: #ff8615;
+}
 .private .line {
   margin-top: 25px;
   width: 100%;
@@ -106,7 +164,7 @@
 .private .icons {
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1.5fr 1.5fr 1.5fr 1fr;
   grid-template-rows: 1fr 1fr;
   row-gap: 55px;
 }
@@ -120,23 +178,6 @@
   text-decoration: none;
   cursor: pointer;
   position: relative;
-}
-.private .icon:hover::before {
-  transform: scaleX(1);
-  transform-origin: left;
-  transition: transform 0.3s;
-}
-.private .icon::before {
-  content: "";
-  width: 70%;
-  height: 1px;
-  background-color: #ffffff;
-  position: absolute;
-  left: 0;
-  bottom: -5px;
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform 0.3s;
 }
 .private .icon img {
   margin-right: 10px;
