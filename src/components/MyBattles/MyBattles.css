@@ -76,6 +76,7 @@
   display: grid;
   grid-template-columns: 77px 330px 1.5fr 1fr 126px;
   border-bottom: 1px solid #8c8c8c99;
+  position: relative;
 }
 .mybattles .box_data p {
   display: flex;
@@ -96,9 +97,23 @@
 .mybattles .box_data .status img {
   margin-right: 16px;
 }
-.mybattles .modal {
-  width: 180px;
-  height: 20px;
+.mybattles .send {
+  position: absolute;
+  right: 0;
+  bottom: 15px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  height: 30px;
   background: white;
-  border-radius: 5px;
+  border-radius: 5px 5px 0 5px;
+  transition: 0.1s ease;
+}
+.mybattles .link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 25px;
+  color: #0761dc;
 }

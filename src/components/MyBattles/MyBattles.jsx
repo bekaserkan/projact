@@ -21,8 +21,8 @@ function MyBattles() {
           </div>
           <Routes path="/">
             <Route index />
-            {/* <Route path="customer" element={<Customer />} /> */}
-            {/* <Route path="performer" element={<Performer />} /> */}
+            <Route path="customer" element={<Customer />} />
+            <Route path="performer" element={<Performer />} />
             <Route path="*" element={<NotFoundPage />} />
           </Routes>
         </div>
