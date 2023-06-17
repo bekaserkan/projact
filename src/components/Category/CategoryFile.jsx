@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./Category.css";
 import check_mark from "../../img/check_mark.svg";
 

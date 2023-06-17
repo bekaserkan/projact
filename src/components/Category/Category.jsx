@@ -5,7 +5,7 @@ import { CategoryFile } from "./CategoryFile";
 import check_mark from "../../img/check_mark.svg";
 import { useNavigate } from "react-router-dom";
 
-function Category() {
+function Category({ handleItemClick }) {
   const [type, setType] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [divVisible, setDivVisible] = useState(false);
@@ -52,7 +52,13 @@ function Category() {
             </div>
           ) : (
             type.map((el) => (
-              <CategoryFile key={el.id} photos={el.photos} title={el.title} />
+              <div onClick={() => handleItemClick(el)} key={el.id}>
+                <CategoryFile
+                  el={el}
+                  photos={el.photos}
+                  title={el.title}
+                />
+              </div>
             ))
           )}
         </div>

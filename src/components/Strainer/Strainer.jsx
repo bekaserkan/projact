@@ -3,12 +3,19 @@ import "./Strainer.css";
 import { useNavigate } from "react-router-dom";
 import { infoClick } from "../UI/sweetalert/sweetalert";
 import { useDispatch, useSelector } from "react-redux";
-import { modalAction } from "../../store/reducers/modalReducers";
+import {
+  activeAction1,
+  activeAction2,
+  activeAction3,
+  modalAction,
+} from "../../store/reducers/modalReducers";
 import { relevanceData } from "./StrainerData";
 
-function Strainer() {
-  const [selectedBackend, setSelectedBackend] = useState(null);
-  const { modal } = useSelector((state) => state.modals);
+function Strainer({data}) {
+  const [selectedBackend, setSelectedBackend] = useState("");
+  const { modal, active1, active2, active3 } = useSelector(
+    (state) => state.modals
+  );
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
@@ -23,6 +30,22 @@ function Strainer() {
     dispatch(modalAction(false));
   }
 
+  function Active1() {
+    dispatch(activeAction1("active"));
+    dispatch(activeAction2(""));
+    dispatch(activeAction3(""));
+  }
+  function Active2() {
+    dispatch(activeAction1(""));
+    dispatch(activeAction2("active"));
+    dispatch(activeAction3(""));
+  }
+  function Active3() {
+    dispatch(activeAction1(""));
+    dispatch(activeAction2(""));
+    dispatch(activeAction3("active"));
+  }
+
   return (
     <div className="strainer">
       <div className="container">
@@ -31,12 +54,18 @@ function Strainer() {
           <div className="save_first">
             <label>Категории</label>
             <button onClick={() => navigate("Category")} className="cate">
-              Все категории
+              {data ? data.title : "Все категории"}
             </button>
             <label>Формат сражения</label>
-            <button className="one">1x1</button>
-            <button className="three">3x3</button>
-            <button className="fife">5x5</button>
+            <button onClick={Active1} className={`one ${active1}`}>
+              1x1
+            </button>
+            <button onClick={Active2} className={`three ${active2}`}>
+              3x3
+            </button>
+            <button onClick={Active3} className={`fife ${active3}`}>
+              5x5
+            </button>
           </div>
           <div className="save_second">
             <label>Стоимость сражения</label>
@@ -47,7 +76,7 @@ function Strainer() {
             </div>
             <label>Сортировать</label>
             <button onClick={TrueModal} className="sort">
-              {selectedBackend.name}
+              {selectedBackend ? selectedBackend.name : "По актуаьности"}
             </button>
           </div>
           {modal && (

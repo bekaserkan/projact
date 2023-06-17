@@ -33,6 +33,9 @@
   display: flex;
   margin-bottom: 11px;
 }
+.strainer .active {
+  background: #0761dc;
+}
 .strainer button {
   width: 100%;
   height: 108px;
