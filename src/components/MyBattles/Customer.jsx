@@ -57,7 +57,7 @@ export function Customer() {
         </div>
         {modal1 && (
           <div className="send">
-            <NavLink className="link" to="">
+            <NavLink className="link" to="/Battles/Cancellation">
               Смотреть историю
             </NavLink>
           </div>
@@ -79,7 +79,7 @@ export function Customer() {
         </div>
         {modal2 && (
           <div className="send">
-            <NavLink className="link" to="">
+            <NavLink className="link" to="/Battles/Completed">
               {" "}
               Смотреть историю{" "}
             </NavLink>
@@ -105,7 +105,7 @@ export function Customer() {
         </div>
         {modal3 && (
           <div className="send">
-            <NavLink className="link" to="">
+            <NavLink className="link" to="/Battles/Pending">
               {" "}
               Смотреть историю{" "}
             </NavLink>

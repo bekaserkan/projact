@@ -55,7 +55,7 @@ export function Performer() {
         </div>
         {modal4 && (
           <div className="send">
-            <NavLink className="link" to="">
+            <NavLink className="link" to="/Battles/Completed">
               {" "}
               Смотреть историю{" "}
             </NavLink>
@@ -81,7 +81,7 @@ export function Performer() {
         </div>
         {modal5 && (
           <div className="send">
-            <NavLink className="link" to="">
+            <NavLink className="link" to="/Battles/Pending">
               {" "}
               Смотреть историю{" "}
             </NavLink>
@@ -106,7 +106,7 @@ export function Performer() {
         </div>
         {modal6 && (
           <div className="send">
-            <NavLink className="link" to="">
+            <NavLink className="link" to="/Battles/Cancellation">
               Смотреть историю
             </NavLink>
           </div>
