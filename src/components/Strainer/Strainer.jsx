@@ -10,8 +10,9 @@ import {
   modalAction,
 } from "../../store/reducers/modalReducers";
 import { relevanceData } from "./StrainerData";
+import iks from "../../img/krest.png";
 
-function Strainer({data}) {
+function Strainer({ data }) {
   const [selectedBackend, setSelectedBackend] = useState("");
   const { modal, active1, active2, active3 } = useSelector(
     (state) => state.modals
@@ -80,8 +81,9 @@ function Strainer({data}) {
             </button>
           </div>
           {modal && (
-            <div className="modal">
+            <div onClick={() => FalseModal()} className="modal">
               <div className="menu">
+                <img className="iks" src={iks} />
                 {relevanceData.map((el) => (
                   <p
                     onClick={() => handleItemClick(el) || FalseModal()}

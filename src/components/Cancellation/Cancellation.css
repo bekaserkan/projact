@@ -10,3 +10,10 @@
     width: 1200px;
     height: 100%;
 }
+.cancellation .call_name{
+ width: 100%;
+margin-top: 50px;
+}
+.cancellation .text_block {
+display: flex;
+}
