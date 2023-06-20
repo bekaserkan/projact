@@ -31,10 +31,10 @@
   height: 60px;
   border-bottom: 1px solid #ffffff54;
   margin-bottom: 50px;
-  transition: .3s ease;
+  transition: 0.3s ease;
 }
-.setting .box:hover{
-  border-bottom: 1px solid #0761DC;
+.setting .box:hover {
+  border-bottom: 1px solid #0761dc;
 }
 .setting .set {
   font-weight: 400;
@@ -46,6 +46,6 @@
   align-items: center;
   cursor: pointer;
 }
-.setting img{
-    margin-right: 33px;
+.setting img {
+  margin-right: 33px;
 }

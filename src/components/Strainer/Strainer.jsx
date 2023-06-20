@@ -81,9 +81,10 @@ function Strainer({ data }) {
             </button>
           </div>
           {modal && (
-            <div onClick={() => FalseModal()} className="modal">
+            <div className="modal">
+              <div onClick={() => FalseModal()} className="false"></div>
               <div className="menu">
-                <img className="iks" src={iks} />
+                <img onClick={() => FalseModal()} className="iks" src={iks} />
                 {relevanceData.map((el) => (
                   <p
                     onClick={() => handleItemClick(el) || FalseModal()}

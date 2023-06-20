@@ -14,7 +14,11 @@ function Tidings({ page, setPage, isLoading, backends, onItemClick }) {
           </div>
         ) : (
           backends.map((backend) => (
-            <div key={backend.id} onClick={() => onItemClick(backend)} className="card">
+            <div
+              key={backend.id}
+              onClick={() => onItemClick(backend)}
+              className="card"
+            >
               <img src={backend.img} />
               <div className="content">
                 <h2>{backend.title}</h2>

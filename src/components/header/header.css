@@ -58,15 +58,16 @@
   height: 58px;
   display: flex;
   align-items: center;
-  border-bottom: 3px solid #0761dc;
   z-index: 1;
+  border-bottom: 3px solid #0761dc;
+  position: relative;
 }
 .header .home::after {
   content: "";
   position: absolute;
   left: 0;
   width: 80%;
-  height: 58px;
+  height: 100%;
   background: rgba(23, 23, 23, 0.466);
 }
 .header .home::before {
@@ -74,7 +75,7 @@
   position: absolute;
   right: 0;
   width: 20%;
-  height: 58px;
+  height: 100%;
   border-top: 1px solid rgba(228, 228, 228, 0.2);
   border-left: 1px solid rgba(228, 228, 228, 0.2);
 }

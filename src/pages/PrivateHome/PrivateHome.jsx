@@ -8,6 +8,8 @@ import Help from "../../components/Help/Help";
 import AboutSite from "../../components/AboutSite/AboutSite";
 import QuestionAnswers from "../../components/QuestionAnswers/QuestionAnswers";
 import Identification from "../../components/Identification/Identification";
+import Profile from "../../components/Profile/Profile";
+import Review from "../../components/Review/Review";
 
 function PrivateHome() {
   return (
@@ -16,6 +18,8 @@ function PrivateHome() {
         <Route index element={<Private />} />
         <Route path="Notify" element={<Notify />} />
         <Route path="Help" element={<Help />} />
+        <Route path="Review" element={<Review />} />
+        <Route path="Profile" element={<Profile />} />
         <Route path="AboutSite" element={<AboutSite />} />
         <Route path="Identification" element={<Identification />} />
         <Route path="QuestionAnswers" element={<QuestionAnswers />} />

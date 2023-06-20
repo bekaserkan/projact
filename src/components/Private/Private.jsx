@@ -35,7 +35,9 @@ function Private() {
               </div>
             </div>
             <div className="profil">
-              <h2 className="prof">Профиль</h2>
+              <NavLink className="prof" to="Profile">
+                Профиль
+              </NavLink>
               <NavLink className="setting_data" to="Tuning">
                 Настройки данных
               </NavLink>

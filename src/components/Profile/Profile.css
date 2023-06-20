@@ -1,0 +1,168 @@
+.profile_section {
+  width: 100%;
+  min-height: 2123px;
+  background: url("../../img/battle_bg.svg") no-repeat center;
+  background-size: cover;
+  padding-top: 147px;
+  padding-bottom: 317px;
+}
+.profile_section .container {
+  margin: 0 auto;
+  width: 1200px;
+  height: 100%;
+  padding-top: 55px;
+}
+.profile_section h1 {
+  width: 251px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+  color: #ffffff;
+  margin-bottom: 25px;
+}
+.profile_section .plofil_div {
+  width: 100%;
+  height: 211px;
+  display: grid;
+  grid-template-columns: 251px 170px 1fr;
+  gap: 55px;
+}
+.profile_section .photo {
+  width: 251px;
+  height: 211px;
+}
+.profile_section .victories {
+  display: flex;
+  flex-direction: column;
+}
+.profile_section .flex {
+  display: flex;
+  align-items: center;
+  margin-bottom: 31px;
+}
+.profile_section p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+}
+.profile_section img {
+  margin-right: 11px;
+}
+.profile_section .messege {
+  width: 560px;
+  height: 84px;
+  border-radius: 16px;
+  background: #272f37;
+  display: flex;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.profile_section .hover {
+  width: 80%;
+  height: 50px;
+  cursor: pointer;
+  margin: 0 auto;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease;
+}
+.profile_section .hover:hover {
+  width: 80%;
+  height: 50px;
+  background: #485d72;
+  box-shadow: 5px 10px 15px #121b24;
+}
+.profile_section .grid {
+  border-right: 1px solid #121b24;
+}
+.profile_section .messege h2 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 152.43%;
+  color: #9d9d9d;
+}
+.profile_section .about {
+  width: 100%;
+}
+.profile_section h3 {
+  margin-top: 42px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.01em;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+.profile_section p {
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.01em;
+  color: #b5b5b5;
+}
+.profile_section .grade {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.profile_section .grade .box {
+  display: flex;
+}
+.profile_section .confirmed {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.profile_section .confirmed img {
+  width: 20px;
+  height: 18px;
+  margin-right: 25px;
+}
+.profile_section .save {
+  width: 100%;
+  height: 110px;
+  margin-bottom: 42px;
+  border-bottom: 1px solid #485d72;
+}
+.profile_section span {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.01em;
+  color: #ffffff;
+  margin-left: 44px;
+}
+.profile_section .setka {
+  display: flex;
+  align-items: center;
+}
+.profile_section .setka p {
+  margin-left: 51px;
+}
+.profile_section .reviews {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 44px;
+  margin-bottom: 91px;
+}
+.profile_section .add {
+  margin-left: 90px;
+  width: 260px;
+  height: 67px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 3px;
+  background: #0761dc;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 27px;
+  color: #ffffff;
+}
+.profile_section .add:hover {
+  background: #0c51b1;
+}
