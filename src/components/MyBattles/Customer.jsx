@@ -12,7 +12,7 @@ import {
   modalAction1,
   modalAction2,
   modalAction3,
-} from "../../store/reducers/modalReducers";
+} from "../../store/actions/modalAction";
 
 export function Customer() {
   const dispatch = useDispatch();

@@ -3,14 +3,14 @@ import "./Strainer.css";
 import { useNavigate } from "react-router-dom";
 import { infoClick } from "../UI/sweetalert/sweetalert";
 import { useDispatch, useSelector } from "react-redux";
+import { relevanceData } from "./StrainerData";
+import iks from "../../img/krest.png";
 import {
   activeAction1,
   activeAction2,
   activeAction3,
   modalAction,
-} from "../../store/reducers/modalReducers";
-import { relevanceData } from "./StrainerData";
-import iks from "../../img/krest.png";
+} from "../../store/actions/modalAction";
 
 function Strainer({ data }) {
   const [selectedBackend, setSelectedBackend] = useState("");
