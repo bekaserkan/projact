@@ -3,9 +3,9 @@ import "./Review.css";
 import Star from "../UI/star/star";
 import { errorContact, successSend } from "../UI/sweetalert/sweetalert";
 import { useDispatch, useSelector } from "react-redux";
-import { modalReviewAction } from "../../store/reducers/modalSecond";
 import { useNavigate } from "react-router-dom";
 import briliand from "../../img/briliand.svg";
+import { modalReviewAction } from "../../store/actions/modalSecond";
 
 function Review() {
   const [value, setValue] = useState("");

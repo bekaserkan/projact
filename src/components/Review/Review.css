@@ -68,6 +68,11 @@
   font-size: 18px;
   line-height: 25px;
   color: #b4b2b2;
+  transition: 0.3s ease;
+}
+.review input:hover {
+  background-color: rgba(52, 191, 255, 0.115);
+  color: #0761dc;
 }
 .review .send {
   margin: 100px auto;
@@ -97,7 +102,7 @@
   justify-content: center;
   z-index: 5;
 }
-.review .modal .false{
+.review .modal .false {
   position: absolute;
   background: rgba(85, 85, 85, 0.514);
   width: 100%;

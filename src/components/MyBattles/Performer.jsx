@@ -8,11 +8,7 @@ import canceled from "../../img/canceled.svg";
 import completed from "../../img/completed.svg";
 import expectation from "../../img/expectation.svg";
 import { useDispatch, useSelector } from "react-redux";
-import {
-  modalAction4,
-  modalAction5,
-  modalAction6,
-} from "../../store/reducers/modalSecond";
+import { modalAction4, modalAction5, modalAction6 } from "../../store/actions/modalSecond";
 
 export function Performer() {
   const dispatch = useDispatch();

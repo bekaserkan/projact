@@ -20,7 +20,7 @@
 }
 .battle .block {
   margin-top: 37px;
-  width: 1200px;
+  width: 100%;
   height: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -106,19 +106,18 @@
   margin-top: 40px;
   z-index: 5;
 }
-.battle li {
-  display: inline-block;
-  padding: 10px 17px;
-  color: #ffffff;
-  font-size: 18px;
+.battle .page {
+  width: 50px;
+  height: 50px;
   border-radius: 10px;
-  margin-right: 15px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  margin-left: 15px;
   cursor: pointer;
-}
-.battle li.active {
-  background: #0761dc;
-  color: #fff;
+  transition: 0.2s ease;
 }
 .battle .loading_div {
   width: 1200px;
