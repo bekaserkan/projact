@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { Loading } from "../UI/loading/loading";
 
-function Champions({ backend, backends, isLoading, onItemClick }) {
+function Champions({ backend, error, backends, isLoading, onItemClick }) {
   const settings3 = {
     dots: false,
     infinite: true,
@@ -67,6 +67,21 @@ function Champions({ backend, backends, isLoading, onItemClick }) {
               </Slider>
             )}
           </div>
+          {error ? (
+            <h1
+              style={{
+                width: "100%",
+                fontSize: "2rem",
+                color: "white",
+                textAlign: "center",
+              }}
+            >
+              {" "}
+              {error}{" "}
+            </h1>
+          ) : (
+            ""
+          )}
         </div>
       </div>
     </div>

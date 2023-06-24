@@ -80,27 +80,23 @@
 .tidings .pagination {
   display: flex;
   justify-content: flex-end;
-  list-style: none;
   margin-top: 40px;
-  z-index: 5;
 }
-.tidings li {
-  display: inline-block;
-  padding: 10px 17px;
-  color: #ffffff;
-  font-size: 18px;
+.tidings .page {
+  width: 40px;
+  height: 40px;
   border-radius: 10px;
-  margin-right: 15px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-left: 15px;
   cursor: pointer;
-}
-.tidings li.active {
-  background: #0761dc;
-  color: #fff;
+  transition: 0.2s ease;
 }
 .tidings .loading_div {
-  width: 100%;
-  min-height: 1000px;
+  width: 1200px;
+  min-height: 985px;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -1,30 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./News.css";
 import Tidings from "../../components/Tidings/Tidings";
 import { Route, Routes } from "react-router-dom";
 import Champions from "../../components/Сhampions/Champions";
 import { useState } from "react";
 import { NotFoundPage } from "../NotFoundPage/NotFoundPage";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchNews, setNewsPage } from "../../store/actions/newsAction";
 
 function News() {
+  const dispatch = useDispatch();
+  const { error, news, loading, page } = useSelector((state) => state.news);
   const [selectedBackend, setSelectedBackend] = useState(null);
-  const [page, setPage] = useState(1);
-  const [news, setNews] = useState([]);
-  const [isLoading, setIsLoading] = useState(true);
+  const pages = [1, 2, 3];
 
-  React.useEffect(() => {
-    setIsLoading(true);
-    fetch(
-      `https://647ce174c0bae2880ad14bc3.mockapi.io/play_join?page=${page}&limit=4`
-    )
-      .then((res) => res.json())
-      .then((json) => {
-        setNews(json);
-      })
-      .catch((err) => {
-        alert("Ошибка при получении данных");
-      })
-      .finally(() => setIsLoading(false));
+  useEffect(() => {
+    dispatch(fetchNews(page));
   }, [page]);
 
   const handleItemClick = (backend) => {
@@ -40,8 +31,11 @@ function News() {
             element={
               <Tidings
                 page={page}
-                setPage={setPage}
-                isLoading={isLoading}
+                pages={pages}
+                error={error}
+                dispatch={dispatch}
+                setPage={setNewsPage}
+                isLoading={loading}
                 backends={news}
                 onItemClick={handleItemClick}
               />
@@ -53,7 +47,8 @@ function News() {
               selectedBackend && (
                 <Champions
                   backend={selectedBackend}
-                  isLoading={isLoading}
+                  error={error}
+                  isLoading={loading}
                   backends={news}
                   onItemClick={handleItemClick}
                 />

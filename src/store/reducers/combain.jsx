@@ -4,6 +4,7 @@ import { ModalSecond } from "./modalSecond";
 import { TodoReducer } from "./battleReducer";
 import { PlayReducer } from "./playReducer";
 import { JoinReducer } from "./joinReducer";
+import { NewsReducer } from "./newsReducer";
 
 export const rootReducer = combineReducers({
   modals: Modalreduser,
@@ -11,4 +12,5 @@ export const rootReducer = combineReducers({
   todo: TodoReducer,
   play: PlayReducer,
   join: JoinReducer,
+  news: NewsReducer,
 });

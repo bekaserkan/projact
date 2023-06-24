@@ -1,9 +1,18 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Tidings.css";
 import { Loading } from "../UI/loading/loading";
 import { NavLink } from "react-router-dom";
 
-function Tidings({ page, setPage, isLoading, backends, onItemClick }) {
+function Tidings({
+  page,
+  pages,
+  error,
+  setPage,
+  isLoading,
+  backends,
+  onItemClick,
+  dispatch,
+}) {
   return (
     <div className="tidings">
       <div className="container">
@@ -31,19 +40,35 @@ function Tidings({ page, setPage, isLoading, backends, onItemClick }) {
             </div>
           ))
         )}
-        <div className="post">
-          <ul className="pagination">
-            {[...Array(3)].map((_, i) => (
-              <li
-                key={i + "pagination"}
-                onClick={() => setPage(i + 1)}
-                className={page === i + 1 ? "active" : ""}
+        {error ? (
+          <h1
+            style={{
+              width: "100%",
+              fontSize: "2rem",
+              color: "white",
+              textAlign: "center",
+            }}
+          >
+            {" "}
+            {error}{" "}
+          </h1>
+        ) : (
+          <div className="pagination">
+            {pages.map((p, index) => (
+              <div
+                style={{
+                  background: p === page ? "#0761dc" : "#ffffff",
+                  color: p === page ? "#ffffff" : "#000",
+                }}
+                className="page"
+                key={index}
+                onClick={() => dispatch(setPage(p))}
               >
-                {i + 1}
-              </li>
+                {p}
+              </div>
             ))}
-          </ul>
-        </div>
+          </div>
+        )}
       </div>
     </div>
   );
