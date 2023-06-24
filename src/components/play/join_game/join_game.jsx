@@ -1,39 +1,30 @@
-import React, { useState } from "react";
+import React, { useEffect } from "react";
 import "./join_game.css";
 import dota2 from "../../../img/dota2.svg";
 import eye from "../../../img/eye.svg";
 import revers from "../../../img/revers.svg";
-import { joinClick } from "../sweetalert/sweetalert";
-import { Loading } from "../loading/loading";
+import { joinClick } from "../../UI/sweetalert/sweetalert";
+import { Loading } from "../../UI/loading/loading";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchJoin, setJoinPage } from "../../../store/actions/joinAction";
 
-export function Join_game() {
-  const [join, setJoin] = useState([]);
-  const [page, setPage] = useState(1);
-  const [isLoading, setIsLoading] = useState(true);
+function Join_game() {
+  const dispatch = useDispatch();
+  const { joins, error, page, loading } = useSelector((state) => state.join);
+  const pages = [1, 2, 3];
 
-  React.useEffect(() => {
-    setIsLoading(true);
-    fetch(
-      `https://647ce174c0bae2880ad14bc3.mockapi.io/play_join?page=${page}&limit=6`
-    )
-      .then((res) => res.json())
-      .then((json) => {
-        setJoin(json);
-      })
-      .catch((err) => {
-        alert("Ошибка при получении данных");
-      })
-      .finally(() => setIsLoading(false));
+  useEffect(() => {
+    dispatch(fetchJoin(page));
   }, [page]);
 
   return (
     <div className="join_game">
-      {isLoading ? (
+      {loading ? (
         <div className="loading_div">
           <Loading />
         </div>
       ) : (
-        join.map((el) => (
+        joins.map((el) => (
           <div key={el.id + "yes"} className="wrapper">
             <div className="box">
               <img src={dota2} />
@@ -66,19 +57,37 @@ export function Join_game() {
           </div>
         ))
       )}
-      <div className="post">
-        <ul className="pagination">
-          {[...Array(3)].map((_, i) => (
-            <li
-              key={i + "page"}
-              onClick={() => setPage(i + 1)}
-              className={page === i + 1 ? "active" : ""}
+      {error ? (
+        <div className="error">
+          <h1
+            style={{
+              fontSize: "2rem",
+              color: "white",
+              textAlign: "center",
+            }}
+          >
+            {error}
+          </h1>
+        </div>
+      ) : (
+        <div className="pagination">
+          {pages.map((p, index) => (
+            <div
+              style={{
+                background: p === page ? "#0761dc" : "#ffffff",
+                color: p === page ? "#ffffff" : "#000",
+              }}
+              className="page"
+              key={index}
+              onClick={() => dispatch(setJoinPage(p))}
             >
-              {i + 1}
-            </li>
+              {p}
+            </div>
           ))}
-        </ul>
-      </div>
+        </div>
+      )}
     </div>
   );
 }
+
+export default Join_game;

@@ -11,7 +11,7 @@ export const fetchTodos = (page = 1) => {
     try {
       dispatch({ type: FETCH_TODOS });
       const response = await axios.get(
-        `https://647ce174c0bae2880ad14bc3.mockapi.io/play_dota?page=${page}&limit=9`,
+        `https://647ce174c0bae2880ad14bc3.mockapi.io/play_dota?page=${page}&limit=9`
       );
       dispatch({
         type: FETCH_TODOS_SUCCESS,
@@ -20,7 +20,7 @@ export const fetchTodos = (page = 1) => {
     } catch (error) {
       dispatch({
         type: FETCH_TODOS_ERROR,
-        payload: "Произошла ошибка при загрузке списка дел",
+        payload: "Произошла ошибка при загрузке...",
       });
     }
   };

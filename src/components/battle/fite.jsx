@@ -1,9 +1,9 @@
 import React from "react";
-import "../../Battle/Battle.css";
-import play_icons1 from "../../../img/play_icons1.svg";
-import play_icons2 from "../../../img/play_icons2.svg";
-import play_icons3 from "../../../img/play_icons3.svg";
-import { infoClick } from "../sweetalert/sweetalert";
+import "./Battle.css"
+import play_icons1 from "../../img/play_icons1.svg";
+import play_icons2 from "../../img/play_icons2.svg";
+import play_icons3 from "../../img/play_icons3.svg";
+import { infoClick } from "../UI/sweetalert/sweetalert";
 import Tilt from "react-parallax-tilt";
 
 export function Fite({ photos, title, batll, puople, price, text }) {

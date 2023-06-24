@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect } from "react";
 import "./Play.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -9,13 +9,19 @@ import play_icons3 from "../../img/play_icons3.svg";
 import all_strelka from "../../img/all_strelka.png";
 import { NavLink } from "react-router-dom";
 import { infoClick } from "../UI/sweetalert/sweetalert";
-import { Join_game } from "../UI/join_game/join_game";
 import { Loading } from "../UI/loading/loading";
 import Tilt from "react-parallax-tilt";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchPlays } from "../../store/actions/playReducer";
+import Join_game from "./join_game/join_game";
 
 function Play() {
-  const [card, setCard] = useState([]);
-  const [isLoading, setIsLoading] = useState(true);
+  const dispatch = useDispatch();
+  const { plays, error, loading } = useSelector((state) => state.play);
+
+  useEffect(() => {
+    dispatch(fetchPlays());
+  }, []);
 
   const settings1 = {
     dots: false,
@@ -33,19 +39,6 @@ function Play() {
     slidesToShow: 3,
     slidesToScroll: 1,
   };
-
-  React.useEffect(() => {
-    setIsLoading(true);
-    fetch("https://647ce174c0bae2880ad14bc3.mockapi.io/play_dota")
-      .then((res) => res.json())
-      .then((json) => {
-        setCard(json);
-      })
-      .catch(() => {
-        alert("Ошибка при получении данных");
-      })
-      .finally(() => setIsLoading(false));
-  }, []);
 
   return (
     <div className="play">
@@ -69,13 +62,13 @@ function Play() {
           Все игры <img className="all_stralka" src={all_strelka} />{" "}
         </NavLink>
         <div className="playing">
-          {isLoading ? (
+          {loading ? (
             <div className="loading_div">
               <Loading />
             </div>
           ) : (
             <Slider {...settings2} className="home_platform">
-              {card.map((el) => (
+              {plays.map((el) => (
                 <Tilt key={el.id}>
                   <div className="play_game">
                     <img className="platform" src={el.photos} />
@@ -102,6 +95,21 @@ function Play() {
                 </Tilt>
               ))}
             </Slider>
+          )}
+          {error ? (
+            <h1
+              style={{
+                width: "100%",
+                fontSize: "2rem",
+                color: "white",
+                textAlign: "center",
+              }}
+            >
+              {" "}
+              {error}{" "}
+            </h1>
+          ) : (
+            ""
           )}
         </div>
         <Join_game />
