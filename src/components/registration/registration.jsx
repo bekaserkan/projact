@@ -14,10 +14,10 @@ function Registration() {
     <div className="registration">
       <div className="container">
         <h1>Регистрация</h1>
-        <div >
+        <div>
           <form action="" method="post" className="r-block">
             <div className="registration1">
-              <input required  type="text" placeholder="Введите номер" />
+              <input required type="text" placeholder="Введите номер" />
               <input required type="email" placeholder="Введите эл.почту" />
               <input required type="text" placeholder="Введите игровой ник" />
             </div>
@@ -34,7 +34,15 @@ function Registration() {
             </div>
           </form>
         </div>
-        <button id="add_r">Регистрация</button>
+        <button
+          onClick={() =>
+            inputValue === "" ? errorContact() : successContact()
+          }
+          aria-required
+          id="add_r"
+        >
+          Регистрация
+        </button>
         <div className="r_footer">
           <span className="href">
             У вас есть профиль?<NavLink to="/Authorization">Войти</NavLink>

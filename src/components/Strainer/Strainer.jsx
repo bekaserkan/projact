@@ -55,7 +55,7 @@ function Strainer({ data }) {
           <div className="save_first">
             <label>Категории</label>
             <button onClick={() => navigate("Category")} className="cate">
-              {data ? data.title : "Все категории"}
+              {data ? data : "Все категории"}
             </button>
             <label>Формат сражения</label>
             <button onClick={Active1} className={`one ${active1}`}>

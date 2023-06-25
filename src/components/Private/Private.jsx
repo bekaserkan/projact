@@ -63,7 +63,7 @@ function Private() {
             <img src={swords} />
             Создать сражение
           </NavLink>
-          <NavLink className="icon" to="/Battles/MyBattles">
+          <NavLink className="icon" to="/Battles/MyBattles/customer">
             <img src={my_battle} />
             Мои сражения
           </NavLink>

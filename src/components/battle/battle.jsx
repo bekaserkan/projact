@@ -7,7 +7,7 @@ import { Loading } from "../UI/loading/loading";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchTodos, setTodoPage } from "../../store/actions/battleAction";
 
-function Battle() {
+function Battle({ onItemClick }) {
   const dispatch = useDispatch();
   const { page, error, loading, todos } = useSelector((state) => state.todo);
   const pages = [1, 2, 3];
@@ -35,6 +35,8 @@ function Battle() {
                 puople={el.puople}
                 price={el.price}
                 text={el.text}
+                el={el}
+                onItemClick={onItemClick}
               />
             ))
           )}

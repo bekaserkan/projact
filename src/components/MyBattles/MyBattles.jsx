@@ -19,8 +19,7 @@ function MyBattles() {
               Я заказчик
             </NavLink>
           </div>
-          <Routes path="/">
-            <Route index />
+          <Routes >
             <Route path="customer" element={<Customer />} />
             <Route path="performer" element={<Performer />} />
             <Route path="*" element={<NotFoundPage />} />

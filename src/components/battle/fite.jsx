@@ -1,17 +1,28 @@
 import React from "react";
-import "./Battle.css"
+import "./Battle.css";
 import play_icons1 from "../../img/play_icons1.svg";
 import play_icons2 from "../../img/play_icons2.svg";
 import play_icons3 from "../../img/play_icons3.svg";
-import { infoClick } from "../UI/sweetalert/sweetalert";
 import Tilt from "react-parallax-tilt";
+import { useNavigate } from "react-router-dom";
 
-export function Fite({ photos, title, batll, puople, price, text }) {
+export function Fite({
+  el,
+  photos,
+  title,
+  batll,
+  puople,
+  price,
+  text,
+  onItemClick,
+}) {
+  const navigate = useNavigate();
+
   return (
     <Tilt>
-      <div className="play_game">
+      <div onClick={() => onItemClick(el)} className="play_game">
         <img className="platform" src={photos} />
-        <div className="content">
+        <div onClick={() => navigate("Respond")} className="content">
           <h1 className="h1">{title}</h1>
           <div className="icons">
             <span>
@@ -25,9 +36,7 @@ export function Fite({ photos, title, batll, puople, price, text }) {
             <span>
               <img src={play_icons3} /> до {price} $
             </span>
-            <button onClick={infoClick} className="btn">
-              {text}
-            </button>
+            <button className="btn">{text}</button>
           </div>
         </div>
       </div>

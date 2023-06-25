@@ -8,11 +8,11 @@ import { useNavigate } from "react-router-dom";
 function Category({ handleItemClick }) {
   const [type, setType] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
-  const [divVisible, setDivVisible] = useState(false);
+  const [divVisible1, setDivVisible] = useState(false);
   const navigate = useNavigate();
 
   const toggleDivs = () => {
-    setDivVisible(!divVisible);
+    setDivVisible(!divVisible1);
   };
 
   useEffect(() => {
@@ -38,10 +38,13 @@ function Category({ handleItemClick }) {
           <div className="box1">
             <h2>Категории</h2>
           </div>
-          <div onClick={toggleDivs} className="box2">
+          <div
+            onClick={() => toggleDivs() || handleItemClick("Все категории")}
+            className="box2"
+          >
             <h2>Выбрать все категории</h2>
             <div className="check_box">
-              {divVisible ? <img src={check_mark} /> : ""}
+              {divVisible1 ? <img src={check_mark} /> : ""}
             </div>
           </div>
         </div>
@@ -52,11 +55,12 @@ function Category({ handleItemClick }) {
             </div>
           ) : (
             type.map((el) => (
-              <div onClick={() => handleItemClick(el)} key={el.id}>
+              <div key={el.id} onClick={() => handleItemClick(el.title)}>
                 <CategoryFile
                   el={el}
                   photos={el.photos}
                   title={el.title}
+                  divVisible1={divVisible1}
                 />
               </div>
             ))

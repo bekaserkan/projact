@@ -54,6 +54,7 @@
   padding: 15px;
   box-shadow: 0 -5px 10px 1px rgb(66, 66, 66);
   transition: 0.2s ease;
+  cursor: pointer;
 }
 .battle .content:hover {
   box-shadow: 0 0px 15px 5px #0761dc;
@@ -97,7 +98,6 @@
   font-weight: 300;
   font-size: 15px;
   border-radius: 15px;
-  cursor: pointer;
 }
 .battle .pagination {
   display: flex;
