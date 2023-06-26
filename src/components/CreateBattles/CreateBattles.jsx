@@ -5,14 +5,48 @@ import photo from "../../img/photo_provate.svg";
 import som from "../../img/battle_som.svg";
 import { errorContact, success } from "../UI/sweetalert/sweetalert";
 import { useNavigate } from "react-router-dom";
+import plus from "../../img/add-fill.svg";
+import crest from "../../img/crest.svg";
+import { UsersData } from "./UserData";
+import { sample } from "lodash";
+import user6 from "../../img/user6.svg";
 
 function CreateBattles() {
   const [bid, setBid] = useState("");
   const [topUp, setTopUp] = useState(false);
   const navigate = useNavigate();
+  const [divs, setDivs] = useState([]);
+  const [value, setValue] = useState("");
+  const [randomData, setRandomData] = useState(user6);
 
-  function nav () {
-    navigate("/Battles/TopUp")
+  const getRandomData = () => {
+    const randomValue = sample(UsersData.map((el) => el.img));
+    setRandomData(randomValue);
+  };
+
+  const createDiv = () => {
+    if (value === "") {
+      errorContact();
+    } else {
+      const newDiv = (
+        <>
+          <img src={randomData} />
+          <span>{value}</span>
+        </>
+      );
+      setDivs([...divs, newDiv]);
+      setValue("");
+    }
+  };
+
+  const removeDiv = (index) => {
+    const updatedDivs = [...divs];
+    updatedDivs.splice(index, 1);
+    setDivs(updatedDivs);
+  };
+
+  function nav() {
+    navigate("/Battles/TopUp");
   }
 
   const numBid = Number(bid);
@@ -25,6 +59,7 @@ function CreateBattles() {
       success();
       setTopUp(false);
       setBid("");
+      setValue("");
     }
   }
 
@@ -87,14 +122,38 @@ function CreateBattles() {
                 placeholder="Введите название команды"
               />
             </div>
-            <div className="input_boxl">
+            <div className="input_boxl pl">
+              <div className="plus_div">
+                <img
+                  onClick={() => createDiv() || getRandomData()}
+                  className="plus"
+                  src={plus}
+                />
+              </div>
               <input
+                value={value}
+                onChange={(e) => setValue(e.target.value)}
                 className="addl"
                 type="text"
                 placeholder="Добавить игрока"
               />
             </div>
           </div>
+        </div>
+        <div className="save">
+          {divs.map((div, index) => (
+            <div className="box" key={index}>
+              {div}
+              <button className="close">
+                {" "}
+                <img
+                  onClick={() => removeDiv(index)}
+                  className="cl"
+                  src={crest}
+                />{" "}
+              </button>
+            </div>
+          ))}
         </div>
         <button onClick={viewing} className="viewing">
           Предварительный просмотр
