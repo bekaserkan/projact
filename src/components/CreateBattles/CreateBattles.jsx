@@ -3,7 +3,7 @@ import "./CreateBattles.css";
 import king from "../../img/king.svg";
 import photo from "../../img/photo_provate.svg";
 import som from "../../img/battle_som.svg";
-import { errorContact, success } from "../UI/sweetalert/sweetalert";
+import { alertClick, errorContact, success } from "../UI/sweetalert/sweetalert";
 import { useNavigate } from "react-router-dom";
 import plus from "../../img/add-fill.svg";
 import crest from "../../img/crest.svg";
@@ -52,8 +52,8 @@ function CreateBattles() {
   const numBid = Number(bid);
 
   function viewing() {
-    if (numBid <= 750) {
-      errorContact();
+    if (numBid >= 750) {
+      alertClick()
       setTopUp(true);
     } else {
       success();

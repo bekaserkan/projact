@@ -192,9 +192,11 @@
   background: white;
   position: relative;
   padding: 10px;
-  padding-right: 45px;
-  overflow-x: auto;
-  z-index: 1;
+  /* padding-right: 45px; */
+  border-radius: 15px;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .response .iks {
   position: absolute;
@@ -206,7 +208,7 @@
 }
 .response .users_box {
   width: 100%;
-  height: 65px;
+  height: 75px;
   display: flex;
   align-items: center;
   display: grid;
@@ -273,4 +275,23 @@
   font-size: 20px;
   line-height: 25px;
   color: #ffffff;
+}
+.response .clear {
+  width: 100%;
+  height: 40px;
+  background: #ff7a00;
+  color: #ffffff;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.response .wrapper_users {
+  padding: 20px;
+  margin-top: 35px;
+  width: 100%;
+  height: 500px;
+  overflow-x: hidden;
 }

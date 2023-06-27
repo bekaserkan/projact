@@ -4,19 +4,20 @@ import photo from "../../img/photo_provate.svg";
 import king from "../../img/king.svg";
 import plus from "../../img/iden_plus.svg";
 import som from "../../img/battle_som.svg";
-import { success } from "../UI/sweetalert/sweetalert";
+import { alertClick, success } from "../UI/sweetalert/sweetalert";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import iks from "../../img/krest.png";
-import { modalAction } from "../../store/actions/modalAction";
+import { modalAction, modalAction1 } from "../../store/actions/modalAction";
 import { UsersData } from "../CreateBattles/UserData";
 import crest from "../../img/crest.svg";
 
 const Response = ({ backend }) => {
+  const { modal, modal1 } = useSelector((state) => state.modals);
   const [topUp, setTopUp] = useState(false);
-  const { modal } = useSelector((state) => state.modals);
-  const dispatch = useDispatch();
   const [divs, setDivs] = useState([]);
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   const createDiv = ([el]) => {
     const newDiv = (
@@ -34,13 +35,21 @@ const Response = ({ backend }) => {
     setDivs(updatedDivs);
   };
 
+  function TrueDiv() {
+    dispatch(modalAction1(true));
+  }
+
+  function FalseDiv() {
+    dispatch(modalAction1(false));
+  }
+
   function TrueModal() {
     dispatch(modalAction(true));
   }
+
   function FalseModal() {
     dispatch(modalAction(false));
   }
-  const navigate = useNavigate();
 
   return (
     <div className="response">
@@ -65,22 +74,32 @@ const Response = ({ backend }) => {
                 <img src={king} />
               </div>
             </div>
-            <div onClick={TrueModal} className="add_user">
+            <div onClick={() => TrueModal()} className="add_user">
               <p>Добавить игрока</p>
               <img src={plus} />
             </div>
-            {divs.map((div, index) => (
-              <div className="box" key={index}>
-                {div}
-                <button className="close">
-                  <img
-                    onClick={() => removeDiv(index)}
-                    className="cl"
-                    src={crest}
-                  />
-                </button>
-              </div>
-            ))}
+            <div className="wrapper_users">
+              {modal1 && (
+                <div
+                  onClick={() => FalseDiv() || setDivs([])}
+                  className="clear"
+                >
+                  Очистить все
+                </div>
+              )}
+              {divs.map((div, index) => (
+                <div className="box" key={index}>
+                  {div}
+                  <button className="close">
+                    <img
+                      onClick={() => removeDiv(index)}
+                      className="cl"
+                      src={crest}
+                    />
+                  </button>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
         <div className="send">
@@ -92,9 +111,7 @@ const Response = ({ backend }) => {
           </h1>
           <button
             onClick={() =>
-              backend.price !== 750
-                ? setTopUp(true) || alert("Поролните баланс и попробуйте снова")
-                : success()
+              backend.price !== 750 ? setTopUp(true) || alertClick() : success()
             }
             className="response_btn"
           >
@@ -126,7 +143,7 @@ const Response = ({ backend }) => {
                 {UsersData.map((el) => (
                   <div
                     key={el.id}
-                    onClick={() => createDiv([el])}
+                    onClick={() => createDiv([el]) || TrueDiv()}
                     className="users_box"
                   >
                     <img src={el.img} />
