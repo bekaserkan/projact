@@ -12,8 +12,10 @@ import whatsap from "../../img/whatsapp-line.svg";
 import { RespondData } from "./RespondData";
 import stone from "../../img/stone.svg";
 import som from "../../img/coin-line.svg";
+import { useNavigate } from "react-router-dom";
 
 const Respond = ({ backend }) => {
+  const navigate = useNavigate();
   useEffect(() => {
     localStorage.setItem("myData", JSON.stringify(backend));
   }, [backend]);
@@ -60,7 +62,12 @@ const Respond = ({ backend }) => {
             <p className="p">
               <img className="i" src={revers} /> {backend.offer}
             </p>
-            <button className="res">Откликнуться</button>
+            <button
+              onClick={() => navigate("/Battles/Response")}
+              className="res"
+            >
+              Откликнуться
+            </button>
           </div>
         </div>
         <div className="contact">

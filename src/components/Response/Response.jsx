@@ -1,0 +1,145 @@
+import React, { useState } from "react";
+import "./Response.css";
+import photo from "../../img/photo_provate.svg";
+import king from "../../img/king.svg";
+import plus from "../../img/iden_plus.svg";
+import som from "../../img/battle_som.svg";
+import { success } from "../UI/sweetalert/sweetalert";
+import { useNavigate } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import iks from "../../img/krest.png";
+import { modalAction } from "../../store/actions/modalAction";
+import { UsersData } from "../CreateBattles/UserData";
+import crest from "../../img/crest.svg";
+
+const Response = ({ backend }) => {
+  const [topUp, setTopUp] = useState(false);
+  const { modal } = useSelector((state) => state.modals);
+  const dispatch = useDispatch();
+  const [divs, setDivs] = useState([]);
+
+  const createDiv = ([el]) => {
+    const newDiv = (
+      <>
+        <img src={el.img} />
+        <span>{el.name}</span>
+      </>
+    );
+    setDivs([...divs, newDiv]);
+  };
+
+  const removeDiv = (index) => {
+    const updatedDivs = [...divs];
+    updatedDivs.splice(index, 1);
+    setDivs(updatedDivs);
+  };
+
+  function TrueModal() {
+    dispatch(modalAction(true));
+  }
+  function FalseModal() {
+    dispatch(modalAction(false));
+  }
+  const navigate = useNavigate();
+
+  return (
+    <div className="response">
+      <div className="container">
+        <div className="wrapper">
+          <div className="save1">
+            <label>Текст отклика</label>
+            <input
+              className="heigth"
+              type="text"
+              placeholder="Расскажите почему именно вы должны сражаться"
+            />
+            <label>Команда</label>
+            <input type="text" placeholder="Введите название команды" />
+          </div>
+          <div className="save2">
+            <label>Игрок</label>
+            <div className="user">
+              <div className="user_box">
+                <img className="photo" src={photo} />
+                <span>@beka</span>
+                <img src={king} />
+              </div>
+            </div>
+            <div onClick={TrueModal} className="add_user">
+              <p>Добавить игрока</p>
+              <img src={plus} />
+            </div>
+            {divs.map((div, index) => (
+              <div className="box" key={index}>
+                {div}
+                <button className="close">
+                  <img
+                    onClick={() => removeDiv(index)}
+                    className="cl"
+                    src={crest}
+                  />
+                </button>
+              </div>
+            ))}
+          </div>
+        </div>
+        <div className="send">
+          <h1 style={{ color: "#ffffff" }}>
+            Стоимость сражения:{" "}
+            <span style={{ color: "#FFB156" }}>
+              {backend ? backend.price : 0} сом
+            </span>
+          </h1>
+          <button
+            onClick={() =>
+              backend.price !== 750
+                ? setTopUp(true) || alert("Поролните баланс и попробуйте снова")
+                : success()
+            }
+            className="response_btn"
+          >
+            Откликнуться
+          </button>
+        </div>
+        {topUp && (
+          <div className="top">
+            {" "}
+            <button onClick={() => navigate("/Battles/TopUp")} className="btn">
+              {" "}
+              Пополнить баланс{" "}
+            </button>{" "}
+            <p className="red">
+              {" "}
+              На вашем балансе недостаточно средств для создания сражения{" "}
+            </p>{" "}
+            <p>
+              <img src={som} /> Ваш баланс 750 сом{" "}
+            </p>
+          </div>
+        )}
+        {modal && (
+          <div className="modal">
+            <div onClick={() => FalseModal()} className="false"></div>
+            <div className="obl">
+              <div className="menu">
+                <img onClick={() => FalseModal()} className="iks" src={iks} />
+                {UsersData.map((el) => (
+                  <div
+                    key={el.id}
+                    onClick={() => createDiv([el])}
+                    className="users_box"
+                  >
+                    <img src={el.img} />
+                    <p>{el.name}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+};
+
+export default Response;

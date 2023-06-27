@@ -1,0 +1,276 @@
+.response {
+  width: 100%;
+  min-height: 1100px;
+  background: url("../../img/battle_bg.svg") no-repeat center;
+  background-size: cover;
+  padding-top: 147px;
+  padding-bottom: 200px;
+}
+.response .container {
+  margin: 0 auto;
+  width: 1200px;
+  height: 100%;
+  padding-top: 55px;
+}
+.response .wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 55px;
+}
+.response .save1 {
+  display: flex;
+  flex-direction: column;
+}
+.response label {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 11px;
+}
+.response input {
+  width: 100%;
+  min-height: 108px;
+  outline: none;
+  background: #00000000;
+  border-radius: 10px;
+  border: 2px solid #0761dc;
+  margin-bottom: 35px;
+  color: #b4b2b2;
+  font-size: 18px;
+  padding-left: 22px;
+  transition: 0.2s ease;
+}
+.response input:hover {
+  background-color: rgba(52, 191, 255, 0.115);
+  color: #0761dc;
+}
+.response input.heigth {
+  height: 170px;
+  padding-bottom: 60px;
+}
+.response .user {
+  margin-top: 11px;
+  width: 100%;
+  height: 108px;
+  border-radius: 10px;
+  background: #00000000;
+  padding-left: 35px;
+  padding-right: 30px;
+  border: 2px solid #0761dc;
+}
+.response .user .user_box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 53px 1fr 25px;
+  gap: 35px;
+}
+.response .user .user_box span {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  color: #ffffff;
+}
+.response .photo {
+  width: 53px;
+  height: 53px;
+}
+.response .add_user {
+  margin-top: 35px;
+  width: 100%;
+  height: 108px;
+  border-radius: 10px;
+  background: #00000000;
+  padding-left: 35px;
+  padding-right: 30px;
+  border: 2px solid #0761dc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.response .add_user p {
+  color: #b4b2b2;
+  font-size: 18px;
+}
+.response .send {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.response h1 {
+  position: absolute;
+  font-size: 26px;
+}
+.response .response_btn {
+  margin: 0 auto;
+  width: 220px;
+  height: 67px;
+  background: #0761dc;
+  border-radius: 3px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+}
+.response .response_btn:hover {
+  background: #0c51b1;
+}
+.response .top {
+  margin: 106px auto;
+  width: 630px;
+  height: 185px;
+  display: flex;
+  flex-direction: column;
+}
+.response .top .btn {
+  margin: 0 auto;
+  width: 320px;
+  height: 84px;
+  outline: none;
+  border-radius: 10px;
+  border: 3px solid #fb9191;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  color: #fb9191;
+  background: #00000000;
+  transition: 0.3s ease;
+}
+.response .top .btn:hover {
+  background: #fb9191;
+  color: #ffffff;
+}
+.response .top p {
+  margin: 0 auto;
+  margin-top: 27px;
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  color: #ffffff;
+}
+.response .top .red {
+  margin-top: 20px;
+  color: #fb9191;
+}
+.response .modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+}
+.response .modal .false {
+  position: absolute;
+  background: rgba(85, 85, 85, 0.514);
+  width: 100%;
+  height: 100%;
+}
+.response .obl {
+  width: 380px;
+  height: 515px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0761dc;
+  border-radius: 15px;
+}
+.response .menu {
+  width: 365px;
+  height: 500px;
+  background: white;
+  position: relative;
+  padding: 10px;
+  padding-right: 45px;
+  overflow-x: auto;
+  z-index: 1;
+}
+.response .iks {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+.response .users_box {
+  width: 100%;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 0.3fr 1fr;
+  gap: 15px;
+  margin-bottom: 10px;
+  background: #000000 url("../../img/change_BG.svg") no-repeat center;
+  background-size: cover;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  border: 2px solid #0761dc;
+}
+.response .users_box:hover {
+  background: #0761dc url("../../img/change_BG.svg") no-repeat;
+  background-size: cover;
+}
+.response .users_box img {
+  margin: 0 auto;
+  width: 55px;
+}
+.response .users_box p {
+  font-weight: 500;
+  font-size: 20px;
+  color: #fff;
+}
+.response .box {
+  margin-top: 35px;
+  width: 100%;
+  height: 108px;
+  border-radius: 10px;
+  background: #00000000;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  padding-left: 35px;
+  padding-right: 30px;
+  border: 2px solid #0761dc;
+  position: relative;
+}
+.response .close {
+  position: absolute;
+  right: 0;
+  width: 75px;
+  height: 100%;
+  outline: none;
+  border: none;
+  background: #00000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+}
+.response .box img {
+  width: 53px;
+}
+.response .box .cl {
+  cursor: pointer;
+  width: 16px;
+}
+.response .box span {
+  margin-left: 35px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  color: #ffffff;
+}
