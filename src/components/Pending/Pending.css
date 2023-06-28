@@ -1,12 +1,301 @@
-.pending{
-    width: 100%;
-    height: 1400px;
-    background: url("../../img/battle_bg.svg") no-repeat center;
-    background-size: cover;
-    padding-top: 147px;
+.pending {
+  width: 100%;
+  min-height: 1800px;
+  background: url("../../img/battle_bg.svg") no-repeat center;
+  background-size: cover;
+  padding-top: 147px;
+  padding-bottom: 300px;
 }
-.pending .container{
-    margin: 0 auto;
-    width: 1200px;
-    height: 100%;
+.pending .container {
+  margin: 0 auto;
+  width: 1200px;
+  height: 100%;
+  padding-top: 55px;
 }
+.pending .can_img {
+  width: 100%;
+  border-radius: 3px;
+}
+.pending .text_block {
+  margin-top: 29px;
+  display: flex;
+  justify-content: space-between;
+}
+.pending .text_block h3 {
+  color: #fff;
+  font-size: 22px;
+}
+.pending .create_text {
+  color: #b5b5b5;
+  font-size: 20px;
+}
+.pending .dota_text {
+  color: #c644cb;
+  font-size: 20px;
+}
+.pending .lane {
+  margin-top: 21px;
+  width: 100%;
+  height: 1px;
+  opacity: 0.10000000149011612;
+  background: #fff;
+}
+.pending .lorem_text {
+  width: 1173px;
+  margin-top: 16px;
+  color: #b5b5b5;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.2px;
+}
+.pending .game_rule {
+  margin-top: 65px;
+  display: flex;
+  justify-content: space-between;
+}
+.pending .game_rule p {
+  color: #fff;
+  font-size: 20px;
+}
+.pending .sum1 {
+  color: #5ea2ff;
+  font-size: 22px;
+}
+.pending .offers_block {
+  display: flex;
+  align-items: center;
+}
+.pending .cancelled {
+  color: rgba(251, 145, 145, 1);
+}
+.pending .line1 {
+  width: 24px;
+  height: 24px;
+}
+.pending .line2 {
+  width: 24px;
+  height: 24px;
+}
+.pending .views {
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #949494;
+  font-size: 20px;
+}
+.pending .offers {
+  margin-left: 10px;
+  color: #949494;
+  font-size: 20px;
+}
+.pending .lane2 {
+  margin-top: 21px;
+  width: 100%;
+  height: 1px;
+  background: #fff;
+  opacity: 0.10000000149011612;
+}
+.pending .comple {
+  margin-top: 14px;
+  display: flex;
+  color: #fff;
+  font-size: 20px;
+}
+.pending .sum {
+  color: #ffb156;
+  font-size: 22px;
+}
+.pending .comp_text {
+  font-size: 20px;
+  margin-left: 252px;
+}
+.pending .comp {
+  color: rgba(255, 122, 0, 1);
+}
+.pending .lane3 {
+  margin-top: 21px;
+  width: 100%;
+  height: 1px;
+  background: #fff;
+  opacity: 0.10000000149011612;
+}
+.pending .customer {
+  margin-top: 46px;
+  color: #fff;
+  font-size: 20px;
+}
+.pending .contact {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.pending .appas {
+  width: 576px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.pending .cat {
+  width: 90px;
+  height: 90px;
+  flex-shrink: 0;
+  border-radius: 16px;
+}
+.pending .azim {
+  color: #fff;
+  font-size: 20px;
+}
+.pending .checkbox {
+  width: 7px;
+  height: 7px;
+  flex-shrink: 0;
+}
+.pending .appas_text {
+  color: #fff;
+  font-size: 20px;
+}
+.pending .class {
+  margin-right: 10px;
+  width: 24.429px;
+  height: 24px;
+}
+.pending .text1 {
+  color: #6be795;
+  font-size: 20px;
+}
+.pending .text2 {
+  color: #6a6e77;
+  font-size: 20px;
+}
+.pending .battles {
+  margin-top: 78px;
+  color: #fff;
+  font-size: 20px;
+}
+.pending .messege {
+  width: 560px;
+  height: 84px;
+  border-radius: 16px;
+  background: #272f37;
+  display: flex;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.pending .hover {
+  width: 80%;
+  height: 50px;
+  cursor: pointer;
+  margin: 0 auto;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease;
+}
+.pending .hover:hover {
+  width: 80%;
+  height: 50px;
+  background: #485d72;
+  box-shadow: 5px 10px 15px #121b24;
+}
+.pending .grid {
+  border-right: 1px solid #121b24;
+}
+.pending .messege h2 {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #9d9d9d;
+}
+.pending .messege h2 img {
+  margin-right: 15px;
+}
+.pending .tron {
+  margin-top: 47px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.pending .tron1 {
+  display: flex;
+  flex-direction: column;
+}
+.pending .nato1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 497px;
+  height: 84px;
+  flex-shrink: 0;
+  border-radius: 2px;
+  background: #5ea2ff;
+  color: #fff;
+  font-size: 20px;
+}
+.pending .nato1 p {
+  margin-right: 100px;
+}
+.pending .nato2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 87px;
+  width: 497px;
+  height: 84px;
+  flex-shrink: 0;
+  border-radius: 2px;
+  background: #272f37;
+  color: #fff;
+  font-size: 20px;
+}
+.pending .nato2 p {
+  margin-left: 100px;
+}
+.pending .f_block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pending .f_center {
+  width: 88px;
+  height: 175px;
+  border-top: 2px solid #272f37;
+  border-right: 2px solid #272f37;
+  border-bottom: 2px solid #272f37;
+}
+.pending .for {
+  width: 10px;
+  height: 84px;
+  border-radius: 2px;
+  background: #0761dc;
+}
+.pending .f_lane {
+  width: 85px;
+  height: 2px;
+  background: #272f37;
+}
+.pending .f_lane2 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 497px;
+  height: 84px;
+  flex-shrink: 0;
+  border-radius: 2px;
+  background: #5ea2ff;
+  color: #fff;
+  font-size: 20px;
+}
+.pending .f_lane2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 75px;
+  height: 100%;
+  background: url("../../img/go_minus.svg") no-repeat center;
+}
+    

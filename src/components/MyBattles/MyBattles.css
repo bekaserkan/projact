@@ -3,7 +3,7 @@
   background: url("../../img/battle_bg.svg") no-repeat center;
   background-size: cover;
   padding-top: 147px;
-  padding-bottom: 200px;
+  padding-bottom: 300px;
 }
 .mybattles .container {
   margin: 0 auto;
@@ -63,11 +63,11 @@
 }
 .mybattles .customer {
   width: 100%;
-  min-height: 500px;
+  min-height: 400px;
 }
 .mybattles .performer {
   width: 100%;
-  min-height: 500px;
+  min-height: 400px;
 }
 .mybattles .box_data {
   margin-top: 35px;
@@ -116,4 +116,21 @@
   font-size: 17px;
   line-height: 25px;
   color: #0761dc;
+}
+.mybattles .details {
+  margin-left: auto;
+  width: 200px;
+  height: 67px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: right;
+  background: #FF7A00;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  border-radius: 3px;
+  cursor: pointer;
 }

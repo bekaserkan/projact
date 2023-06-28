@@ -12,6 +12,7 @@ import Pending from "../../components/Pending/Pending";
 import Respond from "../../components/Respond/Respond";
 import Response from "../../components/Response/Response";
 import CreatTopUp from "../../components/CreatTopUp/CreatTopUp";
+import BattleDetails from "../../components/BattleDetails/BattleDetails";
 
 function Battles() {
   const [bid, setBid] = useState("");
@@ -30,9 +31,13 @@ function Battles() {
         <Route path="CreatTopUp" element={<CreatTopUp value={bid} />} />
         <Route path="Response" element={<Response backend={data} />} />
         <Route path="Cancellation" element={<Cancellation />} />
+        <Route path="BattleDetails/*" element={<BattleDetails />} />
         <Route path="Completed" element={<Completed />} />
         <Route path="Pending" element={<Pending />} />
-        <Route path="CreateBattles" element={<CreateBattles bid={bid} setBid={setBid} />} />
+        <Route
+          path="CreateBattles"
+          element={<CreateBattles bid={bid} setBid={setBid} />}
+        />
         <Route path="MyBattles/*" element={<MyBattles />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>

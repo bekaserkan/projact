@@ -1,11 +1,18 @@
 import React from "react";
 import "./MyBattles.css";
-import { NavLink, Route, Routes } from "react-router-dom";
+import {
+  NavLink,
+  Navigate,
+  Route,
+  Routes,
+  useNavigate,
+} from "react-router-dom";
 import { NotFoundPage } from "../../pages/NotFoundPage/NotFoundPage";
 import { Customer } from "./Customer";
 import { Performer } from "./Performer";
 
 function MyBattles() {
+  const navigate = useNavigate();
   return (
     <div className="mybattles">
       <div className="container">
@@ -19,11 +26,17 @@ function MyBattles() {
               Я заказчик
             </NavLink>
           </div>
-          <Routes >
+          <Routes>
             <Route path="customer" element={<Customer />} />
             <Route path="performer" element={<Performer />} />
             <Route path="*" element={<NotFoundPage />} />
           </Routes>
+        </div>
+        <div
+          onClick={() => navigate("/Battles/BattleDetails/Details")}
+          className="details"
+        >
+          Детали сражений
         </div>
       </div>
     </div>
