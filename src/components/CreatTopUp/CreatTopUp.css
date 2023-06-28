@@ -1,0 +1,138 @@
+.creat_top_up {
+  width: 100%;
+  min-height: 1600px;
+  background: url("../../img/battle_bg.svg") no-repeat center;
+  background-size: cover;
+  padding-top: 147px;
+  padding-bottom: 300px;
+}
+.creat_top_up .container {
+  margin: 0 auto;
+  width: 1200px;
+  height: 100%;
+  padding-top: 55px;
+}
+.creat_top_up h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 64px;
+}
+.creat_top_up h2 {
+  text-align: center;
+  color: #fb9191;
+  font-size: 28px;
+  margin-bottom: 180px;
+}
+.creat_top_up .som {
+  width: 100%;
+  height: 80px;
+  border-bottom: 1px solid #ffffff4d;
+  margin-bottom: 48px;
+}
+.creat_top_up .sed,
+.creat_top_up .som h1 {
+  text-align: start;
+  color: #fff;
+  font-size: 26px;
+}
+.creat_top_up .questions {
+  margin-top: 70px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.creat_top_up .questions p {
+  color: #fff;
+  font-size: 24px;
+}
+.creat_top_up .question {
+  display: grid;
+  grid-template-columns: 0.1fr 1fr;
+  cursor: pointer;
+}
+.creat_top_up .wallet {
+  margin-top: 80px;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 46px;
+}
+.creat_top_up .box {
+  width: 668px;
+  height: 120px;
+  border-radius: 10px;
+  border: 2px solid #0761dc;
+  display: flex;
+  align-items: center;
+  padding-left: 39px;
+  padding-right: 29px;
+  background: #00000000;
+  cursor: pointer;
+}
+.creat_top_up .box p {
+  color: #fff;
+  font-size: 24px;
+  margin-left: 43px;
+}
+.creat_top_up .box .str{
+    margin-left: auto;
+}
+.creat_top_up .modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+}
+.creat_top_up .modal .false {
+  position: absolute;
+  background: rgba(85, 85, 85, 0.514);
+  width: 100%;
+  height: 100%;
+}
+.creat_top_up .modal .text {
+  width: 700px;
+  height: 600px;
+  background: url("../../img/modal_bg.svg") no-repeat center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.creat_top_up .modal .text p {
+  margin-top: 40px;
+  text-align: center;
+  width: 424px;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 45px;
+  color: #ffffff;
+  margin-bottom: 85px;
+}
+.creat_top_up .go_out {
+  width: 400px;
+  height: 67px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 3px;
+  background: #0761dc;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 27px;
+  color: #ffffff;
+}
+.creat_top_up .go_out:hover {
+  background: #0c51b1;
+}

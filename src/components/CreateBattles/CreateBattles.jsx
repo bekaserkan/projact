@@ -10,9 +10,9 @@ import crest from "../../img/crest.svg";
 import { UsersData } from "./UserData";
 import { sample } from "lodash";
 import user6 from "../../img/user6.svg";
+import CreatTopUp from "../CreatTopUp/CreatTopUp";
 
-function CreateBattles() {
-  const [bid, setBid] = useState("");
+function CreateBattles({bid, setBid}) {
   const [topUp, setTopUp] = useState(false);
   const navigate = useNavigate();
   const [divs, setDivs] = useState([]);
@@ -45,15 +45,11 @@ function CreateBattles() {
     setDivs(updatedDivs);
   };
 
-  function nav() {
-    navigate("/Battles/TopUp");
-  }
-
   const numBid = Number(bid);
 
   function viewing() {
     if (numBid >= 750) {
-      alertClick()
+      alertClick();
       setTopUp(true);
     } else {
       success();
@@ -161,7 +157,10 @@ function CreateBattles() {
         {topUp && (
           <div className="top">
             {" "}
-            <button onClick={nav} className="btn">
+            <button
+              onClick={() => navigate("/Battles/CreatTopUp")}
+              className="btn"
+            >
               {" "}
               Пополнить баланс{" "}
             </button>{" "}

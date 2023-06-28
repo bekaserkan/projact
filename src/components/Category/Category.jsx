@@ -57,7 +57,6 @@ function Category({ handleItemClick }) {
             type.map((el) => (
               <div key={el.id} onClick={() => handleItemClick(el.title)}>
                 <CategoryFile
-                  el={el}
                   photos={el.photos}
                   title={el.title}
                   divVisible1={divVisible1}
