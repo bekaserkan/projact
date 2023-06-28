@@ -49,10 +49,11 @@
   color: #b5b5b5;
   transition: 0.3s ease;
   border-radius: 3px;
+  cursor: pointer;
 }
 .modal_animated .close:hover {
   color: #ffffff;
-  background: #0761dc;
+  background: #02ef41;
 }
 .modal_animated .go_out {
   width: 165px;
@@ -68,6 +69,7 @@
   color: #ffffff;
   transition: 0.3s ease;
   border-radius: 3px;
+  cursor: pointer;
 }
 .modal_animated .go_out:hover {
   background: red;

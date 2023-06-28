@@ -2,8 +2,14 @@ import React, { useState } from "react";
 import "./Electronic.css";
 import { NavLink, useNavigate } from "react-router-dom";
 import { errorContact, successContact } from "../UI/sweetalert/sweetalert";
+import { useDispatch } from "react-redux";
+import {
+  privateDiv1Action,
+  privateDiv2Action,
+} from "../../store/reducers/privateDivReducer";
 
 function Electronic() {
+  const dispatch = useDispatch();
   const [entrance, setEntrance] = useState("");
   const [email, setEmail] = useState("");
   const navigate = useNavigate();
@@ -19,6 +25,8 @@ function Electronic() {
   function Open() {
     if (entrance == 2023 && email === "@beka") {
       successContact();
+      dispatch(privateDiv1Action(true));
+      dispatch(privateDiv2Action(false));
       navigate("/PrivateHome");
       // window.location.href = '/PrivateHome'
     } else {
