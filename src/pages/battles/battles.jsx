@@ -14,6 +14,7 @@ import Response from "../../components/Response/Response";
 import CreatTopUp from "../../components/CreatTopUp/CreatTopUp";
 import BattleDetails from "../../components/BattleDetails/BattleDetails";
 import Executor from "../../components/Executor/Executor";
+import Publish from "../../components/Publish/Publish";
 
 function Battles() {
   const [bid, setBid] = useState("");
@@ -36,6 +37,7 @@ function Battles() {
         <Route path="Completed" element={<Completed />} />
         <Route path="Executor" element={<Executor />} />
         <Route path="Pending" element={<Pending />} />
+        <Route path="Publish" element={<Publish />} />
         <Route
           path="CreateBattles"
           element={<CreateBattles bid={bid} setBid={setBid} />}

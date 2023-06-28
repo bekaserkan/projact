@@ -1,6 +1,6 @@
 import React from "react";
 import "./Pending.css";
-import can_img from "../../img/tanka.svg"
+import can_img from "../../img/tanka.svg";
 import checkbox from "../../img/checkbox.svg";
 import thum from "../../img/eye-line.svg";
 import reply from "../../img/reply-line.svg";
@@ -45,6 +45,8 @@ function Pending() {
             {" "}
             <img className="line1" src={thum} />{" "}
             <span className="views">562 просмотров</span>
+          </div>
+          <div className="offers_block">
             <img className="line2" src={reply} />{" "}
             <span className="offers"> 18 предложений</span>
           </div>

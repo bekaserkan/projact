@@ -10,7 +10,6 @@ import phone from "../../img/phone-line.svg";
 import telegram from "../../img/telegram-line.svg";
 import whatsap from "../../img/whatsapp-line.svg";
 import checkbox from "../../img/checkbox.svg";
-import lane9 from "../../img/Line 9.svg";
 
 function Cancellation() {
   return (

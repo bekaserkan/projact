@@ -1,0 +1,358 @@
+.publish {
+  width: 100%;
+  min-height: 1500px;
+  background: url("../../img/battle_bg.svg") no-repeat center;
+  background-size: cover;
+  padding-top: 147px;
+  padding-bottom: 300px;
+}
+.publish .container {
+  margin: 0 auto;
+  width: 1200px;
+  height: 100%;
+  padding-top: 55px;
+}
+.publish .can_img {
+  width: 100%;
+  border-radius: 3px;
+}
+.publish .text_block {
+  margin-top: 29px;
+  display: flex;
+  justify-content: space-between;
+}
+.publish .text_block h3 {
+  color: #fff;
+  font-size: 22px;
+}
+.publish .create_text {
+  color: #b5b5b5;
+  font-size: 20px;
+}
+.publish .dota_text {
+  color: #c644cb;
+  font-size: 20px;
+}
+.publish .lane {
+  margin-top: 21px;
+  width: 100%;
+  height: 1px;
+  opacity: 0.10000000149011612;
+  background: #fff;
+}
+.publish .lorem_text {
+  width: 1173px;
+  margin-top: 16px;
+  color: #b5b5b5;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.2px;
+}
+.publish .game_rule {
+  margin-top: 65px;
+  display: flex;
+  justify-content: space-between;
+}
+.publish .game_rule p {
+  color: #fff;
+  font-size: 20px;
+}
+.publish .sum1 {
+  color: #ffb156;
+  font-size: 22px;
+}
+.publish .offers_block {
+  display: flex;
+  align-items: center;
+}
+.publish .cancelled {
+  color: rgba(251, 145, 145, 1);
+}
+.publish .line1 {
+  width: 24px;
+  height: 24px;
+}
+.publish .line2 {
+  width: 24px;
+  height: 24px;
+}
+.publish .views {
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #949494;
+  font-size: 20px;
+}
+.publish .offers {
+  margin-left: 10px;
+  color: #949494;
+  font-size: 20px;
+}
+.publish .lane2 {
+  margin-top: 21px;
+  width: 100%;
+  height: 1px;
+  background: #fff;
+  opacity: 0.10000000149011612;
+}
+.publish .team {
+  width: 460px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.publish .team p {
+  color: #fff;
+  font-size: 20px;
+}
+.publish .cust_lane {
+  margin-top: 34px;
+  width: 100%;
+  height: 1.5px;
+  opacity: 0.10000000149011612;
+  background: #fff;
+}
+.publish .cat_block {
+  margin-top: 34px;
+  display: flex;
+  align-items: center;
+}
+.publish .cat {
+  width: 460px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 20px;
+}
+.publish .cat span {
+  margin-left: 14px;
+}
+.publish .checkbox {
+  margin-left: 10px;
+}
+.publish .box {
+  width: 25px;
+  height: 20px;
+}
+.publish .cat_block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.publish .wrapper {
+  margin-top: 55px;
+}
+.publish .customer {
+  color: #fff;
+  font-size: 20px;
+}
+.publish .contact {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.publish .appas {
+  width: 576px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.publish .cat {
+  width: 90px;
+  height: 90px;
+  flex-shrink: 0;
+  border-radius: 16px;
+}
+.publish .azim {
+  color: #fff;
+  font-size: 20px;
+}
+.cancellation .checkbox {
+  width: 7px;
+  height: 7px;
+  flex-shrink: 0;
+}
+.publish .appas_text {
+  color: #fff;
+  font-size: 20px;
+}
+.publish .class {
+  margin-right: 10px;
+  width: 24.429px;
+  height: 24px;
+}
+.publish .text1,
+.publish .text2 {
+  display: flex;
+  align-items: center;
+}
+.publish .text1 {
+  color: #6be795;
+  font-size: 20px;
+}
+.publish .text2 {
+  color: #6a6e77;
+  font-size: 20px;
+}
+.publish .messege {
+  width: 560px;
+  height: 84px;
+  border-radius: 16px;
+  background: #272f37;
+  display: flex;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.publish .hover {
+  width: 80%;
+  height: 50px;
+  cursor: pointer;
+  margin: 0 auto;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease;
+}
+.publish .hover:hover {
+  width: 80%;
+  height: 50px;
+  background: #485d72;
+  box-shadow: 5px 10px 15px #121b24;
+}
+.publish .grid {
+  border-right: 1px solid #121b24;
+}
+.publish .messege h2 {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #9d9d9d;
+}
+.publish .messege h2 img {
+  margin-right: 15px;
+}
+.publish .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px auto;
+  width: 250px;
+  height: 67px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background: #0761dc;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+}
+.publish .btn:hover {
+  background: #0c51b1;
+}
+.publish .save {
+  width: 100%;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.publish .box {
+  width: 100%;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-bottom: 1px solid #ffffff22;
+}
+.publish .user {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.publish .user.plus {
+  position: relative;
+}
+.publish .user.plus::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 70%;
+  height: 100%;
+  background: url("../../img/king.svg") no-repeat center;
+}
+.publish .user img {
+  width: 90px;
+  height: 90px;
+  border-radius: 16px;
+  margin-right: 16px;
+}
+.publish .user p {
+  color: #fff;
+  font-size: 20px;
+}
+.publish .team_p {
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.publish .modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+}
+.publish .modal .false {
+  position: absolute;
+  background: rgba(85, 85, 85, 0.514);
+  width: 100%;
+  height: 100%;
+}
+.publish .modal .text {
+  width: 700px;
+  height: 600px;
+  background: url("../../img/modal_bg.svg") no-repeat center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.publish .modal .text p {
+  margin-top: 40px;
+  text-align: center;
+  width: 390px;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 45px;
+  color: #ffffff;
+  margin-bottom: 70px;
+}
+.publish .go_out {
+  width: 200px;
+  height: 67px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 3px;
+  background: #0761dc;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 27px;
+  color: #ffffff;
+}
+.publish .go_out:hover {
+  background: #0c51b1;
+}

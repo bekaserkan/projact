@@ -12,7 +12,7 @@ import { sample } from "lodash";
 import user6 from "../../img/user6.svg";
 import CreatTopUp from "../CreatTopUp/CreatTopUp";
 
-function CreateBattles({bid, setBid}) {
+function CreateBattles({ bid, setBid }) {
   const [topUp, setTopUp] = useState(false);
   const navigate = useNavigate();
   const [divs, setDivs] = useState([]);
@@ -48,14 +48,19 @@ function CreateBattles({bid, setBid}) {
   const numBid = Number(bid);
 
   function viewing() {
-    if (numBid >= 750) {
-      alertClick();
-      setTopUp(true);
+    if (numBid === "") {
+      errorContact();
     } else {
-      success();
-      setTopUp(false);
-      setBid("");
-      setValue("");
+      if (numBid >= 750) {
+        alertClick();
+        setTopUp(true);
+      } else {
+        success();
+        navigate("/Battles/Publish");
+        setTopUp(false);
+        setBid("");
+        setValue("");
+      }
     }
   }
 

@@ -37,16 +37,17 @@ function Completed() {
             Игра начинается: <span className="time">20:00, 05.06.21</span>
           </p>
           <p>
-            Победитель:{" "}
+            Победитель:
             <span className="sum1">
-              Азим Д. <img src={checkbox} /> appass1nato{" "}
+              Азим Д. <img src={checkbox} /> appass1nato
             </span>
           </p>
           <div className="offers_block">
-            {" "}
-            <img className="line1" src={thum} />{" "}
+            <img className="line1" src={thum} />
             <span className="views">562 просмотров</span>
-            <img className="line2" src={reply} />{" "}
+          </div>
+          <div className="offers_block">
+            <img className="line2" src={reply} />
             <span className="offers"> 18 предложений</span>
           </div>
         </div>

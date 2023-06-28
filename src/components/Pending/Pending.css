@@ -106,7 +106,7 @@
 }
 .pending .comp_text {
   font-size: 20px;
-  margin-left: 252px;
+  margin-left: 210px;
 }
 .pending .comp {
   color: rgba(255, 122, 0, 1);
@@ -156,7 +156,7 @@
 }
 .pending .class {
   margin-right: 10px;
-  width: 24.429px;
+  width: 24px;
   height: 24px;
 }
 .pending .text1 {
@@ -227,7 +227,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 497px;
+  width: 500px;
   height: 84px;
   flex-shrink: 0;
   border-radius: 2px;
@@ -243,7 +243,7 @@
   justify-content: center;
   align-items: center;
   margin-top: 87px;
-  width: 497px;
+  width: 500px;
   height: 84px;
   flex-shrink: 0;
   border-radius: 2px;
@@ -260,7 +260,7 @@
   align-items: center;
 }
 .pending .f_center {
-  width: 88px;
+  width: 100px;
   height: 175px;
   border-top: 2px solid #272f37;
   border-right: 2px solid #272f37;
@@ -273,7 +273,7 @@
   background: #0761dc;
 }
 .pending .f_lane {
-  width: 85px;
+  width: 100px;
   height: 2px;
   background: #272f37;
 }
