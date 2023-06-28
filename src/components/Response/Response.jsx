@@ -8,14 +8,19 @@ import { alertClick, success } from "../UI/sweetalert/sweetalert";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import iks from "../../img/krest.png";
-import { modalAction, modalAction1 } from "../../store/actions/modalAction";
+import {
+  modalAction,
+  modalAction1,
+  modalAction2,
+} from "../../store/actions/modalAction";
 import { UsersData } from "../CreateBattles/UserData";
 import crest from "../../img/crest.svg";
+import clean from "../../img/clean.png";
 
 const Response = ({ backend }) => {
-  const { modal, modal1 } = useSelector((state) => state.modals);
-  const [topUp, setTopUp] = useState(false);
+  const { modal, modal1, modal2 } = useSelector((state) => state.modals);
   const [divs, setDivs] = useState([]);
+  const [value, setValue] = useState("");
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
@@ -78,28 +83,28 @@ const Response = ({ backend }) => {
               <p>Добавить игрока</p>
               <img src={plus} />
             </div>
-            <div className="wrapper_users">
-              {modal1 && (
+            {modal1 && (
+              <div className="wrapper_users">
                 <div
                   onClick={() => FalseDiv() || setDivs([])}
                   className="clear"
                 >
                   Очистить все
                 </div>
-              )}
-              {divs.map((div, index) => (
-                <div className="box" key={index}>
-                  {div}
-                  <button className="close">
-                    <img
-                      onClick={() => removeDiv(index)}
-                      className="cl"
-                      src={crest}
-                    />
-                  </button>
-                </div>
-              ))}
-            </div>
+                {divs.map((div, index) => (
+                  <div className="box" key={index}>
+                    {div}
+                    <button className="close">
+                      <img
+                        onClick={() => removeDiv(index)}
+                        className="cl"
+                        src={crest}
+                      />
+                    </button>
+                  </div>
+                ))}
+              </div>
+            )}
           </div>
         </div>
         <div className="send">
@@ -111,14 +116,16 @@ const Response = ({ backend }) => {
           </h1>
           <button
             onClick={() =>
-              backend.price !== 750 ? setTopUp(true) || alertClick() : success()
+              backend.price !== 750
+                ? dispatch(modalAction2(true)) || alertClick()
+                : success()
             }
             className="response_btn"
           >
             Откликнуться
           </button>
         </div>
-        {topUp && (
+        {modal2 && (
           <div className="top">
             {" "}
             <button onClick={() => navigate("/Battles/TopUp")} className="btn">
@@ -139,15 +146,32 @@ const Response = ({ backend }) => {
             <div onClick={() => FalseModal()} className="false"></div>
             <div className="obl">
               <div className="menu">
-                <img onClick={() => FalseModal()} className="iks" src={iks} />
-                {UsersData.map((el) => (
+                <div className="search_div">
+                  <input
+                    className="search"
+                    value={value}
+                    onChange={(e) => setValue(e.target.value)}
+                    type="text"
+                    placeholder="Введите..."
+                  />
+                  <img
+                    onClick={() => setValue("")}
+                    className="clean"
+                    src={clean}
+                  />
+                  <img onClick={() => FalseModal()} className="iks" src={iks} />
+                </div>
+                {UsersData.filter((obj) => {
+                  const fullName = obj.name.toLowerCase();
+                  return fullName.includes(value.toLowerCase());
+                }).map((obj) => (
                   <div
-                    key={el.id}
-                    onClick={() => createDiv([el]) || TrueDiv()}
+                    key={obj.id}
+                    onClick={() => createDiv([obj]) || TrueDiv()}
                     className="users_box"
                   >
-                    <img src={el.img} />
-                    <p>{el.name}</p>
+                    <img src={obj.img} />
+                    <p>{obj.name}</p>
                   </div>
                 ))}
               </div>
