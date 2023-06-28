@@ -8,8 +8,10 @@ import telegram from "../../../img/telegram-line.svg";
 import checkbox from "../../../img/checkbox.svg";
 import whatsap from "../../../img/whatsapp-line.svg";
 import shodow from "../../../img/sword_fight.svg";
+import { useNavigate } from "react-router-dom";
 
 const Offers = () => {
+  const navigate = useNavigate();
   return (
     <div className="offers">
       <h1>У вас 31 предложений</h1>
@@ -17,9 +19,7 @@ const Offers = () => {
         <div className="contact">
           <div className="appas">
             <img className="cat" src={cat} />
-            <p className="azim">
-              Азим Д <img className="checkbox" src={checkbox} />{" "}
-            </p>
+            <p className="azim">Леха У. Lewa</p>
             <p className="text1">
               <img className="class" src={class1} />
               19{" "}
@@ -91,7 +91,9 @@ const Offers = () => {
         </div>
         <div className="buttons">
           <p>05 июля 2022, 17:56</p>
-          <button className="btn">Выбрать исполнителем</button>
+          <button onClick={() => navigate("/Battles/Executor")} className="btn">
+            Выбрать исполнителем
+          </button>
         </div>
       </div>
       <div className="wrapper">
@@ -172,7 +174,9 @@ const Offers = () => {
         </div>
         <div className="buttons">
           <p>05 июля 2022, 17:56</p>
-          <button className="btn">Выбрать исполнителем</button>
+          <button onClick={() => navigate("/Battles/Executor")} className="btn">
+            Выбрать исполнителем
+          </button>
         </div>
       </div>
     </div>

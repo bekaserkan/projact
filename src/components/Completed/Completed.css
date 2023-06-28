@@ -63,6 +63,7 @@
 }
 .completed .offers_block {
   display: flex;
+  
 }
 .completed .cancelled {
   color: rgba(251, 145, 145, 1);

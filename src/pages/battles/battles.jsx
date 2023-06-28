@@ -13,6 +13,7 @@ import Respond from "../../components/Respond/Respond";
 import Response from "../../components/Response/Response";
 import CreatTopUp from "../../components/CreatTopUp/CreatTopUp";
 import BattleDetails from "../../components/BattleDetails/BattleDetails";
+import Executor from "../../components/Executor/Executor";
 
 function Battles() {
   const [bid, setBid] = useState("");
@@ -33,6 +34,7 @@ function Battles() {
         <Route path="Cancellation" element={<Cancellation />} />
         <Route path="BattleDetails/*" element={<BattleDetails />} />
         <Route path="Completed" element={<Completed />} />
+        <Route path="Executor" element={<Executor />} />
         <Route path="Pending" element={<Pending />} />
         <Route
           path="CreateBattles"

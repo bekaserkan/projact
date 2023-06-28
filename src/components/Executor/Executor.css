@@ -1,0 +1,87 @@
+.executor {
+  width: 100%;
+  min-height: 1500px;
+  background: url("../../img/battle_bg.svg") no-repeat center;
+  background-size: cover;
+  padding-top: 147px;
+  padding-bottom: 300px;
+}
+.executor .container {
+  margin: 0 auto;
+  width: 1200px;
+  height: 100%;
+  padding-top: 55px;
+}
+.executor h1 {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 44px;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 64px;
+}
+.executor h2 {
+  font-size: 28px;
+  font-weight: 4500;
+  line-height: 44px;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 180px;
+}
+.executor .som {
+  width: 100%;
+  height: 80px;
+  border-bottom: 1px solid #ffffff4d;
+  margin-bottom: 48px;
+}
+.executor .sed,
+.executor .som h1 {
+  text-align: start;
+  color: #fff;
+  font-size: 26px;
+}
+.executor .questions {
+  margin-top: 70px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 200px;
+}
+.executor .questions p {
+  color: #fff;
+  font-size: 24px;
+}
+.executor .question {
+  display: grid;
+  grid-template-columns: 0.1fr 1fr;
+  cursor: pointer;
+}
+.executor p {
+  color: #b5b5b5;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 27px;
+}
+.executor a {
+  color: #0761dc;
+  text-decoration: none;
+}
+.executor .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 340px;
+  height: 67px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background: #0761dc;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+}
+.executor .btn:hover {
+  background: #0c51b1;
+}
