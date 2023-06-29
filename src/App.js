@@ -8,12 +8,12 @@ import Battles from "./pages/Battles/Battles";
 import News from "./pages/News/News";
 import Chavo from "./pages/Chavo/Chavo";
 import Header from "./components/Header/Header";
-import Footer from "./components/Footer/Footer";
 import Electronic from "./components/Electronic/Electronic";
 import { NotFoundPage } from "./pages/NotFoundPage/NotFoundPage";
 import PrivateHome from "./pages/PrivateHome/PrivateHome";
 import Withdrawal from "./pages/Withdrawal/Withdrawal";
 import Filter from "./pages/Filter/Filter";
+import Footer from "./components/Foot/Foot";
 
 function App() {
   return (
