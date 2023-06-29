@@ -11,6 +11,7 @@ function Battle({ onItemClick }) {
   const dispatch = useDispatch();
   const { page, error, loading, todos } = useSelector((state) => state.todo);
   const pages = [1, 2, 3];
+  
 
   useEffect(() => {
     dispatch(fetchTodos(page));
