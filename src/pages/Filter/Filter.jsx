@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Route, Routes } from "react-router-dom";
-import { NotFoundPage } from "../NotFoundPage/NotFoundPage";
 import Strainer from "../../components/Strainer/Strainer";
 import Category from "../../components/Category/Category";
+import { NotFoundPage } from "../NotFound/NotFound";
 
 function Filter() {
   const [selectedBackend, setSelectedBackend] = useState("");

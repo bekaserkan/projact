@@ -1,12 +1,12 @@
 import React, { useEffect } from "react";
-import "./News.css";
+import "./NewsMain.css";
 import Tidings from "../../components/Tidings/Tidings";
 import { Route, Routes } from "react-router-dom";
 import Champions from "../../components/Сhampions/Champions";
 import { useState } from "react";
-import { NotFoundPage } from "../NotFoundPage/NotFoundPage";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchNews, setNewsPage } from "../../store/actions/newsAction";
+import { NotFoundPage } from "../NotFound/NotFound";
 
 function News() {
   const dispatch = useDispatch();

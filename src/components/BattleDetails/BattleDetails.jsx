@@ -4,7 +4,7 @@ import image from "../../img/cancellation.svg";
 import Details from "./Details/Details";
 import Offers from "./Offers/Offers";
 import { NavLink, Route, Routes } from "react-router-dom";
-import { NotFoundPage } from "../../pages/NotFoundPage/NotFoundPage";
+import { NotFoundPage } from "../../pages/NotFound/NotFound";
 
 const BattleDetails = () => {
   return (

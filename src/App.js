@@ -1,11 +1,6 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import Main from "./pages/Main/Main";
-import Battles from "./pages/Battles/Battles";
-import News from "./pages/News/News";
-import Chavo from "./pages/Chavo/Chavo";
 import Electronic from "./components/Electronic/Electronic";
-import { NotFoundPage } from "./pages/NotFoundPage/NotFoundPage";
 import PrivateHome from "./pages/PrivateHome/PrivateHome";
 import Withdrawal from "./pages/Withdrawal/Withdrawal";
 import Filter from "./pages/Filter/Filter";
@@ -14,6 +9,11 @@ import Authorization from "./components/Auth/Auth";
 import Header from "./components/Head/Head";
 import Registration from "./components/Registr/Registr";
 import Restore from "./components/Restor/Restor";
+import Main from "./pages/Home/Home";
+import Battles from "./pages/Combats/Combats";
+import Chavo from "./pages/FaqMain/FaqMain";
+import News from "./pages/NewsMain/NewsMain";
+import { NotFoundPage } from "./pages/NotFound/NotFound";
 
 function App() {
   return (

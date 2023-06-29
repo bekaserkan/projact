@@ -1,5 +1,5 @@
 import React from "react";
-import "./Main.css";
+import "./Home.css";
 import Advantages from "../../components/Advantages/Advantages";
 import Faq from "../../components/Faq/Faq";
 import NewsMain from "../../components/NewsMain/NewsMain";

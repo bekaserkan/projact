@@ -1,9 +1,9 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import { NotFoundPage } from "../NotFoundPage/NotFoundPage";
 import Funds from "../../components/Funds/Funds";
 import Viza from "../../components/Viza/Viza";
 import Elsom from "../../components/Elsom/Elsom";
+import { NotFoundPage } from "../NotFound/NotFound";
 
 function Withdrawal() {
   return (

@@ -1,7 +1,6 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Private from "../../components/Private/Private";
-import { NotFoundPage } from "../NotFoundPage/NotFoundPage";
 import Tuning from "../Tuning/Tuning";
 import Notify from "../../components/Notify/Notify";
 import Help from "../../components/Help/Help";
@@ -10,6 +9,7 @@ import QuestionAnswers from "../../components/QuestionAnswers/QuestionAnswers";
 import Identification from "../../components/Identification/Identification";
 import Profile from "../../components/Profile/Profile";
 import Review from "../../components/Review/Review";
+import { NotFoundPage } from "../NotFound/NotFound";
 
 function PrivateHome() {
   return (

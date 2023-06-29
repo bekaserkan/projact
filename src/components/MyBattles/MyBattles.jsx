@@ -2,14 +2,13 @@ import React from "react";
 import "./MyBattles.css";
 import {
   NavLink,
-  Navigate,
   Route,
   Routes,
   useNavigate,
 } from "react-router-dom";
-import { NotFoundPage } from "../../pages/NotFoundPage/NotFoundPage";
 import { Customer } from "./Customer";
 import { Performer } from "./Performer";
+import { NotFoundPage } from "../../pages/NotFound/NotFound";
 
 function MyBattles() {
   const navigate = useNavigate();

@@ -2,9 +2,9 @@ import React from "react";
 import "./Tuning.css";
 import { Route, Routes } from "react-router-dom";
 import Setting from "../../components/Setting/Setting";
-import { NotFoundPage } from "../NotFoundPage/NotFoundPage";
 import PersonalInformation from "../../components/PersonalInformation/PersonalInformation";
 import ChangePassword from "../../components/ChangePassword/ChangePassword";
+import { NotFoundPage } from "../NotFound/NotFound";
 
 function Tuning() {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import "./Chavo.css";
+import "./FaqMain.css";
 import Faq from "../../components/Faq/Faq";
 
 function Chavo() {

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./NotFoundPage.css";
+import "./NotFound.css";
 import not_page from "../../img/not_page.png";
 import krest from "../../img/krest.png";
 import { useNavigate } from "react-router-dom";
