@@ -1,12 +1,12 @@
 import {
+  MODAL_ACTION,
   ACTIVE_ACTION_FIFE,
   ACTIVE_ACTION_ONE,
   ACTIVE_ACTION_THREE,
-  MODAL_ACTION,
   MODAL_ACTION_FIRST,
   MODAL_ACTION_SECOND,
   MODAL_ACTION_THREE,
-} from "../actions/modalAction";
+} from "../actions/modalActions";
 
 const initialState = {
   modal: false,

@@ -8,14 +8,14 @@ import { alertClick, success } from "../UI/sweetalert/sweetalert";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import iks from "../../img/krest.png";
+import { UsersData } from "../CreateBattles/UserData";
+import crest from "../../img/crest.svg";
+import clean from "../../img/clean.png";
 import {
   modalAction,
   modalAction1,
   modalAction2,
-} from "../../store/actions/modalAction";
-import { UsersData } from "../CreateBattles/UserData";
-import crest from "../../img/crest.svg";
-import clean from "../../img/clean.png";
+} from "../../store/actions/modalActions";
 
 const Response = ({ backend }) => {
   const { modal, modal1, modal2 } = useSelector((state) => state.modals);

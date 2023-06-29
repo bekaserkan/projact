@@ -10,7 +10,7 @@ import {
   activeAction2,
   activeAction3,
   modalAction,
-} from "../../store/actions/modalAction";
+} from "../../store/actions/modalActions";
 
 function Strainer({ data }) {
   const [selectedBackend, setSelectedBackend] = useState("");
