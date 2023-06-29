@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Registration.css";
+import "./Registr.css";
 import { NavLink } from "react-router-dom";
 import { errorContact, successContact } from "../UI/sweetalert/sweetalert";
 

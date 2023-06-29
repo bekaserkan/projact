@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "./Play.css";
+import "./Game.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -13,7 +13,7 @@ import { Loading } from "../UI/loading/loading";
 import Tilt from "react-parallax-tilt";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchPlays } from "../../store/actions/playReducer";
-import Join_game from "./join_game/join_game";
+import JoinGame from "../JoinGame/JoinGame";
 
 function Play() {
   const dispatch = useDispatch();
@@ -33,7 +33,7 @@ function Play() {
   };
 
   const settings2 = {
-    dots: false, 
+    dots: false,
     infinite: true,
     speed: 450,
     slidesToShow: 3,
@@ -112,7 +112,7 @@ function Play() {
             ""
           )}
         </div>
-        <Join_game />
+        <JoinGame />
       </div>
     </div>
   );

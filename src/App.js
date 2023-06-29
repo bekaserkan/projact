@@ -1,7 +1,5 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import Restore from "./components/Restore/Restore";
-import Registration from "./components/Registration/Registration";
 import Main from "./pages/Main/Main";
 import Battles from "./pages/Battles/Battles";
 import News from "./pages/News/News";
@@ -14,6 +12,8 @@ import Filter from "./pages/Filter/Filter";
 import Footer from "./components/Foot/Foot";
 import Authorization from "./components/Auth/Auth";
 import Header from "./components/Head/Head";
+import Registration from "./components/Registr/Registr";
+import Restore from "./components/Restor/Restor";
 
 function App() {
   return (

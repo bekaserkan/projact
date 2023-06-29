@@ -1,14 +1,14 @@
 import React, { useEffect } from "react";
-import "./join_game.css";
-import dota2 from "../../../img/dota2.svg";
-import eye from "../../../img/eye.svg";
-import revers from "../../../img/revers.svg";
-import { joinClick } from "../../UI/sweetalert/sweetalert";
-import { Loading } from "../../UI/loading/loading";
+import "./JoinGame.css";
+import dota2 from "../../img/dota2.svg";
+import eye from "../../img/eye.svg";
+import revers from "../../img/revers.svg";
+import { joinClick } from "../UI/sweetalert/sweetalert";
+import { Loading } from "../UI/loading/loading";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchJoin, setJoinPage } from "../../../store/actions/joinAction";
+import { fetchJoin, setJoinPage } from "../../store/actions/joinAction";
 
-function Join_game() {
+function JoinGame() {
   const dispatch = useDispatch();
   const { joins, error, page, loading } = useSelector((state) => state.join);
   const pages = [1, 2, 3];
@@ -90,4 +90,4 @@ function Join_game() {
   );
 }
 
-export default Join_game;
+export default JoinGame;
