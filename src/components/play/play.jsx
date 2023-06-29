@@ -33,7 +33,7 @@ function Play() {
   };
 
   const settings2 = {
-    dots: false,
+    dots: false, 
     infinite: true,
     speed: 450,
     slidesToShow: 3,

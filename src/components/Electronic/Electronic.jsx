@@ -34,7 +34,7 @@ function Electronic() {
       alert('Аскар байке пароль - 2023, email - @beka')
     }
   }
-
+  
   return (
     <div className="electronic">
       <div className="container">
