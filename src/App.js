@@ -8,7 +8,7 @@ import Battles from "./pages/Battles/Battles";
 import News from "./pages/News/News";
 import Chavo from "./pages/Chavo/Chavo";
 import Header from "./components/Header/Header";
-import Footer from "./components/footer/footer";
+import Footer from "./components/Footer/Footer";
 import Electronic from "./components/Electronic/Electronic";
 import { NotFoundPage } from "./pages/NotFoundPage/NotFoundPage";
 import PrivateHome from "./pages/PrivateHome/PrivateHome";
