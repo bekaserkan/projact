@@ -1,5 +1,5 @@
 import React from "react";
-import "./Battle.css";
+import "./BattleCombat.css";
 import play_icons1 from "../../img/play_icons1.svg";
 import play_icons2 from "../../img/play_icons2.svg";
 import play_icons3 from "../../img/play_icons3.svg";

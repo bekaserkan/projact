@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Header.css";
+import "./Head.css";
 import logo from "../../img/header_logo.png";
 import { NavLink, useNavigate } from "react-router-dom";
 import instagram from "../../img/🦆 icon _Instagram_.svg";

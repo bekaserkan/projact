@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./Battles.css";
-import Battle from "../../components/Battle/Battle";
 import { Route, Routes } from "react-router-dom";
 import { NotFoundPage } from "../NotFoundPage/NotFoundPage";
 import TopUp from "../../components/TopUp/TopUp";
@@ -15,6 +14,7 @@ import CreatTopUp from "../../components/CreatTopUp/CreatTopUp";
 import BattleDetails from "../../components/BattleDetails/BattleDetails";
 import Executor from "../../components/Executor/Executor";
 import Publish from "../../components/Publish/Publish";
+import Battle from "../../components/BattleCombat/BattleCombat";
 
 function Battles() {
   const [bid, setBid] = useState("");

@@ -1,19 +1,19 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Restore from "./components/Restore/Restore";
-import Authorization from "./components/Authorization/Authorization";
 import Registration from "./components/Registration/Registration";
 import Main from "./pages/Main/Main";
 import Battles from "./pages/Battles/Battles";
 import News from "./pages/News/News";
 import Chavo from "./pages/Chavo/Chavo";
-import Header from "./components/Header/Header";
 import Electronic from "./components/Electronic/Electronic";
 import { NotFoundPage } from "./pages/NotFoundPage/NotFoundPage";
 import PrivateHome from "./pages/PrivateHome/PrivateHome";
 import Withdrawal from "./pages/Withdrawal/Withdrawal";
 import Filter from "./pages/Filter/Filter";
 import Footer from "./components/Foot/Foot";
+import Authorization from "./components/Auth/Auth";
+import Header from "./components/Head/Head";
 
 function App() {
   return (

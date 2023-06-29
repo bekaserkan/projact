@@ -1,5 +1,5 @@
 import React from "react";
-import "./Authorization.css";
+import "./Auth.css";
 import fasebook from "../../img/fasebook.svg";
 import google from "../../img/🦆 icon _google_.png";
 import { NavLink } from "react-router-dom";

@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
-import "./Battle.css";
+import "./BattleCombat.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { Fite } from "./fite";
+import { Fite } from "./Fight";
 import { Loading } from "../UI/loading/loading";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchTodos, setTodoPage } from "../../store/actions/battleAction";
@@ -11,7 +11,7 @@ function Battle({ onItemClick }) {
   const dispatch = useDispatch();
   const { page, error, loading, todos } = useSelector((state) => state.todo);
   const pages = [1, 2, 3];
-  
+
   useEffect(() => {
     dispatch(fetchTodos(page));
   }, [page]);
