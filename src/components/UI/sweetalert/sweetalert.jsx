@@ -69,7 +69,7 @@ export const errorContact = () => {
   });
   Toast.fire({
     icon: "error",
-    title: "Заполняйте правильно !",
+    title: "Заполните поля !",
   });
 };
 

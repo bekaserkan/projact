@@ -31,6 +31,7 @@ function Electronic() {
       // window.location.href = '/PrivateHome'
     } else {
       errorContact();
+      alert('Аскар байке пароль - 2023, email - @beka')
     }
   }
 
